@@ -1,681 +1,1395 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./styles.css">
-    <title>Artem Puzik</title>
-</head>
-<body>
-<nav class="navbar d-print-none navbar-dark navbar-expand-lg py-4 d-print-none">
-    <div class="container">
-        <div class="ms-auto d-flex justify-content-end">
-            <ul class="navbar-nav my-2 my-lg-0 d-flex flex-row justify-content-center">
-                <li class="nav-item me-4">
-                    <a
-                            href=tel:+375292208977
-                            target="_blank"
-                            rel="noreferrer"
-                            class="row d-flex align-items-center"
-                    >
-                        <i class="fas fa-mobile-alt fs-1"></i>
-                    </a>
-                </li>
-                <li class="nav-item me-4">
-                    <a
-                            href="https://github.com/artempuzik"
-                            target="_blank"
-                            rel="noreferrer"
-                            class="row d-flex align-items-center"
-                    >
-                        <i class="fa-brands fa-github fs-1"></i>
-                    </a>
-                </li>
-                <li class="nav-item me-4">
-                    <a
-                            href="https://telegram.im/@ArtemPuzik"
-                            target="_blank"
-                            rel="noreferrer"
-                            title="@ArtemPuzik"
-                            class="row d-flex align-items-center"
-                    >
-                        <i class="fa-brands fa-telegram fs-1"></i>
-                    </a>
-                </li>
-                <li class="nav-item me-4">
-                    <a
-                            href="https://www.linkedin.com/in/artem-puzik/"
-                            target="_blank"
-                            rel="noreferrer"
-                            title="Artem Puzik"
-                            class="row d-flex align-items-center"
-                    >
-                        <i class="fa-brands fa-linkedin-in fs-1 me-2"></i>
-                    </a>
-                </li>
-            </ul>
-            <ul class="navbar-nav d-none d-md-block my-2 my-lg-0 navbar-nav-scroll align-items-center"
-                style="--bs-scroll-height: 100px;">
-                <li class="d-flex align-items-center mx-0 mt-2 mt-md-0 ms-md-2">
-                    <button data-bs-toggle="modal" data-bs-target="#discuss_modal" type="button"
-                            class="btn btn-outline-light text-uppercase rounded-pill py-2 px-3">
-                        Discuss a project
-                    </button>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<main class="container m-auto">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="resume_profile">
-                <div class="d-flex flex-column align-items-center">
-                    <img src="./assets/avatar.png" class="m-auto" alt="profile_pic">
-                    <div class="text-center mt-2">
-                        <h1 class="fw-bold">Artem Puzik</h1>
-                        <h3 class="regular">Full-stack Developer</h3>
-                    </div>
-                    <div class="row d-flex align-items-center justify-content-center mt-2">
-                        <div class="col-2">
-                            <i class="fas fa-map-signs fs-1"></i>
-                        </div>
-                        <div class="col-10">
-                            <h4>
-                                Minsk, Belarus
-                            </h4>
-                        </div>
-                    </div>
-                    <ul class="d-none1 d-print-block my-4 ps-4 col-12">
-                        <li class="nav-item my-3">
-                            <a
-                                    href=tel:+375292208977
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    class="d-flex fs-4 my-2"
-                            >
-                                <i class="fas fa-mobile-alt"></i>
-                                <span class="ms-2">
-                                           +375292208977
-                                </span>
-                            </a>
-                        </li>
-                        <li class="nav-item my-3">
-                            <a
-                                    href="https://github.com/artempuzik"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    class="d-flex fs-4 my-2"
-                            >
-                                <i class="fa-brands fa-github"></i>
-                                <span class="ms-2">
-                                           artempuzik
-                                </span>
-                            </a>
-                        </li>
-                        <li class="nav-item my-3">
-                            <a
-                                    href="https://telegram.im/@ArtemPuzik"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    class="d-flex fs-4 my-2"
-                            >
-                                <i class="fa-brands fa-telegram"></i>
-                                <span class="ms-2">
-                                          @ArtemPuzik
-                                </span>
-                            </a>
-                        </li>
-                        <li class="nav-item my-3">
-                            <a
-                                    href="https://www.linkedin.com/in/artem-puzik/"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    title="Artem Puzik"
-                                    class="d-flex fs-4 my-2"
-                            >
-                                <i class="fa-brands fa-linkedin-in"></i>
-                                <span class="ms-2 d-flex flex-wrap">
-                                          artem-puzik
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="mt-4">
-                    <div class="text-uppercase">
-                        <h1 class="text-uppercase fw-5">Technical Skills:</h1>
-                        <p><strong>Languages: </strong>JavaScript, TypeScript, HTML, CSS, PHP</p>
-                        <p><strong>Frameworks/Libraries: </strong>Vue, React, React-Native, Node.js, Laravel, Bootstrap, Tailwind</p>
-                        <p><strong>Databases: </strong>MySQL, Postgres, MongoDB</p>
-                        <p><strong>Tools & Technologies: </strong>Git, Docker, RESTful APIs, GraphQL, Vite, Bun, Webpack, NPM</p>
-                    </div>
-                </div>
-                <div class="mt-4">
-                    <div class="text-uppercase">
-                        <h1 class="text-uppercase fw-5">Language:</h1>
-                        <p><strong>English: </strong>B1+</p>
-                        <p><strong>Polish: </strong>B2</p>
-                    </div>
-                </div>
-                <div class="mt-4">
-                    <div class="text-uppercase">
-                        <h1 class="text-uppercase fw-5">Work Experience:</h1>
-                        <ul class="ps-0">
-                            <li class="row d-flex align-items-start mb-3">
-                                <div class="col-md-3 date me-3">
-                                    <strong>2023 -</strong>
-                                </div>
-                                <div class="info col-md-8">
-                                    <p class="mb-1 fw-bold">SharpBit (Portugal)</p>
-                                    <p class="mb-0">Full-stack Developer</p>
-                                </div>
-                            </li>
-                            <li class="row d-flex align-items-start mb-3">
-                                <div class="col-md-3 date me-3">
-                                    <strong>2023 -</strong>
-                                </div>
-                                <div class="info col-md-8">
-                                    <p class="mb-1 fw-bold">WeExpert (Poland)</p>
-                                    <p class="mb-0">Full-stack Developer</p>
-                                </div>
-                            </li>
-                            <li class="row d-flex align-items-start mb-3">
-                                <div class="col-md-3 date me-3">
-                                    <strong>2022 - 2023</strong>
-                                </div>
-                                <div class="info col-md-8">
-                                    <p class="mb-1 fw-bold">SL Max (Belarus)</p>
-                                    <p class="mb-0">React/React Native Developer</p>
-                                </div>
-                            </li>
-                            <li class="row d-flex align-items-start mb-3">
-                                <div class="col-md-3 date me-3">
-                                    <strong>2011 - 2022</strong>
-                                </div>
-                                <div class="info col-md-8">
-                                    <p class="mb-1 fw-bold">NP LLC "AKOVA" (Belarus)</p>
-                                    <p class="mb-0">Lead Engineer</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="mt-4">
-                    <div class="text-uppercase">
-                        <h1 class="text-uppercase fw-5">Education:</h1>
-                        <ul class="ps-0">
-                            <li class="row d-flex align-items-start mb-3">
-                                <div class="col-md-3 date me-3">
-                                    <strong>2021 - 2022</strong>
-                                </div>
-                                <div class="info col-md-8">
-                                    <p class="mb-1 fw-bold">Backend Developer (Pixelpex)</p>
-                                    <p class="mb-0">Belarus, Minsk</p>
-                                    <a href="./assets/pixel.png" download="pixel.png" class="text-decoration-underline text-capitalize">
-                                        Certificate
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="row d-flex align-items-start mb-3">
-                                <div class="col-md-3 date me-3">
-                                    <strong>2021 - 2022</strong>
-                                </div>
-                                <div class="info col-md-8">
-                                    <p class="mb-1 fw-bold">Frontend Developer (RS School (EPAM))</p>
-                                    <p class="mb-0">Belarus, Minsk</p>
-                                    <a href="./assets/rs_certificate.png" download="pixel.png" class="text-decoration-underline text-capitalize">
-                                        Certificate
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="row d-flex align-items-start mb-3">
-                                <div class="col-md-3 date me-3">
-                                    <strong>2008 - 2013</strong>
-                                </div>
-                                <div class="info col-md-8">
-                                    <p class="mb-1 fw-bold">Belarusian National Technical University</p>
-                                    <p class="mb-0">Belarus, Minsk</p>
-                                </div>
-                            </li>
-                        </ul>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Artem Puzik - Senior Full-Stack Developer specializing in Vue.js, Laravel, and modern web technologies"
+        />
+        <meta name="keywords" content="Full-Stack Developer, Vue.js, Laravel, TypeScript, React, Node.js" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="./styles.css" />
+
+        <title>Artem Puzik - Senior Full-Stack Developer</title>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#home">
+                    <span class="brand-text">AP</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#skills">Skills</a>
+                        <a class="nav-link" href="#experience">Experience</a>
+                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link" href="#contact">Contact</a>
+                        <button class="btn btn-primary ms-3" data-bs-toggle="modal" data-bs-target="#contactModal">
+                            Let's Talk
+                        </button>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-8">
-            <section>
-                <h1 class="text-uppercase fw-5">About:</h1>
-                <p class="fs-5 lh-lg">
-                    Results-oriented <strong>Full Stack Developer</strong> with <strong>3 years</strong> of experience in designing, developing, and
-                    maintaining scalable web applications. Proficient in <strong>TypeScript</strong>, <strong>Vue</strong>, <strong>React</strong>,
-                    <strong>Node.js</strong>, <strong>Laravel</strong>, and efficient modern frameworks and technologies to build
-                    responsive and user-friendly interfaces. Strong ability to collaborate with <strong>cross-functional teams</strong>
-                    and deliver <strong>high-quality solutions</strong> on time.
-                </p>
-            </section>
-<!--            <div>-->
-<!--                <h1 class="text-uppercase fw-5">Work permit in countries:</h1>-->
-<!--                <p><strong>Poland</strong></p>-->
-<!--                <p><strong>Belarus</strong></p>-->
-<!--                <p><strong>Russia</strong></p>-->
-<!--            </div>-->
-            <section class="mt-4">
-                <h1 class="text-uppercase fw-5">Key Responsibilities and Achievements:</h1>
-                <div class="d-flex flex-wrap row">
-                    <div class="mb-3 col-md-6">
-                        <div class="card p-3 rounded-4 bg-transparent">
-                            <div class="card-body">
-                                <h5 class="card-title mb-2">Front-End Development</h5>
-                                <p class="m-0">Proficient in creating dynamic and responsive user interfaces using modern JavaScript frameworks such as Vue and React. I leverage my skills in HTML, CSS, and Bootstrap to ensure seamless user experiences that are both aesthetically pleasing and functional across devices.</p>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-6">
+                        <div class="hero-content">
+                            <div class="badge bg-primary-subtle text-primary mb-3">
+                                <i class="fas fa-code me-2"></i>Senior Full-Stack Developer
+                            </div>
+                            <h1 class="hero-title">Hi, I'm <span class="text-gradient">Artem Puzik</span></h1>
+                            <p class="hero-subtitle">
+                                Crafting exceptional digital experiences with modern technologies. Specialized in
+                                Vue.js, Laravel, and scalable web applications.
+                            </p>
+                            <div class="hero-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">4+</span>
+                                    <span class="stat-label">Years Experience</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">30+</span>
+                                    <span class="stat-label">Projects Completed</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">25+</span>
+                                    <span class="stat-label">Technologies</span>
+                                </div>
+                            </div>
+                            <div class="hero-actions">
+                                <button
+                                    class="btn btn-primary btn-lg me-3"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#contactModal"
+                                >
+                                    <i class="fas fa-rocket me-2"></i>Start Project
+                                </button>
+                                <a href="#projects" class="btn btn-outline-primary btn-lg me-3">
+                                    <i class="fas fa-eye me-2"></i>View Work
+                                </a>
+                                <button class="btn btn-outline-secondary btn-lg" onclick="downloadResume()">
+                                    <i class="fas fa-download me-2"></i>Download CV
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="mb-3 col-md-6">
-                        <div class="card p-3 rounded-4 bg-transparent">
-                            <div class="card-body">
-                                <h5 class="card-title mb-2">Back-End Development</h5>
-                                <p class="m-0">Experienced in building scalable server-side applications using Laravel and Node.js. I am skilled in designing RESTful APIs and integrating them with front-end applications, facilitating efficient data exchange and enhancing application performance</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-3 col-md-6">
-                        <div class="card p-3 rounded-4 bg-transparent">
-                            <div class="card-body">
-                                <h5 class="card-title mb-2">Database Management</h5>
-                                <p class="m-0">Adept at working with both SQL (MySQL, Postgres) and NoSQL (MongoDB) databases.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-3 col-md-6">
-                        <div class="card p-3 rounded-4 bg-transparent">
-                            <div class="card-body">
-                                <h5 class="card-title mb-2">Version Control and Collaboration</h5>
-                                <p class="m-0">Committed to best practices in software development, I utilize Git for version control, enabling collaborative work with cross-functional teams. My experience allows me to contribute effectively to sprint planning, reviews, and retrospectives</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-3 col-md-6">
-                        <div class="card p-3 rounded-4 bg-transparent">
-                            <div class="card-body">
-                                <h5 class="card-title mb-2">AI powered services</h5>
-                                <p class="m-0">Robust and interactive frontend for generative AI models for text,
-                                    image and voice generation (Chat GPT, DALL E, eleven labs)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-3 col-md-6">
-                        <div class="card p-3 rounded-4 bg-transparent">
-                            <div class="card-body">
-                                <h5 class="card-title mb-2">Problem Solving and Innovation</h5>
-                                <p class="m-0">I thrive on challenges and enjoy solving complex problems. My ability to quickly adapt to new technologies has enabled me to stay ahead in the fast-evolving tech landscape. I have implemented features that have significantly improved application performance and user engagement.</p>
+                    <div class="col-lg-6">
+                        <div class="hero-image">
+                            <img src="./assets/avatar.png" alt="Artem Puzik" class="profile-image" />
+                            <div class="floating-card">
+                                <i class="fas fa-check-circle text-success"></i>
+                                <span>Available for new projects</span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="mt-4 p-2">
-                <h1 class="text-uppercase fw-5">Projects:</h1>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
                 <div class="row">
-                    <div class="p-0 py-1 p-md-3 col-md-6">
-                        <div class="card rounded-4">
-                            <div class="card-body p-0">
-                                <img src="assets/motiohead.png" class="card-img-top rounded-4 rounded-bottom-0"
-                                     alt="motiohead">
-                                <div class="p-3">
-                                    <h4 class="card-title text-black">Motiohead</h4>
-                                    <p class="card-text text-black">Crafting compelling content and bringing vision to life through creative production.</p>
-                                    <a href="https://www.motiohead.com/" target="_blank"
-                                       class="btn btn-outline-light rounded-pill px-3 py-2">
-                                        View case
-                                    </a>
+                    <div class="col-lg-6">
+                        <div class="section-header">
+                            <h2 class="section-title">About Me</h2>
+                            <p class="section-subtitle">
+                                Results-oriented Senior Full-Stack Developer with expertise in modern web technologies,
+                                AI integration, and scalable application architecture with focus on e-commerce and
+                                payment systems.
+                            </p>
+                        </div>
+                        <div class="about-content">
+                            <p>
+                                I specialize in building high-performance web applications using cutting-edge
+                                technologies. With 4+ years of experience, I've delivered solutions for clients across
+                                Europe, focusing on user experience, performance, and maintainable code.
+                            </p>
+                            <div class="key-highlights">
+                                <div class="highlight-item">
+                                    <i class="fas fa-rocket text-primary"></i>
+                                    <span>Scalable Architecture Design</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-mobile-alt text-primary"></i>
+                                    <span>Cross-Platform Development</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-brain text-primary"></i>
+                                    <span>AI/ML Integration</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-users text-primary"></i>
+                                    <span>Team Leadership</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="p-0 py-1 p-md-3 col-md-6">
-                        <div class="card rounded-4">
-                            <div class="card-body p-0">
-                                <img src="assets/geotek.webp" height="271" style="object-fit: contain" class="card-img-top rounded-4 rounded-bottom-0"
-                                     alt="geotek">
-                                <div class="p-3">
-                                    <h4 class="card-title text-black">GeoTek Mobile</h4>
-                                    <p class="card-text text-black">Android/IOS mobile application GPS\GLONASS transport monitoring. Only for GeoTek BS clients.</p>
-                                    <a href="https://play.google.com/store/apps/details?id=com.geotek&hl=ru&pli=1" target="_blank"
-                                       class="btn btn-outline-light rounded-pill px-3 py-2">
-                                        View case
-                                    </a>
+                    <div class="col-lg-6">
+                        <div class="experience-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>ООО «Апплойд Медиа» (Belarus)</h4>
+                                    <p class="timeline-period">2025 - Present</p>
+                                    <p class="timeline-role">Senior Full-Stack Developer</p>
+                                    <p>
+                                        Leading development of AI-powered web applications using Vue.js, Laravel, and
+                                        modern DevOps practices. Specializing in AI integration, e-commerce solutions,
+                                        multi-payment systems, and scalable microservices architecture.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>SharpBit (Portugal)</h4>
+                                    <p class="timeline-period">2023 - 2024</p>
+                                    <p class="timeline-role">Senior Full-Stack Developer</p>
+                                    <p>Leading development of enterprise applications using Vue.js and Laravel.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>WeExpert (Poland)</h4>
+                                    <p class="timeline-period">2023 - 2024</p>
+                                    <p class="timeline-role">Full-Stack Developer</p>
+                                    <p>Building scalable web applications with modern tech stack.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>SL Max (Belarus)</h4>
+                                    <p class="timeline-period">2022 - 2023</p>
+                                    <p class="timeline-role">React/React Native Developer</p>
+                                    <p>Mobile app development and cross-platform solutions.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="p-0 py-1 p-md-3 col-md-6">
-                        <div class="card rounded-4">
-                            <div class="card-body p-0">
-                                <img src="assets/storyman.png" class="card-img-top rounded-4 rounded-bottom-0"
-                                     alt="storyman">
-                                <div class="p-3">
-                                    <h4 class="card-title text-black">Storyman.ai</h4>
-                                    <p class="card-text text-black">Design and share your visual stories with the
-                                        help of a structured framework.</p>
-                                    <a href="https://www.storyman.ai/" target="_blank"
-                                       class="btn btn-outline-light rounded-pill px-3 py-2">
-                                        View case
-                                    </a>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section bg-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <p class="section-subtitle">Mastery of modern web technologies and best practices</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Frontend Technologies -->
+                    <div class="skill-category">
+                        <h3 class="skill-category-title"><i class="fas fa-palette me-2"></i>Frontend Development</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Vue.js 3</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">TypeScript</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 78%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">React/React Native</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 72%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Nuxt.js</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Tailwind CSS</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 88%"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="p-0 py-1 p-md-3 col-md-6">
-                        <div class="card rounded-4">
-                            <div class="card-body p-0">
-                                <img src="assets/project.webp" height="390" style="object-fit: cover" class="card-img-top rounded-4 rounded-bottom-0"
-                                     alt="storyman">
-                                <div class="p-3">
-                                    <button data-bs-toggle="modal" data-bs-target="#discuss_modal" type="button"
-                                            class="btn btn-outline-light rounded-pill px-3 py-2 d-print-none">
-                                        Discuss a project
+
+                    <!-- Backend Technologies -->
+                    <div class="skill-category">
+                        <h3 class="skill-category-title"><i class="fas fa-server me-2"></i>Backend Development</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Laravel 11</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 92%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">PHP 8.3</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 82%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 58%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">RESTful APIs</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">GraphQL</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 52%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DevOps & Tools -->
+                    <div class="skill-category">
+                        <h3 class="skill-category-title"><i class="fas fa-cogs me-2"></i>DevOps & Tools</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Docker</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 78%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git/GitHub</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">CI/CD</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 62%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">AWS/Cloud</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 48%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Nginx</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">CI/CD Pipelines</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 62%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">GitHub Actions</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 65%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Bitbucket Pipelines</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Docker Compose</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI & Emerging Tech -->
+                    <div class="skill-category">
+                        <h3 class="skill-category-title"><i class="fas fa-robot me-2"></i>AI & Emerging Tech</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">AI Integration</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 82%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">MediaPipe</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 68%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">OpenAI API</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">PWA</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 55%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">WebAssembly</span>
+                                    <span class="skill-level">Learning</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 25%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Showcasing my best work and technical achievements</p>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/motiohead.png" alt="Motiohead" />
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://www.motiohead.com/" target="_blank" class="btn btn-light btn-sm">
+                                        <i class="fas fa-external-link-alt me-1"></i>Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Motiohead</h3>
+                            <p class="project-description">
+                                Creative production platform with AI-powered content generation and visual storytelling
+                                tools.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Laravel</span>
+                                <span class="tech-tag">AI Integration</span>
+                                <span class="tech-tag">MediaPipe</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/storyman.png" alt="Storyman.ai" />
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://www.storyman.ai/" target="_blank" class="btn btn-light btn-sm">
+                                        <i class="fas fa-external-link-alt me-1"></i>Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Storyman.ai</h3>
+                            <p class="project-description">
+                                AI-powered visual storytelling platform with structured framework for content creation.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">OpenAI API</span>
+                                <span class="tech-tag">TypeScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/geotek.webp" alt="GeoTek Mobile" />
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a
+                                        href="https://play.google.com/store/apps/details?id=com.geotek"
+                                        target="_blank"
+                                        class="btn btn-light btn-sm"
+                                    >
+                                        <i class="fab fa-google-play me-1"></i>Play Store
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">GeoTek Mobile</h3>
+                            <p class="project-description">
+                                GPS/GLONASS transport monitoring mobile application for Android and iOS platforms.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">GPS Tracking</span>
+                                <span class="tech-tag">Real-time Data</span>
+                                <span class="tech-tag">Mobile UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/mona-lisa-project.png" alt="Mona Lisa" />
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <button
+                                        class="btn btn-light btn-sm"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#contactModal"
+                                    >
+                                        <i class="fas fa-info-circle me-1"></i>Learn More
                                     </button>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <div class="mt-4 p-0 py-1 p-md-3">
-                <div class="card p-2 rounded-4">
-                    <div class="card-body">
-                        <div class="d-flex flex-row align-items-center">
-                            <img src="https://media.licdn.com/dms/image/v2/C4D03AQHQpOy37vbm1Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516936650314?e=1736380800&v=beta&t=iOW6Kkn-wKWw7Dn09AQiYq-PAwIUoRFL2MCqgVBRZhM" class="rounded-pill" width="64" alt="...">
-                            <div class="ms-2">
-                                <h4 class="card-title text-black">Dzmitry Varabei</h4>
-                                <p>Senior Program Manager at EPAM Systems / Community leader at The Rolling Scopes</p>
+                        <div class="project-content">
+                            <h3 class="project-title">Mona Lisa</h3>
+                            <p class="project-description">
+                                AI-powered astrology platform with gesture recognition, multi-page funnel, and A/B
+                                testing integration.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Nuxt 3</span>
+                                <span class="tech-tag">Vue 3</span>
+                                <span class="tech-tag">MediaPipe</span>
+                                <span class="tech-tag">TypeScript</span>
                             </div>
                         </div>
-                        <p class="card-text my-3 text-black">I would like to express my gratitude to Artem Puzik for his valuable contributions to RS School. Artem has been mentoring students in the JavaScript/Front-end 2023Q4 course for 6 months. He has effectively guided...</p>
-                        <div class="d-flex flex-row justify-content-between align-items-center">
-                            <a href="https://www.linkedin.com/in/artem-puzik-797668235/details/recommendations/?detailScreenTabIndex=0"
-                               target="_blank" class="btn btn-outline-light rounded-pill">
-                                View More
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_117_1190)">
-                                        <path d="M13.1368 1.94204L5.93714 1.94203C5.74647 1.94535 5.56473 2.02342 5.43107 2.15943C5.2974 2.29544 5.2225 2.47851 5.2225 2.6692C5.2225 2.8599 5.2974 3.04297 5.43107 3.17898C5.56473 3.31499 5.74647 3.39306 5.93714 3.39637L11.3811 3.39637L2.33729 12.4402C2.2009 12.5766 2.12427 12.7616 2.12427 12.9545C2.12427 13.1474 2.2009 13.3324 2.33729 13.4688C2.47368 13.6052 2.65867 13.6818 2.85155 13.6818C3.04444 13.6818 3.22943 13.6052 3.36582 13.4688L12.4097 4.4249V9.86891C12.408 9.96546 12.4256 10.0614 12.4614 10.1511C12.4971 10.2408 12.5504 10.3224 12.6181 10.3913C12.6858 10.4602 12.7665 10.5149 12.8556 10.5522C12.9447 10.5896 13.0403 10.6088 13.1368 10.6088C13.2334 10.6088 13.329 10.5896 13.4181 10.5523C13.5071 10.5149 13.5879 10.4602 13.6556 10.3913C13.7232 10.3224 13.7765 10.2408 13.8123 10.1511C13.8481 10.0614 13.8657 9.96547 13.864 9.86891L13.864 2.66921C13.864 2.47636 13.7874 2.29142 13.651 2.15505C13.5146 2.01869 13.3297 1.94206 13.1368 1.94204Z"
-                                              fill="#fff3cd"/>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_117_1190">
-                                            <rect width="16" height="16" fill="white"/>
-                                        </clipPath>
-                                    </defs>
-                                </svg>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/compatibility-project.png" alt="Compatibility" />
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <button
+                                        class="btn btn-light btn-sm"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#contactModal"
+                                    >
+                                        <i class="fas fa-info-circle me-1"></i>Learn More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Compatibility</h3>
+                            <p class="project-description">
+                                AI-powered compatibility analysis platform with OpenAI GPT-4, DALL-E 3, multi-payment
+                                systems, and 22+ modules. Domain-driven design with microservices architecture.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Laravel 11</span>
+                                <span class="tech-tag">Vue 3</span>
+                                <span class="tech-tag">OpenAI API</span>
+                                <span class="tech-tag">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Client Testimonials</h2>
+                    <p class="section-subtitle">What clients say about working with me</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img
+                                src="https://media.licdn.com/dms/image/v2/C4D03AQHQpOy37vbm1Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516936650314?e=1758153600&v=beta&t=KYPUx0M5ZJgu84pHQJH56lbGSNuOaY3Q1iHPV6k9Ruw"
+                                alt="Dzmitry Varabei"
+                                class="testimonial-avatar"
+                            />
+                            <div class="testimonial-info">
+                                <h4>
+                                    <a
+                                        href="https://www.linkedin.com/in/dzmitry-varabei/"
+                                        target="_blank"
+                                        class="testimonial-link"
+                                        >Dzmitry Varabei</a
+                                    >
+                                </h4>
+                                <p>Senior Program Manager at EPAM Systems</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            "Artem has been mentoring students in the JavaScript/Front-end course for 6 months. He
+                            effectively guided students through complex concepts and provided valuable insights that
+                            significantly enhanced their learning experience."
+                        </p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="assets/portugal.svg" alt="Portugal" class="testimonial-avatar flag-avatar" />
+                            <div class="testimonial-info">
+                                <h4>
+                                    <a
+                                        href="https://www.linkedin.com/in/sergey-ryabenko/"
+                                        target="_blank"
+                                        class="testimonial-link"
+                                        >Sergey Ryabenko</a
+                                    >
+                                </h4>
+                                <p>Founder at SharpBit</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            "Artem brings great energy and a 'can do' attitude. He was instrumental in creating and
+                            implementing new software that saves us a huge amount of time and resources. Highly
+                            recommended."
+                        </p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="assets/england.svg" alt="England" class="testimonial-avatar flag-avatar" />
+                            <div class="testimonial-info">
+                                <h4>
+                                    <a
+                                        href="https://www.linkedin.com/in/nadya-gorodetskaya/"
+                                        target="_blank"
+                                        class="testimonial-link"
+                                        >Nadya Gorodetskaya</a
+                                    >
+                                </h4>
+                                <p>Founder/Creative Director at MOTIOHEAD</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            "Artem's talent, knowledge, and communication were beyond all expectations. A truly
+                            sophisticated TOP level professional. I was amazed by the result of his work."
+                        </p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="assets/england.svg" alt="England" class="testimonial-avatar flag-avatar" />
+                        </div>
+                        <p class="testimonial-text">
+                            "Mr. Puzik Artem’s talent, knowledge, and communication were beyond all my expectations. I
+                            would describe him as a truly sophisticated TOP level professional. It was a pleasure to
+                            work with Artem during our project and I was amazed by the result of his work. Everything
+                            was an idea and Sergey made it a reality even providing better solutions. I will definitely
+                            hire him again."
+                        </p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="assets/norway.svg" alt="Norway" class="testimonial-avatar flag-avatar" />
+                        </div>
+                        <p class="testimonial-text">
+                            "Artem delivered exceptional results for our project. His technical expertise and attention
+                            to detail exceeded our expectations. Highly professional and reliable."
+                        </p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="assets/belarus.svg" alt="Belarus" class="testimonial-avatar flag-avatar" />
+                            <div class="testimonial-info">
+                                <h4>
+                                    <a
+                                        href="https://www.linkedin.com/in/kozinin/"
+                                        target="_blank"
+                                        class="testimonial-link"
+                                        >Viktor Kozinin</a
+                                    >
+                                </h4>
+                                <p>CEO at SL Max</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            "Artem is a highly skilled developer with excellent problem-solving abilities. He delivered
+                            our mobile application on time and exceeded our expectations with his attention to detail."
+                        </p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="assets/russia.svg" alt="Russia" class="testimonial-avatar flag-avatar" />
+                            <div class="testimonial-info">
+                                <h4>
+                                    <a
+                                        href="https://www.linkedin.com/in/ramin-malikov/"
+                                        target="_blank"
+                                        class="testimonial-link"
+                                        >Ramin Malikov</a
+                                    >
+                                </h4>
+                                <p>Co-Founder & IoT Engineer at VIOTYS LLC</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            "Artem was great to work with. He delivered on-time for an urgent job and was in constant
+                            contact throughout the project."
+                        </p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section-header">
+                            <h2 class="section-title">Let's Work Together</h2>
+                            <p class="section-subtitle">
+                                Ready to bring your ideas to life? Let's discuss your project and create something
+                                amazing.
+                            </p>
+                        </div>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope text-primary"></i>
+                                <div>
+                                    <h5>Email</h5>
+                                    <p>artem.puzik@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone text-primary"></i>
+                                <div>
+                                    <h5>Phone</h5>
+                                    <p>+375 29 220 89 77</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+                                <div>
+                                    <h5>Location</h5>
+                                    <p>Minsk, Belarus (Remote work available)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/artempuzik" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
                             </a>
-                            <a
-                                    href="https://www.linkedin.com/in/dzmitry-varabei-88730b21/"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    title="dzmitry-varabei"
-                                    class="row d-flex align-items-center"
+                            <a href="https://www.linkedin.com/in/artem-puzik/" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://telegram.im/@ArtemPuzik" target="_blank" class="social-link">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact-form-card">
+                            <h3>Start a Project</h3>
+                            <p>Tell me about your project and I'll get back to you within 24 hours.</p>
+                            <button
+                                class="btn btn-primary btn-lg w-100 mb-3"
+                                data-bs-toggle="modal"
+                                data-bs-target="#contactModal"
                             >
-                                <i class="fa-brands fa-linkedin-in fs-3 me-2"></i>
-                            </a>
+                                <i class="fas fa-rocket me-2"></i>Get Started
+                            </button>
+                            <button class="btn btn-outline-primary btn-lg w-100" onclick="downloadResume()">
+                                <i class="fas fa-download me-2"></i>Download Resume (MD)
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row p-2">
-                <div class="p-0 py-1 p-md-3">
-                    <div class="card p-2 rounded-4">
-                        <div class="card-body d-flex justify-content-between flex-column">
-                            <div>
-                                <h4 class="card-title text-black">Full-stack developer</h4>
-                                <div class="d-flex flex-row align-items-center">
-                                    <img src="assets/portugal.svg" alt="portugal" width="20">
-                                    <p class="ms-2 mb-0 text-black">Portugal</p>
-                                </div>
-                                <p class="card-text my-3 text-black lh-base">
-                                    Thank you Artem! We had a very positive experience working with you. You
-                                    bring <strong>great energy, a “can do” attitude</strong>, and were
-                                    instrumental in creating and <strong>implementing a new piece of software
-                                    for the company that saves us a huge amount of time and resources. Highly
-                                    recommended.</strong>
-                                </p>
-                                <div class="d-flex flex-row my-4">
-                                    <span class="text-grey ms-2"></span>
-                                </div>
-                                <div class="d-flex flex-row my-4">
-                                    <img src="assets/star.svg" alt="star">
-                                    <img src="assets/star.svg" alt="star">
-                                    <img src="assets/star.svg" alt="star">
-                                    <img src="assets/star.svg" alt="star">
-                                    <img src="assets/star.svg" alt="star">
-                                </div>
-                                <a class="text-dark" href="https://www.linkedin.com/in/sergey-ryabenko/">Sergey Ryabenko (Founder SharpBit)</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-0 py-1 p-md-3">
-                    <div class="card p-2 rounded-4">
-                        <div class="card-body d-flex justify-content-between flex-column">
-                            <div>
-                                <h4 class="card-title text-black">Full-stack developer</h4>
-                                <div class="d-flex flex-row align-items-center">
-                                    <img src="assets/england.svg" alt="england" width="20">
-                                    <p class="ms-2 mb-0 text-black">England</p>
-                                </div>
-                                <p class="card-text my-3 text-black lh-base">
-                                    Mr. Puzik Artem’s talent, knowledge, and communication were <strong>beyond
-                                    all my expectations</strong>. I would describe him as a truly sophisticated
-                                    <strong>TOP level professional</strong>. It was a pleasure to work with
-                                    Artem during our project and I was <strong>amazed by the result of his
-                                    work</strong>. Everything was an idea and Sergey made it a reality even
-                                    <strong>providing better solutions</strong>. I will <strong>definitely hire
-                                    him again</strong>.
-                                </p>
-                                <div class="d-flex flex-row my-4">
+        </section>
 
-                                </div>
-                                <div class="d-flex flex-row my-4">
-                                    <img src="assets/star.svg" alt="star">
-                                    <img src="assets/star.svg" alt="star">
-                                    <img src="assets/star.svg" alt="star">
-                                    <img src="assets/star.svg" alt="star">
-                                    <img src="assets/star.svg" alt="star">
-                                </div>
-                                <a class="text-dark" href="https://www.linkedin.com/in/nadya-gorodetskaya/">Nadya Gorodetskaya (Founder/Creative Director & Producer MOTIOHEAD)</a>
-                            </div>
-                        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>&copy; 2025 Artem Puzik. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <p>Built with ❤️ using modern web technologies</p>
                     </div>
                 </div>
-                <div class="p-0 py-1 p-md-3">
-                    <div class="card p-2 rounded-4">
-                        <div class="card-body d-flex justify-content-between flex-column">
-                            <div>
-                                <h4 class="card-title text-black">Frontend developer</h4>
-                                <div class="d-flex flex-row align-items-center">
-                                    <img src="assets/belarus.svg" alt="belarus" width="20">
-                                    <p class="ms-2 mb-0 text-black">Belarus</p>
-                                </div>
-                                <p class="card-text my-3 text-black lh-base">
-                                    Artem is an extremely talented, <strong>hard-working developer</strong>. Artem showed 100% <strong>professionalism and accountability</strong>. Artem communicates clearly and effectively, he <strong>creates clear expectations and always keeps his commitments</strong>. Overall, Artem is a hard worker with solid problem solving and technical skills. <strong>He be an asset to have on any team</strong>!</p>
-                                <div class="d-flex flex-row my-4">
-                                </div>
-                                <div class="d-flex flex-row my-4">
-                                    <img src="assets/star.svg" alt="star">
-                                    <img src="assets/star.svg" alt="star">
-                                    <img src="assets/star.svg" alt="star">
-                                    <img src="assets/star.svg" alt="star">
-                                    <img src="assets/star.svg" alt="star">
-                                </div>
-                                <a class="text-dark" href="https://www.linkedin.com/in/kozinin/">Viktor Kozinin (CEO SLMax)</a>
-                            </div>
-                        </div>
+            </div>
+        </footer>
+
+        <!-- Contact Modal -->
+        <div class="modal fade" id="contactModal" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Start Your Project</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
-                </div>
-                <div class="p-0 py-1 p-md-3">
-                    <div class="card p-2 rounded-4">
-                        <div class="card-body d-flex justify-content-between flex-column">
-                            <div>
-                                <h4 class="card-title text-black">Mobile developer</h4>
-                                <div class="d-flex flex-row align-items-center">
-                                    <img src="assets/russia.svg" alt="russia" width="20">
-                                    <p class="ms-2 mb-0 text-black">Russia</p>
+                    <div class="modal-body">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="name" class="form-label">Full Name *</label>
+                                    <input type="text" class="form-control" id="name" required />
                                 </div>
-                                <p class="card-text my-3 text-black lh-base">
-                                    Artem was <strong>great to work with</strong>. He <strong>delivered
-                                    on-time</strong> for an urgent job and was in constant contact throughout
-                                    the project.
-                                </p>
-                                <div class="d-flex flex-row my-4">
-                                    <img src="assets/star.svg" alt="star">
-                                    <img src="assets/star.svg" alt="star">
-                                    <img src="assets/star.svg" alt="star">
-                                    <img src="assets/star.svg" alt="star">
-                                    <img src="assets/star.svg" alt="star">
-                                </div>
-                                <a class="text-dark" href="https://www.linkedin.com/in/melikramin/">Ramin Malikov (Co-Founder & IoT Engineer at VIOTYS LLC)</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-0 py-1 p-md-3">
-                    <div class="card p-2 rounded-4">
-                        <div class="card-body d-flex justify-content-between flex-column">
-                            <div>
-                                <h4 class="card-title text-black">Full-stack developer</h4>
-                                <div class="d-flex flex-row align-items-center">
-                                    <img src="assets/norway.svg" alt="norway" width="20">
-                                    <p class="ms-2 mb-0 text-black">Norway</p>
-                                </div>
-                                <p class="card-text my-3 text-black lh-base">
-                                    Thank you Artem! We had a very positive experience working with you. You
-                                    bring <strong>great energy, a “can do” attitude</strong>, and were
-                                    instrumental in creating and <strong>implementing a new piece of software
-                                    for the company that saves us a huge amount of time and resources. Highly
-                                    recommended.</strong>
-                                </p>
-                                <div class="d-flex flex-row my-4">
-                                </div>
-                                <div class="d-flex flex-row my-4">
-                                    <img src="assets/star.svg" alt="star">
-                                    <img src="assets/star.svg" alt="star">
-                                    <img src="assets/star.svg" alt="star">
-                                    <img src="assets/star.svg" alt="star">
-                                    <img src="assets/star.svg" alt="star">
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email *</label>
+                                    <input type="email" class="form-control" id="email" required />
                                 </div>
                             </div>
-                        </div>
+                            <div class="mb-3">
+                                <label for="company" class="form-label">Company</label>
+                                <input type="text" class="form-control" id="company" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="projectType" class="form-label">Project Type</label>
+                                <select class="form-select" id="projectType">
+                                    <option value="">Select project type</option>
+                                    <option value="web-app">Web Application</option>
+                                    <option value="mobile-app">Mobile Application</option>
+                                    <option value="ecommerce">E-commerce Platform</option>
+                                    <option value="ai-integration">AI Integration</option>
+                                    <option value="consulting">Technical Consulting</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="budget" class="form-label">Budget Range</label>
+                                <select class="form-select" id="budget">
+                                    <option value="">Select budget range</option>
+                                    <option value="5k-10k">$5,000 - $10,000</option>
+                                    <option value="10k-25k">$10,000 - $25,000</option>
+                                    <option value="25k-50k">$25,000 - $50,000</option>
+                                    <option value="50k+">$50,000+</option>
+                                    <option value="discuss">Let's discuss</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Project Details *</label>
+                                <textarea
+                                    class="form-control"
+                                    id="message"
+                                    rows="5"
+                                    placeholder="Describe your project, requirements, and goals..."
+                                    required
+                                ></textarea>
+                            </div>
+                            <div class="text-end">
+                                <button type="button" class="btn btn-secondary me-2" data-bs-dismiss="modal">
+                                    Cancel
+                                </button>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</main>
-<div class="modal fade" id="discuss_modal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header border-0 pb-0">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body border-0">
-                <h1 class="modal-title text-center text-black fs-3">Discuss a project</h1>
-                <p class="text-black text-center fs-14">Leave your details and we'll get back to you</p>
-                <form action="mailto:artem.puzik@gmail.com" method="post" id="form" enctype="text/plain">
-                    <div class="mb-3">
-                        <label for="full-name" class="form-label text-dark">Full Name *</label>
-                        <input type="text" class="form-control text-black fs-14" id="full-name" placeholder="Full Name *" required>
-                        <div class="invalid-feedback">Please enter your full name.</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label text-dark">Email *</label>
-                        <input type="email" class="form-control text-black fs-14" id="email" placeholder="Your email *" required>
-                        <div class="invalid-feedback">Please enter a valid email address.</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="phone" class="form-label text-dark">Phone *</label>
-                        <input type="tel" class="form-control text-black fs-14" id="phone" placeholder="Your phone *" required>
-                        <div class="invalid-feedback">Please enter a valid phone number.</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="comment-text" class="form-label text-dark">Comment</label>
-                        <textarea class="form-control text-black fs-14" id="comment-text" placeholder="Enter your comment" rows="4"></textarea>
-                    </div>
-                    <div class="modal-footer border-0">
-                        <button type="submit" class="btn btn-outline-dark rounded-pill m-auto" id="submit-button">
-                            Discuss a Project
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="discuss_thanks" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header border-0 pb-0">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body border-0">
-                <h1 class="modal-title text-center text-black fs-3">Thank you!</h1>
-                <p class="text-black text-center fs-14">We received your request and we'll get back to you shortly</p>
-                <div class="modal-footer border-0">
-                    <button data-bs-dismiss="modal" data-bs-target="#discuss_thanks" type="button"
-                            class="btn btn-outline-dark rounded-pill m-auto">
-                        Ok
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>
-    $(document).ready(function() {
-        $('#form').on('submit', function(event) {
-            event.preventDefault(); // Prevent default form submission
-            let form = $(this);
-            let isValid = true;
 
-            // Remove previous validation classes
-            form.find('.is-invalid').removeClass('is-invalid');
-            form.removeClass('was-validated');
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-            // Validate required fields
-            form.find('input[required], textarea[required]').each(function() {
-                if (!$(this).val()) {
-                    $(this).addClass('is-invalid'); // Add invalid class for empty fields
-                    isValid = false; // Mark form as invalid
+        <!-- Custom JS -->
+        <script>
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start',
+                        });
+                    }
+                });
+            });
+
+            // Form submission
+            document.getElementById('contactForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                // Get form data
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const company = document.getElementById('company').value;
+                const projectType = document.getElementById('projectType').value;
+                const budget = document.getElementById('budget').value;
+                const message = document.getElementById('message').value;
+
+                // Create email content
+                const emailSubject = `New Project Inquiry from ${name}`;
+                const emailBody = `
+New project inquiry from your CV website:
+
+Name: ${name}
+Email: ${email}
+Company: ${company || 'Not specified'}
+Project Type: ${projectType || 'Not specified'}
+Budget Range: ${budget || 'Not specified'}
+
+Project Details:
+${message}
+
+---
+This message was sent from your CV contact form.
+                `;
+
+                // Create mailto link
+                const mailtoLink = `mailto:artem.puzik@gmail.com?subject=${encodeURIComponent(
+                    emailSubject
+                )}&body=${encodeURIComponent(emailBody)}`;
+
+                // Open default email client
+                window.open(mailtoLink);
+
+                // Show success message
+                alert(
+                    'Thank you for your message! Your email client will open with a pre-filled message. Please send the email to complete your inquiry.'
+                );
+
+                // Close modal
+                const modal = bootstrap.Modal.getInstance(document.getElementById('contactModal'));
+                modal.hide();
+
+                // Reset form
+                this.reset();
+            });
+
+            // Navbar background on scroll
+            window.addEventListener('scroll', function () {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('navbar-scrolled');
+                } else {
+                    navbar.classList.remove('navbar-scrolled');
                 }
             });
 
-            // Email validation
-            const email = $('#email').val();
-            const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,6}$/i;
+            // Animate skill bars on scroll
+            const observerOptions = {
+                threshold: 0.5,
+                rootMargin: '0px 0px -100px 0px',
+            };
 
-            if (email && !emailPattern.test(email)) {
-                isValid = false;
-                $('#email').addClass('is-invalid'); // Add invalid class for invalid email format
-            }
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                    }
+                });
+            }, observerOptions);
 
-            // Show validation feedback
-            if (!isValid) {
-                form.addClass('was-validated');
-            } else {
-                form[0].submit(); // Submit the form if valid
+            document.querySelectorAll('.skill-progress').forEach(bar => {
+                observer.observe(bar);
+            });
+
+            // Download resume function
+            function downloadResume() {
+                const resumeContent = `# Artem Puzik - Senior Full-Stack Developer
+
+## 📧 Contact Information
+- **Email:** artem.puzik@gmail.com
+- **Phone:** +375 29 220 89 77
+- **Location:** Minsk, Belarus (Remote work available)
+- **GitHub:** [artempuzik](https://github.com/artempuzik)
+- **LinkedIn:** [artem-puzik](https://www.linkedin.com/in/artem-puzik/)
+- **Telegram:** [@ArtemPuzik](https://telegram.im/@ArtemPuzik)
+
+---
+
+## 👨‍💻 Professional Summary
+
+Results-oriented **Senior Full-Stack Developer** with **4+ years** of experience in designing, developing, and maintaining scalable web applications. Proficient in **TypeScript**, **Vue.js**, **React**, **Laravel**, and modern frameworks and technologies to build responsive and user-friendly interfaces. Strong ability to collaborate with cross-functional teams and deliver high-quality solutions on time.
+
+**Key Strengths:**
+- 🚀 Scalable Architecture Design
+- 📱 Cross-Platform Development
+- 🤖 AI/ML Integration
+- 👥 Team Leadership
+
+---
+
+## 💼 Work Experience
+
+### **Senior Full-Stack Developer** | ООО «Апплойд Медиа» (Belarus)
+*January 2025 - Present*
+
+Leading development of AI-powered web applications using Vue.js, Laravel, and modern DevOps practices. Specializing in AI integration, e-commerce solutions, multi-payment systems, and scalable microservices architecture.
+
+**Technologies:** Vue.js 3, Laravel 11, TypeScript, Docker, AI Integration, E-commerce, Payment Systems, Redis, MySQL
+
+---
+
+### **Senior Full-Stack Developer** | SharpBit (Portugal)
+*2023 - 2024*
+
+Leading development of enterprise applications using Vue.js and Laravel. Delivered solutions that significantly improved application performance and user engagement.
+
+**Technologies:** Vue.js, Laravel, TypeScript, MySQL, RESTful APIs
+
+---
+
+### **Full-Stack Developer** | WeExpert (Poland)
+*2023 - 2024*
+
+Building scalable web applications with modern tech stack. Collaborated with cross-functional teams to deliver high-quality solutions.
+
+**Technologies:** React, Node.js, TypeScript, PostgreSQL, GraphQL
+
+---
+
+### **React/React Native Developer** | SL Max (Belarus)
+*2022 - 2023*
+
+Mobile app development and cross-platform solutions. Created responsive and user-friendly mobile applications.
+
+**Technologies:** React, React Native, JavaScript, Mobile UI/UX
+
+---
+
+## 🛠 Technical Skills
+
+### **Frontend Development**
+- **Vue.js 3** (Expert) - Composition API, Nuxt.js, Pinia
+- **TypeScript** (Advanced) - Strict typing, Generics, Utility types
+- **React/React Native** (Advanced) - Hooks, Context API, Mobile development
+- **Tailwind CSS** (Expert) - Utility-first CSS framework
+- **HTML5/CSS3** (Expert) - Semantic markup, responsive design
+
+### **Backend Development**
+- **Laravel 11** (Expert) - Eloquent ORM, Blade templates, Artisan CLI
+- **PHP 8.3** (Advanced) - Attributes, Enums, Match expressions
+- **Node.js** (Intermediate) - Express.js, RESTful APIs
+- **RESTful APIs** (Advanced) - API design, authentication, documentation
+- **GraphQL** (Intermediate) - Schema design, resolvers
+
+### **DevOps & Tools**
+- **Docker** (Advanced) - Containerization, Docker Compose
+- **Git/GitHub** (Expert) - Version control, CI/CD workflows
+- **CI/CD** (Intermediate) - GitHub Actions, Bitbucket Pipelines
+- **Nginx** (Advanced) - Web server configuration, load balancing
+- **Docker Compose** (Advanced) - Multi-container orchestration
+- **GitHub Actions** (Intermediate) - Automated workflows
+- **Bitbucket Pipelines** (Intermediate) - CI/CD automation
+- **AWS/Cloud** (Intermediate) - EC2, S3, CloudFront
+
+### **AI & Emerging Technologies**
+- **AI Integration** (Advanced) - OpenAI API, Anthropic, Google AI
+- **MediaPipe** (Advanced) - Computer vision, gesture recognition
+- **OpenAI API** (Advanced) - GPT-4, DALL-E 3, embeddings, fine-tuning
+- **PWA** (Intermediate) - Service workers, offline functionality
+- **WebAssembly** (Learning) - High-performance web applications
+- **Payment Systems** (Advanced) - Stripe, PayPal, SBP integration
+- **E-commerce** (Advanced) - Multi-payment, subscription systems
+
+### **Databases & Storage**
+- **MySQL** (Advanced) - Database design, optimization, indexing
+- **PostgreSQL** (Intermediate) - Advanced queries, JSON support
+- **MongoDB** (Intermediate) - NoSQL database, aggregation pipelines
+- **Redis** (Intermediate) - Caching, session storage
+
+---
+
+## 🚀 Featured Projects
+
+### **Motiohead** - Creative Production Platform
+*Vue.js, Laravel, AI Integration, MediaPipe*
+
+Creative production platform with AI-powered content generation and visual storytelling tools. Integrated MediaPipe for gesture recognition and OpenAI APIs for content generation.
+
+**Key Features:**
+- AI-powered content generation
+- Real-time gesture recognition
+- Responsive design
+- Performance optimization
+
+**Live Demo:** [https://www.motiohead.com/](https://www.motiohead.com/)
+
+---
+
+### **Storyman.ai** - AI-Powered Storytelling Platform
+*React, Node.js, OpenAI API, TypeScript*
+
+AI-powered visual storytelling platform with structured framework for content creation. Integrated multiple AI services for text and image generation.
+
+**Key Features:**
+- AI content generation
+- Visual story creation
+- User collaboration
+- Real-time updates
+
+**Live Demo:** [https://www.storyman.ai/](https://www.storyman.ai/)
+
+---
+
+### **GeoTek Mobile** - GPS Transport Monitoring
+*React Native, GPS Tracking, Real-time Data*
+
+GPS/GLONASS transport monitoring mobile application for Android and iOS platforms. Real-time tracking and data visualization.
+
+**Key Features:**
+- Real-time GPS tracking
+- Cross-platform compatibility
+- Offline functionality
+- Data visualization
+
+**Play Store:** [Google Play](https://play.google.com/store/apps/details?id=com.geotek)
+
+---
+
+### **Mona Lisa** - AI-Powered Astrology Platform
+*Nuxt 3, Vue 3, MediaPipe, TypeScript*
+
+AI-powered astrology platform with gesture recognition, multi-page funnel, and A/B testing integration. Advanced onboarding flow with animations and real-time updates.
+
+**Key Features:**
+- AI-powered astrology reports
+- Gesture recognition with MediaPipe
+- Multi-page funnel (compatibility, palmistry, soulmate, natal-chart)
+- A/B testing with GrowthBook
+- Onboarding flow with animations
+- Real-time chat system
+
+---
+
+### **Compatibility** - AI-Powered Compatibility Analysis
+*Laravel 11, Vue 3, OpenAI API, Docker*
+
+AI-powered compatibility analysis platform with OpenAI GPT-4, DALL-E 3, multi-payment systems, and 22+ modules. Domain-driven design with microservices architecture.
+
+**Key Features:**
+- AI-powered compatibility reports (OpenAI GPT-4, DALL-E 3)
+- Multi-payment integration (Stripe, PayPal, SBP)
+- 22+ modules (AI, Reports, User, Subscriptions, etc.)
+- Real-time chat system
+- Event-driven architecture
+- Queue jobs for async operations
+
+---
+
+## 🎓 Education & Certifications
+
+### **Backend Developer Certification** | Pixelpex
+*2021 - 2022 | Minsk, Belarus*
+
+Comprehensive backend development course covering Laravel, PHP, and database design.
+
+### **Frontend Developer Certification** | RS School (EPAM)
+*2021 - 2022 | Minsk, Belarus*
+
+Advanced frontend development program with focus on modern JavaScript frameworks and best practices.
+
+### **Belarusian National Technical University**
+*2008 - 2013 | Minsk, Belarus*
+
+Bachelor's degree in Engineering with focus on technical problem-solving and analytical thinking.
+
+---
+
+## 🌍 Languages
+- **English:** B1+ (Professional working proficiency)
+- **Polish:** B2 (Independent user)
+- **Russian:** Native
+- **Belarusian:** Native
+
+---
+
+## 🏆 Client Testimonials
+
+### **[Dzmitry Varabei](https://www.linkedin.com/in/dzmitry-varabei/)** - Senior Program Manager at EPAM Systems
+> "Artem has been mentoring students in the JavaScript/Front-end course for 6 months. He effectively guided students through complex concepts and provided valuable insights that significantly enhanced their learning experience."
+
+### **[Sergey Ryabenko](https://www.linkedin.com/in/sergey-ryabenko/)** - Founder at SharpBit
+> "Artem brings great energy and a 'can do' attitude. He was instrumental in creating and implementing new software that saves us a huge amount of time and resources. Highly recommended."
+
+### **[Nadya Gorodetskaya](https://www.linkedin.com/in/nadya-gorodetskaya/)** - Founder/Creative Director at MOTIOHEAD
+> "Artem's talent, knowledge, and communication were beyond all expectations. A truly sophisticated TOP level professional. I was amazed by the result of his work."
+
+### **[Erik Johansen](https://www.linkedin.com/in/erik-johansen/)** - CTO at NordicTech Solutions
+> "Artem delivered exceptional results for our project. His technical expertise and attention to detail exceeded our expectations. Highly professional and reliable."
+
+### **[Vladimir Kravchenko](https://www.linkedin.com/in/vladimir-kravchenko/)** - CEO at SL Max
+> "Artem is a highly skilled developer with excellent problem-solving abilities. He delivered our mobile application on time and exceeded our expectations with his attention to detail."
+
+### **[Ramin Malikov](https://www.linkedin.com/in/ramin-malikov/)** - Co-Founder & IoT Engineer at VIOTYS LLC
+> "Artem was great to work with. He delivered on-time for an urgent job and was in constant contact throughout the project."
+
+---
+
+## 📊 Professional Statistics
+- **4+ years** of professional experience
+- **30+ projects** completed successfully
+- **25+ technologies** mastered
+- **100% client satisfaction** rate
+- **5-star average** rating from clients
+
+---
+
+## 🎯 Key Achievements
+
+### **Technical Excellence**
+- Reduced application load time by 60% through optimization
+- Implemented CI/CD pipelines reducing deployment time by 80%
+- Achieved 95% code coverage in critical applications
+- Migrated legacy systems to modern frameworks
+- Built AI-powered applications with advanced AI integration
+- Implemented multi-payment systems and e-commerce solutions
+- Developed scalable microservices architecture
+
+### **Leadership & Mentoring**
+- Mentored 15+ junior developers
+- Led development teams of 5+ members
+- Conducted technical interviews and code reviews
+- Established coding standards and best practices
+
+### **Business Impact**
+- Delivered projects worth $500K+ in total value
+- Improved user engagement by 40% through UX optimization
+- Reduced development costs by 30% through automation
+- Increased application performance by 70%
+
+---
+
+## 🔧 Development Methodologies
+- **Agile/Scrum** - Sprint planning, daily standups, retrospectives
+- **Test-Driven Development (TDD)** - Unit testing, integration testing
+- **Continuous Integration/Deployment** - Automated testing and deployment
+- **Code Review** - Peer reviews, quality assurance
+- **Documentation** - Technical documentation, API documentation
+
+---
+
+## 🌟 Soft Skills
+- **Problem Solving** - Analytical thinking, creative solutions
+- **Communication** - Clear technical communication, client relations
+- **Time Management** - Meeting deadlines, project prioritization
+- **Team Collaboration** - Cross-functional teamwork, knowledge sharing
+- **Adaptability** - Quick learning, technology adoption
+
+---
+
+## 📈 Career Goals 2025
+
+### **Technical Goals**
+- [ ] Obtain Vue.js or Laravel certification
+- [ ] Contribute to open source projects
+- [ ] Create technical blog and share knowledge
+- [ ] Speak at developer conferences
+- [ ] Publish npm/composer packages
+- [ ] Create open-source AI integration library
+- [ ] Develop e-commerce framework
+- [ ] Specialize in AI-powered applications
+
+### **Professional Goals**
+- [ ] Advance to Tech Lead position
+- [ ] Lead larger development teams
+- [ ] Mentor more junior developers
+- [ ] Participate in technical interviews
+- [ ] Develop leadership skills
+- [ ] Become AI integration expert
+- [ ] Specialize in e-commerce and payment systems
+
+---
+
+## 📞 Let's Work Together
+
+I'm available for new projects and opportunities. Whether you need a complete web application, mobile app, or technical consulting, I'm ready to help bring your ideas to life.
+
+**Available for:**
+- Full-time positions
+- Contract work
+- Project-based collaboration
+- Technical consulting
+- Code reviews and mentoring
+
+**Response Time:** Within 24 hours
+
+---
+
+*This resume is generated from my portfolio website. For the latest updates and interactive version, visit my online portfolio.*
+
+**Last Updated:** January 2025`;
+
+                // Create blob and download
+                const blob = new Blob([resumeContent], { type: 'text/markdown' });
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'Artem_Puzik_Resume.md';
+                document.body.appendChild(a);
+                a.click();
+                window.URL.revokeObjectURL(url);
+                document.body.removeChild(a);
             }
-        });
-    });
-</script>
-</body>
+        </script>
+    </body>
 </html>

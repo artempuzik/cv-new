@@ -116,7 +116,7 @@
         <section id="about" class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 mb-6">
                         <div class="section-header">
                             <h2 class="section-title">About Me</h2>
                             <p class="section-subtitle">
@@ -322,7 +322,7 @@
                                     <span class="skill-level">Advanced</span>
                                 </div>
                                 <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 78%"></div>
+                                    <div class="skill-progress" style="width: 85%"></div>
                                 </div>
                             </div>
                             <div class="skill-item">
@@ -337,10 +337,10 @@
                             <div class="skill-item">
                                 <div class="skill-info">
                                     <span class="skill-name">CI/CD</span>
-                                    <span class="skill-level">Intermediate</span>
+                                    <span class="skill-level">Advanced</span>
                                 </div>
                                 <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 62%"></div>
+                                    <div class="skill-progress" style="width: 80%"></div>
                                 </div>
                             </div>
                             <div class="skill-item">
@@ -358,16 +358,16 @@
                                     <span class="skill-level">Advanced</span>
                                 </div>
                                 <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 70%"></div>
+                                    <div class="skill-progress" style="width: 80%"></div>
                                 </div>
                             </div>
                             <div class="skill-item">
                                 <div class="skill-info">
                                     <span class="skill-name">CI/CD Pipelines</span>
-                                    <span class="skill-level">Intermediate</span>
+                                    <span class="skill-level">Advanced</span>
                                 </div>
                                 <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 62%"></div>
+                                    <div class="skill-progress" style="width: 80%"></div>
                                 </div>
                             </div>
                             <div class="skill-item">
@@ -382,15 +382,24 @@
                             <div class="skill-item">
                                 <div class="skill-info">
                                     <span class="skill-name">Bitbucket Pipelines</span>
-                                    <span class="skill-level">Intermediate</span>
+                                    <span class="skill-level">Advanced</span>
                                 </div>
                                 <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 60%"></div>
+                                    <div class="skill-progress" style="width: 80%"></div>
                                 </div>
                             </div>
                             <div class="skill-item">
                                 <div class="skill-info">
                                     <span class="skill-name">Docker Compose</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Temporal</span>
                                     <span class="skill-level">Advanced</span>
                                 </div>
                                 <div class="skill-bar">
@@ -618,11 +627,7 @@
                 <div class="testimonials-grid">
                     <div class="testimonial-card">
                         <div class="testimonial-header">
-                            <img
-                                src="https://media.licdn.com/dms/image/v2/C4D03AQHQpOy37vbm1Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516936650314?e=1758153600&v=beta&t=KYPUx0M5ZJgu84pHQJH56lbGSNuOaY3Q1iHPV6k9Ruw"
-                                alt="Dzmitry Varabei"
-                                class="testimonial-avatar"
-                            />
+                            <img src="assets/belarus.svg" alt="Belarus" class="testimonial-avatar flag-avatar" />
                             <div class="testimonial-info">
                                 <h4>
                                     <a
@@ -705,10 +710,21 @@
                             <i class="fas fa-star"></i>
                         </div>
                     </div>
-
+<!--
                     <div class="testimonial-card">
                         <div class="testimonial-header">
                             <img src="assets/england.svg" alt="England" class="testimonial-avatar flag-avatar" />
+                            <div class="testimonial-info">
+                                <h4>
+                                    <a
+                                        href="https://www.linkedin.com/in/rigel-jenman-220569120/"
+                                        target="_blank"
+                                        class="testimonial-link"
+                                        >Rigel Jenman</a
+                                    >
+                                </h4>
+                                <p>CEO at Survaigo LTD</p>
+                            </div>
                         </div>
                         <p class="testimonial-text">
                             "Mr. Puzik Artem’s talent, knowledge, and communication were beyond all my expectations. I
@@ -724,11 +740,17 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                    </div>
-
+                    </div> -->
+<!--
                     <div class="testimonial-card">
                         <div class="testimonial-header">
                             <img src="assets/norway.svg" alt="Norway" class="testimonial-avatar flag-avatar" />
+                            <div class="testimonial-info">
+                                <h4>
+                                    Jon Aabakken
+                                </h4>
+                                <p>Musikkundervisningen Norge AS</p>
+                            </div>
                         </div>
                         <p class="testimonial-text">
                             "Artem delivered exceptional results for our project. His technical expertise and attention
@@ -741,7 +763,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="testimonial-card">
                         <div class="testimonial-header">
@@ -988,19 +1010,19 @@
                 // Create email content
                 const emailSubject = `New Project Inquiry from ${name}`;
                 const emailBody = `
-New project inquiry from your CV website:
+                    New project inquiry from your CV website:
 
-Name: ${name}
-Email: ${email}
-Company: ${company || 'Not specified'}
-Project Type: ${projectType || 'Not specified'}
-Budget Range: ${budget || 'Not specified'}
+                    Name: ${name}
+                    Email: ${email}
+                    Company: ${company || 'Not specified'}
+                    Project Type: ${projectType || 'Not specified'}
+                    Budget Range: ${budget || 'Not specified'}
 
-Project Details:
-${message}
+                    Project Details:
+                    ${message}
 
----
-This message was sent from your CV contact form.
+                    ---
+                    This message was sent from your CV contact form.
                 `;
 
                 // Create mailto link
@@ -1083,9 +1105,9 @@ Results-oriented **Senior Full-Stack Developer** with **4+ years** of experience
 ### **Senior Full-Stack Developer** | ООО «Апплойд Медиа» (Belarus)
 *January 2025 - Present*
 
-Leading development of AI-powered web applications using Vue.js, Laravel, and modern DevOps practices. Specializing in AI integration, e-commerce solutions, multi-payment systems, and scalable microservices architecture.
+Leading development of AI-powered web applications using Vue.js, Laravel, and modern DevOps practices. Specializing in AI integration, e-commerce solutions, multi-payment systems, and scalable microservices architecture. Implemented CI/CD pipelines, Docker containerization, and Nginx load balancing for high-availability systems.
 
-**Technologies:** Vue.js 3, Laravel 11, TypeScript, Docker, AI Integration, E-commerce, Payment Systems, Redis, MySQL
+**Technologies:** Vue.js 3, Laravel 11, TypeScript, Docker, Nginx, CI/CD Pipelines, AI Integration, E-commerce, Payment Systems, Redis, MySQL, Temporal
 
 ---
 
@@ -1133,13 +1155,15 @@ Mobile app development and cross-platform solutions. Created responsive and user
 - **GraphQL** (Intermediate) - Schema design, resolvers
 
 ### **DevOps & Tools**
-- **Docker** (Advanced) - Containerization, Docker Compose
+- **Docker** (Advanced) - Containerization, Docker Compose, multi-stage builds
 - **Git/GitHub** (Expert) - Version control, CI/CD workflows
-- **CI/CD** (Intermediate) - GitHub Actions, Bitbucket Pipelines
-- **Nginx** (Advanced) - Web server configuration, load balancing
+- **CI/CD** (Advanced) - GitHub Actions, Bitbucket Pipelines, automated deployment
+- **Nginx** (Advanced) - Web server configuration, load balancing, reverse proxy
+- **Temporal** (Advanced) - Workflow orchestration, async processing
+- **Laravel Horizon** (Advanced) - Queue management, job monitoring
 - **Docker Compose** (Advanced) - Multi-container orchestration
-- **GitHub Actions** (Intermediate) - Automated workflows
-- **Bitbucket Pipelines** (Intermediate) - CI/CD automation
+- **GitHub Actions** (Advanced) - Automated workflows
+- **Bitbucket Pipelines** (Advanced) - CI/CD automation
 - **AWS/Cloud** (Intermediate) - EC2, S3, CloudFront
 
 ### **AI & Emerging Technologies**
@@ -1304,6 +1328,9 @@ Bachelor's degree in Engineering with focus on technical problem-solving and ana
 - Built AI-powered applications with advanced AI integration
 - Implemented multi-payment systems and e-commerce solutions
 - Developed scalable microservices architecture
+- Set up CI/CD pipelines reducing deployment time by 80%
+- Configured Docker containerization and Nginx load balancing
+- Implemented Temporal workflows for async processing
 
 ### **Leadership & Mentoring**
 - Mentored 15+ junior developers
@@ -1316,6 +1343,10 @@ Bachelor's degree in Engineering with focus on technical problem-solving and ana
 - Improved user engagement by 40% through UX optimization
 - Reduced development costs by 30% through automation
 - Increased application performance by 70%
+- Achieved 99.9% uptime for critical applications
+- Increased revenue by 30% through AI-powered features
+- Reduced deployment time from 30 minutes to 3 minutes
+- Implemented automated testing and deployment pipelines
 
 ---
 

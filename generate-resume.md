@@ -26,13 +26,13 @@ Results-oriented **Senior Full-Stack Developer** with **4+ years** of experience
 
 ## 💼 Work Experience
 
-### **Senior Full-Stack Developer** | ООО «Апплойд Медиа» (Russia)
+### **Senior Full-Stack Developer** | ООО «Апплойд Медиа» (Belarus)
 
 _January 2025 - Present_
 
-Leading development of high-performance web applications using Vue.js, Laravel, and modern DevOps practices. Specializing in AI integration and scalable architecture.
+Leading development of AI-powered web applications using Vue.js, Laravel, and modern DevOps practices. Specializing in AI integration, e-commerce solutions, multi-payment systems, and scalable microservices architecture. Implemented CI/CD pipelines, Docker containerization, and Nginx load balancing for high-availability systems.
 
-**Technologies:** Vue.js 3, Laravel 11, TypeScript, Docker, AI Integration, MediaPipe
+**Technologies:** Vue.js 3, Laravel 11, TypeScript, Docker, Nginx, CI/CD Pipelines, AI Integration, E-commerce, Payment Systems, Redis, MySQL, Temporal
 
 ---
 
@@ -86,19 +86,23 @@ Mobile app development and cross-platform solutions. Created responsive and user
 
 ### **DevOps & Tools**
 
--   **Docker** (Advanced) - Containerization, Docker Compose
+-   **Docker** (Advanced) - Containerization, Docker Compose, multi-stage builds
 -   **Git/GitHub** (Expert) - Version control, CI/CD workflows
--   **CI/CD** (Intermediate) - GitHub Actions, automated deployment
+-   **CI/CD** (Advanced) - GitHub Actions, Bitbucket Pipelines, automated deployment
+-   **Nginx** (Advanced) - Web server configuration, load balancing, reverse proxy
 -   **AWS/Cloud** (Intermediate) - EC2, S3, CloudFront
--   **Nginx** (Advanced) - Web server configuration, load balancing
+-   **Temporal** (Advanced) - Workflow orchestration, async processing
+-   **Laravel Horizon** (Advanced) - Queue management, job monitoring
 
 ### **AI & Emerging Technologies**
 
 -   **AI Integration** (Advanced) - OpenAI API, Anthropic, Google AI
 -   **MediaPipe** (Advanced) - Computer vision, gesture recognition
--   **OpenAI API** (Advanced) - GPT models, embeddings, fine-tuning
+-   **OpenAI API** (Advanced) - GPT-4, DALL-E 3, embeddings, fine-tuning
 -   **PWA** (Intermediate) - Service workers, offline functionality
 -   **WebAssembly** (Learning) - High-performance web applications
+-   **Payment Systems** (Advanced) - Stripe, PayPal, SBP integration
+-   **E-commerce** (Advanced) - Multi-payment, subscription systems
 
 ### **Databases & Storage**
 
@@ -162,18 +166,37 @@ GPS/GLONASS transport monitoring mobile application for Android and iOS platform
 
 ---
 
-### **Compatibility Dashboard** - Analytics Platform
+### **Mona Lisa** - AI-Powered Astrology Platform
 
-_Laravel, Vue.js, Docker, Telegram Bot_
+_Nuxt 3, Vue 3, MediaPipe, TypeScript_
 
-Real-time analytics dashboard with Telegram bot integration and Docker containerization. Service-oriented architecture with read-only security.
+AI-powered astrology platform with gesture recognition, multi-page funnel, and A/B testing integration. Advanced onboarding flow with animations and real-time updates.
 
 **Key Features:**
 
--   Real-time analytics
--   Telegram bot integration
--   Docker containerization
--   Secure read-only access
+-   AI-powered astrology reports
+-   Gesture recognition with MediaPipe
+-   Multi-page funnel (compatibility, palmistry, soulmate, natal-chart)
+-   A/B testing with GrowthBook
+-   Onboarding flow with animations
+-   Real-time chat system
+
+---
+
+### **Compatibility** - AI-Powered Compatibility Analysis
+
+_Laravel 11, Vue 3, OpenAI API, Docker_
+
+AI-powered compatibility analysis platform with OpenAI GPT-4, DALL-E 3, multi-payment systems, and 22+ modules. Domain-driven design with microservices architecture.
+
+**Key Features:**
+
+-   AI-powered compatibility reports (OpenAI GPT-4, DALL-E 3)
+-   Multi-payment integration (Stripe, PayPal, SBP)
+-   22+ modules (AI, Reports, User, Subscriptions, etc.)
+-   Real-time chat system
+-   Event-driven architecture
+-   Queue jobs for async operations
 
 ---
 
@@ -227,8 +250,8 @@ Bachelor's degree in Engineering with focus on technical problem-solving and ana
 ## 📊 Professional Statistics
 
 -   **4+ years** of professional experience
--   **35+ projects** completed successfully
--   **20+ technologies** mastered
+-   **30+ projects** completed successfully
+-   **25+ technologies** mastered
 -   **100% client satisfaction** rate
 -   **5-star average** rating from clients
 
@@ -242,6 +265,12 @@ Bachelor's degree in Engineering with focus on technical problem-solving and ana
 -   Implemented CI/CD pipelines reducing deployment time by 80%
 -   Achieved 95% code coverage in critical applications
 -   Migrated legacy systems to modern frameworks
+-   Built AI-powered applications with advanced AI integration
+-   Implemented multi-payment systems and e-commerce solutions
+-   Developed scalable microservices architecture
+-   Set up CI/CD pipelines reducing deployment time by 80%
+-   Configured Docker containerization and Nginx load balancing
+-   Implemented Temporal workflows for async processing
 
 ### **Leadership & Mentoring**
 
@@ -256,6 +285,10 @@ Bachelor's degree in Engineering with focus on technical problem-solving and ana
 -   Improved user engagement by 40% through UX optimization
 -   Reduced development costs by 30% through automation
 -   Increased application performance by 70%
+-   Achieved 99.9% uptime for critical applications
+-   Increased revenue by 30% through AI-powered features
+-   Reduced deployment time from 30 minutes to 3 minutes
+-   Implemented automated testing and deployment pipelines
 
 ---
 
@@ -288,6 +321,9 @@ Bachelor's degree in Engineering with focus on technical problem-solving and ana
 -   [ ] Create technical blog and share knowledge
 -   [ ] Speak at developer conferences
 -   [ ] Publish npm/composer packages
+-   [ ] Create open-source AI integration library
+-   [ ] Develop e-commerce framework
+-   [ ] Specialize in AI-powered applications
 
 ### **Professional Goals**
 
@@ -296,6 +332,8 @@ Bachelor's degree in Engineering with focus on technical problem-solving and ana
 -   [ ] Mentor more junior developers
 -   [ ] Participate in technical interviews
 -   [ ] Develop leadership skills
+-   [ ] Become AI integration expert
+-   [ ] Specialize in e-commerce and payment systems
 
 ---
 
@@ -318,3 +356,42 @@ I'm available for new projects and opportunities. Whether you need a complete we
 _This resume is generated from my portfolio website. For the latest updates and interactive version, visit my online portfolio._
 
 **Last Updated:** January 2025
+
+---
+
+## 📝 ALMUS Projects Summary
+
+### **Основные проекты (2024-2025)**
+
+**compatibility** - Основная платформа астрологических сервисов
+- 124 PHP файла, 298 Vue компонентов, 809 ресурсов
+- Астрологические отчеты, платежи, AI-чат, курсы
+
+**mona-lisa** - Frontend приложение для астрологических сервисов
+- 152 Vue компонента, 62 страницы, 194 публичных файла
+- Лендинги, онбординг, MediaPipe интеграция
+
+**astro-microservices** - Микросервисная архитектура
+- 6 сервисов, OAuth интеграции
+- Аутентификация, синхронизация пользователей
+
+**astro-chat** - AI-чат с астрологом
+- Real-time чат, WebSocket, AI интеграция
+- Чат с AI-астрологом, сессии, сообщения
+
+**s3-file-manager** - Менеджер файлов
+- AWS S3 интеграция, Temporal workflows
+- Управление файлами, асинхронная обработка
+
+**subs_billing_platform** - Платформа подписок
+- 270 PHP файлов, Temporal workflows
+- Управление подписками, платежи, воркфлоу
+
+### **Ключевые технологии ALMUS**
+- **Backend:** PHP 8.3, Laravel 11, MySQL, Redis, Temporal
+- **Frontend:** Vue 3, Nuxt 3, TypeScript, Tailwind CSS, Pinia
+- **AI/ML:** OpenAI GPT-4, DALL-E 3, MediaPipe
+- **DevOps:** Docker, Docker Compose, Nginx, Bitbucket Pipelines, CI/CD
+- **Infrastructure:** Multi-stage builds, load balancing, reverse proxy
+- **Payments:** Stripe, PayPal, SBP
+- **Analytics:** Amplitude, Google Analytics, GrowthBook

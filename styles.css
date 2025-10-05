@@ -478,6 +478,10 @@ h6 {
     width: 0;
 }
 
+.mb-6 {
+    margin-bottom: 2rem;
+}
+
 /* .skill-progress.animate {
     animation: progressAnimation 1.5s ease forwards;
 }

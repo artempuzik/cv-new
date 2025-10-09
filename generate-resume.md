@@ -317,45 +317,6 @@ I'm available for new projects and opportunities. Whether you need a complete we
 
 ---
 
-_This resume is generated from my portfolio website. For the latest updates and interactive version, visit my online portfolio._
-
-**Last Updated:** January 2025
+**Last Updated:** October 2025
 
 ---
-
-## 📝 ALMUS Projects Summary
-
-### **Основные проекты (2024-2025)**
-
-**compatibility** - Основная платформа астрологических сервисов
-- 124 PHP файла, 298 Vue компонентов, 809 ресурсов
-- Астрологические отчеты, платежи, AI-чат, курсы
-
-**mona-lisa** - Frontend приложение для астрологических сервисов
-- 152 Vue компонента, 62 страницы, 194 публичных файла
-- Лендинги, онбординг, MediaPipe интеграция
-
-**astro-microservices** - Микросервисная архитектура
-- 6 сервисов, OAuth интеграции
-- Аутентификация, синхронизация пользователей
-
-**astro-chat** - AI-чат с астрологом
-- Real-time чат, WebSocket, AI интеграция
-- Чат с AI-астрологом, сессии, сообщения
-
-**s3-file-manager** - Менеджер файлов
-- AWS S3 интеграция, Temporal workflows
-- Управление файлами, асинхронная обработка
-
-**subs_billing_platform** - Платформа подписок
-- 270 PHP файлов, Temporal workflows
-- Управление подписками, платежи, воркфлоу
-
-### **Ключевые технологии ALMUS**
-- **Backend:** PHP 8.3, Laravel 11, MySQL, Redis, Temporal
-- **Frontend:** Vue 3, Nuxt 3, TypeScript, Tailwind CSS, Pinia
-- **AI/ML:** OpenAI GPT-4, DALL-E 3, MediaPipe
-- **DevOps:** Docker, Docker Compose, Nginx, Bitbucket Pipelines, CI/CD
-- **Infrastructure:** Multi-stage builds, load balancing, reverse proxy
-- **Payments:** Stripe, PayPal, SBP
-- **Analytics:** Amplitude, Google Analytics, GrowthBook

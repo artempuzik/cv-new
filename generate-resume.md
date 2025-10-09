@@ -36,7 +36,7 @@ Leading development of AI-powered web applications using Vue.js, Laravel, and mo
 
 ---
 
-### **Senior Full-Stack Developer** | SharpBit (Portugal)
+### **Middle+ Full-Stack Developer** | SharpBit (Portugal)
 
 _2023 - 2024_
 
@@ -166,11 +166,11 @@ GPS/GLONASS transport monitoring mobile application for Android and iOS platform
 
 ---
 
-### **Mona Lisa** - AI-Powered Astrology Platform
+### **Astro App** - AI-Powered Astrology Platform
 
-_Nuxt 3, Vue 3, MediaPipe, TypeScript_
+_Nuxt 3, Vue 3, MediaPipe, TypeScript_, _Laravel 11, OpenAI API, Docker_, _Nginx_
 
-AI-powered astrology platform with gesture recognition, multi-page funnel, and A/B testing integration. Advanced onboarding flow with animations and real-time updates.
+AI-powered astrology platform with gesture recognition, multi-page funnel, and A/B testing integration. Advanced onboarding flow with animations and real-time updates. Domain-driven design with microservices architecture.
 
 **Key Features:**
 
@@ -180,21 +180,9 @@ AI-powered astrology platform with gesture recognition, multi-page funnel, and A
 -   A/B testing with GrowthBook
 -   Onboarding flow with animations
 -   Real-time chat system
-
----
-
-### **Compatibility** - AI-Powered Compatibility Analysis
-
-_Laravel 11, Vue 3, OpenAI API, Docker_
-
-AI-powered compatibility analysis platform with OpenAI GPT-4, DALL-E 3, multi-payment systems, and 22+ modules. Domain-driven design with microservices architecture.
-
-**Key Features:**
-
 -   AI-powered compatibility reports (OpenAI GPT-4, DALL-E 3)
 -   Multi-payment integration (Stripe, PayPal, SBP)
 -   22+ modules (AI, Reports, User, Subscriptions, etc.)
--   Real-time chat system
 -   Event-driven architecture
 -   Queue jobs for async operations
 
@@ -224,8 +212,8 @@ Bachelor's degree in Engineering with focus on technical problem-solving and ana
 
 ## 🌍 Languages
 
--   **English:** B1+ (Professional working proficiency)
--   **Polish:** B2 (Independent user)
+-   **English:** B1- (Reading the documentation, writing simple emails, basic conversation)
+-   **Polish:** B1 (Independent user)
 -   **Russian:** Native
 -   **Belarusian:** Native
 
@@ -259,36 +247,12 @@ Bachelor's degree in Engineering with focus on technical problem-solving and ana
 
 ## 🎯 Key Achievements
 
-### **Technical Excellence**
-
--   Reduced application load time by 60% through optimization
--   Implemented CI/CD pipelines reducing deployment time by 80%
--   Achieved 95% code coverage in critical applications
--   Migrated legacy systems to modern frameworks
--   Built AI-powered applications with advanced AI integration
--   Implemented multi-payment systems and e-commerce solutions
--   Developed scalable microservices architecture
--   Set up CI/CD pipelines reducing deployment time by 80%
--   Configured Docker containerization and Nginx load balancing
--   Implemented Temporal workflows for async processing
-
 ### **Leadership & Mentoring**
 
 -   Mentored 15+ junior developers
 -   Led development teams of 5+ members
 -   Conducted technical interviews and code reviews
 -   Established coding standards and best practices
-
-### **Business Impact**
-
--   Delivered projects worth $500K+ in total value
--   Improved user engagement by 40% through UX optimization
--   Reduced development costs by 30% through automation
--   Increased application performance by 70%
--   Achieved 99.9% uptime for critical applications
--   Increased revenue by 30% through AI-powered features
--   Reduced deployment time from 30 minutes to 3 minutes
--   Implemented automated testing and deployment pipelines
 
 ---
 
@@ -312,7 +276,7 @@ Bachelor's degree in Engineering with focus on technical problem-solving and ana
 
 ---
 
-## 📈 Career Goals 2025
+## 📈 Career Goals 2026
 
 ### **Technical Goals**
 

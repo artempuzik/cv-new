@@ -101,7 +101,7 @@ Mobile app development and cross-platform solutions. Created responsive and user
 -   **OpenAI API** (Advanced) - GPT-4, DALL-E 3, embeddings, fine-tuning
 -   **PWA** (Intermediate) - Service workers, offline functionality
 -   **WebAssembly** (Learning) - High-performance web applications
--   **Payment Systems** (Advanced) - Stripe, PayPal, SBP integration
+-   **Payment Systems** (Advanced) - Stripe, PayPal, SBP integration, MusePay Card API
 -   **E-commerce** (Advanced) - Multi-payment, subscription systems
 
 ### **Databases & Storage**
@@ -240,6 +240,7 @@ Bachelor's degree in Engineering with focus on technical problem-solving and ana
 -   **4+ years** of professional experience
 -   **30+ projects** completed successfully
 -   **25+ technologies** mastered
+-   **1 published package** on Packagist
 -   **100% client satisfaction** rate
 -   **5-star average** rating from clients
 
@@ -253,6 +254,15 @@ Bachelor's degree in Engineering with focus on technical problem-solving and ana
 -   Led development teams of 5+ members
 -   Conducted technical interviews and code reviews
 -   Established coding standards and best practices
+
+### **Open Source Contributions**
+
+-   **Published MuseWallet SDK Laravel** - Comprehensive Laravel SDK for MusePay Card API integration
+    -   **Package:** [artempuzik/musewallet-sdk-laravel](https://packagist.org/packages/artempuzik/musewallet-sdk-laravel)
+    -   **Features:** RSA signature generation, webhook handling, typed responses (DTO), event-driven architecture
+    -   **Technologies:** PHP 8.1+, Laravel 10/11, OpenSSL, comprehensive test coverage
+    -   **Published:** October 2025 on Packagist
+    -   **Documentation:** Complete API integration with MusePay Card API v1
 
 ---
 
@@ -284,7 +294,7 @@ Bachelor's degree in Engineering with focus on technical problem-solving and ana
 -   [ ] Contribute to open source projects
 -   [ ] Create technical blog and share knowledge
 -   [ ] Speak at developer conferences
--   [ ] Publish npm/composer packages
+-   [x] Publish npm/composer packages ✅ (MuseWallet SDK Laravel - October 2025)
 -   [ ] Create open-source AI integration library
 -   [ ] Develop e-commerce framework
 -   [ ] Specialize in AI-powered applications

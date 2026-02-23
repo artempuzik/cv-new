@@ -1,0 +1,49 @@
+---
+description: Instructions for maintaining CV/resume files and site; skill sync and private files
+globs: resume.html,index.html,generate-resume.md,generate-pdf.sh,.gitignore
+alwaysApply: false
+---
+
+# CV / Resume Project — Maintenance Rules
+
+## Project structure and source of truth
+
+- **generate-resume.md** — Main content source: contact, summary, experience, skills, projects, education, etc. Used to generate `resume.html` via Pandoc.
+- **resume.html** — HTML resume (generated from `generate-resume.md` or kept in sync manually). Styled with `resume-template.css`.
+- **index.html** — Public site: hero, about, experience timeline, skills grid, projects, testimonials, contact. Must reflect the same facts as the resume.
+- **generate-pdf.sh** — Builds PDF from `generate-resume.md` → `resume.html` (Pandoc) then HTML → PDF (Prince). Output e.g. `puzik-cv.pdf`.
+
+## Keeping files in sync
+
+1. **Skills** — The same set of skills with the same descriptions must appear in all three:
+   - `generate-resume.md` (sections: Frontend, Backend, DevOps & Tools, Analytics & Experimentation, AI & Emerging Technologies, Databases & Storage)
+   - `resume.html` (same section titles and list items)
+   - `index.html` (skill categories and skill items; names may include short descriptions in parentheses)
+
+2. **When adding, removing, or editing a skill:**
+   - Update `generate-resume.md` first (canonical list and wording).
+   - Update `resume.html` to match (same categories and items).
+   - Update `index.html`: same categories, same items; keep `skill-name` + `skill-level` and optional short description in the name.
+
+3. **Experience (jobs):** Keep company, period, role, description, and technologies identical across `generate-resume.md`, `resume.html`, and the experience/timeline block in `index.html`.
+
+4. **Projects, contact, summary:** Any change in one place must be reflected in the other two where that content exists.
+
+5. **Regenerating resume/PDF:** After editing `generate-resume.md`, run `./generate-pdf.sh` to refresh `resume.html` and the PDF. If `resume.html` is edited by hand (e.g. extra sections not in Markdown), sync those edits back into `generate-resume.md` or document the exception.
+
+## Private files and .gitignore
+
+- **Private files** (notes, drafts, personal data, local-only content) must live in a folder that is ignored by Git.
+- In `.gitignore`, ensure an entry for that folder exists (e.g. `private/` or `_private/`). Do not commit the contents of that folder.
+- Do not reference or copy content from the private folder into `resume.html`, `index.html`, or `generate-resume.md` unless the user explicitly asks.
+
+## Skill development strategy (for you only)
+
+**Do not add this section or its content to resume.html, index.html, or generate-resume.md.** It is only for your and the AI’s context when discussing priorities.
+
+- Prioritise depth in 2–3 core areas (e.g. Vue/Laravel + AI/agents + payments or data) rather than listing many shallow skills.
+- Add a new skill to the three files only when you have real project or learning evidence (e.g. shipped feature, course, pet project).
+- Once per quarter: review the skills list, remove obsolete or weak items, tighten descriptions, align level (Expert/Advanced/Intermediate/Learning) with actual use.
+- Keep “Learning” and “Intermediate” to a small number so the resume stays credible; prefer “Advanced” for things you use regularly in production.
+
+When the user asks to “add a skill” or “update skills,” apply the sync rules above and do not inject the strategy text into any project file.

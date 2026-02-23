@@ -1,0 +1,28 @@
+# Local development documents and context files
+.context/
+
+# Temporary files
+*.tmp
+*.temp
+
+# IDE files
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Personal notes and drafts
+notes/
+drafts/
+
+# Private folder (personal strategy, local data — never commit)
+private/
+
+# Backup files
+*.bak
+*.backup

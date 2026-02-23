@@ -70,46 +70,55 @@ Mobile app development and cross-platform solutions. Created responsive and user
 
 ### **Frontend Development**
 
--   **Vue.js 3** (Expert) - Composition API, Nuxt.js, Pinia
--   **TypeScript** (Advanced) - Strict typing, Generics, Utility types
--   **React/React Native** (Advanced) - Hooks, Context API, Mobile development
--   **Tailwind CSS** (Expert) - Utility-first CSS framework
--   **HTML5/CSS3** (Expert) - Semantic markup, responsive design
+-   **Vue.js 3** (Expert) - Composition API, Nuxt.js, Pinia, state management, reactive patterns
+-   **TypeScript** (Advanced) - Strict typing, Generics, Utility types, type-safe APIs
+-   **React/React Native** (Advanced) - Hooks, Context API, mobile development, cross-platform UI
+-   **Nuxt.js** (Advanced) - SSR, SSG, Vue 3 ecosystem, routing, server middleware
+-   **Tailwind CSS** (Expert) - Utility-first CSS, responsive design, theming
+-   **HTML5/CSS3** (Expert) - Semantic markup, responsive design, accessibility (a11y)
 
 ### **Backend Development**
 
--   **Laravel 11** (Expert) - Eloquent ORM, Blade templates, Artisan CLI
--   **PHP 8.3** (Advanced) - Attributes, Enums, Match expressions
--   **Node.js** (Intermediate) - Express.js, RESTful APIs
--   **RESTful APIs** (Advanced) - API design, authentication, documentation
--   **GraphQL** (Intermediate) - Schema design, resolvers
+-   **Laravel 11** (Expert) - Eloquent ORM, Blade templates, Artisan CLI, queues, events
+-   **PHP 8.3** (Advanced) - Attributes, Enums, Match expressions, readonly classes
+-   **Node.js** (Intermediate) - Express.js, RESTful APIs, async I/O
+-   **RESTful APIs** (Advanced) - API design, authentication, documentation, versioning
+-   **GraphQL** (Intermediate) - Schema design, resolvers, queries and mutations
 
 ### **DevOps & Tools**
 
 -   **Docker** (Advanced) - Containerization, Docker Compose, multi-stage builds
--   **Git/GitHub** (Expert) - Version control, CI/CD workflows
+-   **Git/GitHub** (Expert) - Version control, CI/CD workflows, branching strategies
 -   **CI/CD** (Advanced) - GitHub Actions, Bitbucket Pipelines, automated deployment
 -   **Nginx** (Advanced) - Web server configuration, load balancing, reverse proxy
 -   **AWS/Cloud** (Intermediate) - EC2, S3, CloudFront
--   **Temporal** (Advanced) - Workflow orchestration, async processing
--   **Laravel Horizon** (Advanced) - Queue management, job monitoring
+-   **Temporal** (Advanced) - Workflow orchestration, async processing, durable execution
+-   **Laravel Horizon** (Advanced) - Queue management, job monitoring, scaling workers
+-   **Message brokers** (Advanced) - Redis Queue, RabbitMQ, async messaging, event-driven systems
+
+### **Analytics & Experimentation**
+
+-   **Amplitude** (Advanced) - Product analytics, user behavior tracking, funnels, retention
+-   **Meta Pixel** (Advanced) - Conversion tracking, audience insights, ad attribution
+-   **GrowthBook** (Advanced) - A/B testing, feature flags, experimentation platform
 
 ### **AI & Emerging Technologies**
 
--   **AI Integration** (Advanced) - OpenAI API, Anthropic, Google AI
--   **MediaPipe** (Advanced) - Computer vision, gesture recognition
+-   **AI Integration** (Advanced) - OpenAI API, Anthropic, Google AI, embedding models
+-   **AI agents** (Advanced) - Anthropic Claude, Cursor AI, agentic workflows, prompt engineering
+-   **AI development tools** (Advanced) - Daily use of Anthropic Claude and Cursor for development, refactoring, code review, problem-solving
+-   **MediaPipe** (Advanced) - Computer vision, gesture recognition, real-time ML in browser
 -   **OpenAI API** (Advanced) - GPT-4, DALL-E 3, embeddings, fine-tuning
--   **PWA** (Intermediate) - Service workers, offline functionality
+-   **PWA** (Intermediate) - Service workers, offline functionality, installable apps
 -   **WebAssembly** (Learning) - High-performance web applications
--   **Payment Systems** (Advanced) - Stripe, PayPal, SBP integration, MusePay Card API
--   **E-commerce** (Advanced) - Multi-payment, subscription systems
+-   **Payment Systems** (Advanced) - Stripe, PayPal, Airwallex, SBP integration, MusePay Card API
+-   **E-commerce** (Advanced) - Multi-payment, subscription systems, checkout flows
 
 ### **Databases & Storage**
 
--   **MySQL** (Advanced) - Database design, optimization, indexing
--   **PostgreSQL** (Intermediate) - Advanced queries, JSON support
--   **MongoDB** (Intermediate) - NoSQL database, aggregation pipelines
--   **Redis** (Intermediate) - Caching, session storage
+-   **MySQL** (Advanced) - Database design, optimization, indexing, migrations
+-   **PostgreSQL** (Intermediate) - Advanced queries, JSON support, full-text search
+-   **Redis** (Intermediate) - Caching, session storage, queues, pub/sub
 
 ---
 
@@ -163,28 +172,6 @@ GPS/GLONASS transport monitoring mobile application for Android and iOS platform
 -   Data visualization
 
 **Play Store:** [Google Play](https://play.google.com/store/apps/details?id=com.geotek)
-
----
-
-### **Astro App** - AI-Powered Astrology Platform
-
-_Nuxt 3, Vue 3, MediaPipe, TypeScript_, _Laravel 11, OpenAI API, Docker_, _Nginx_
-
-AI-powered astrology platform with gesture recognition, multi-page funnel, and A/B testing integration. Advanced onboarding flow with animations and real-time updates. Domain-driven design with microservices architecture.
-
-**Key Features:**
-
--   AI-powered astrology reports
--   Gesture recognition with MediaPipe
--   Multi-page funnel (compatibility, palmistry, soulmate, natal-chart)
--   A/B testing with GrowthBook
--   Onboarding flow with animations
--   Real-time chat system
--   AI-powered compatibility reports (OpenAI GPT-4, DALL-E 3)
--   Multi-payment integration (Stripe, PayPal, SBP)
--   22+ modules (AI, Reports, User, Subscriptions, etc.)
--   Event-driven architecture
--   Queue jobs for async operations
 
 ---
 
@@ -283,31 +270,6 @@ Bachelor's degree in Engineering with focus on technical problem-solving and ana
 -   **Time Management** - Meeting deadlines, project prioritization
 -   **Team Collaboration** - Cross-functional teamwork, knowledge sharing
 -   **Adaptability** - Quick learning, technology adoption
-
----
-
-## 📈 Career Goals 2026
-
-### **Technical Goals**
-
--   [ ] Obtain Vue.js or Laravel certification
--   [ ] Contribute to open source projects
--   [ ] Create technical blog and share knowledge
--   [ ] Speak at developer conferences
--   [x] Publish npm/composer packages ✅ (MuseWallet SDK Laravel - October 2025)
--   [ ] Create open-source AI integration library
--   [ ] Develop e-commerce framework
--   [ ] Specialize in AI-powered applications
-
-### **Professional Goals**
-
--   [ ] Advance to Tech Lead position
--   [ ] Lead larger development teams
--   [ ] Mentor more junior developers
--   [ ] Participate in technical interviews
--   [ ] Develop leadership skills
--   [ ] Become AI integration expert
--   [ ] Specialize in e-commerce and payment systems
 
 ---
 

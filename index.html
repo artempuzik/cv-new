@@ -27,6 +27,14 @@
         <link rel="stylesheet" href="./styles.css" />
 
         <title>Artem Puzik - Senior Full-Stack Developer</title>
+        <script>
+            (function () {
+                var saved = localStorage.getItem('theme');
+                var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                var theme = saved === 'dark' || saved === 'light' ? saved : (prefersDark ? 'dark' : 'light');
+                document.documentElement.setAttribute('data-theme', theme);
+            })();
+        </script>
     </head>
     <body>
         <!-- Navigation -->
@@ -46,6 +54,9 @@
                         <a class="nav-link" href="#experience">Experience</a>
                         <a class="nav-link" href="#projects">Projects</a>
                         <a class="nav-link" href="#contact">Contact</a>
+                        <button type="button" class="theme-toggle btn ms-2" id="themeToggle" aria-label="Toggle theme">
+                            <i class="fas fa-moon" id="themeIcon"></i>
+                        </button>
                         <button class="btn btn-primary ms-3" data-bs-toggle="modal" data-bs-target="#contactModal">
                             Let's Talk
                         </button>
@@ -1118,6 +1129,27 @@
 
         <!-- Custom JS -->
         <script>
+            // Theme toggle
+            (function () {
+                var root = document.documentElement;
+                var toggle = document.getElementById('themeToggle');
+                var icon = document.getElementById('themeIcon');
+                function updateIcon() {
+                    var isDark = root.getAttribute('data-theme') === 'dark';
+                    icon.className = isDark ? 'fas fa-sun' : 'fas fa-moon';
+                }
+                updateIcon();
+                if (toggle) {
+                    toggle.addEventListener('click', function () {
+                        var current = root.getAttribute('data-theme');
+                        var next = current === 'dark' ? 'light' : 'dark';
+                        root.setAttribute('data-theme', next);
+                        localStorage.setItem('theme', next);
+                        updateIcon();
+                    });
+                }
+            })();
+
             // Smooth scrolling for navigation links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {

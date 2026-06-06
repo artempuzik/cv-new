@@ -26,7 +26,7 @@ pandoc generate-resume.md \
     --to html5 \
     --css resume-template.css \
     --standalone \
-    --metadata title="Artem Puzik - Senior Full-Stack Developer" \
+    --metadata title="Artem Puzik - Strong Middle+ Full-Stack Developer" \
     --output resume.html
 
 if [ $? -eq 0 ]; then
@@ -40,9 +40,9 @@ fi
 echo "📄 Converting HTML to PDF..."
 prince resume.html \
     --pdf-profile="PDF/A-1b" \
-    --pdf-title="Artem Puzik - Senior Full-Stack Developer" \
+    --pdf-title="Artem Puzik - Strong Middle+ Full-Stack Developer" \
     --pdf-author="Artem Puzik" \
-    --pdf-subject="Senior Full-Stack Developer Resume" \
+    --pdf-subject="Strong Middle+ Full-Stack Developer Resume" \
     --pdf-keywords="Full-Stack, Vue.js, Laravel, TypeScript, AI, DevOps" \
     --output puzik-cv.pdf
 

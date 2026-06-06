@@ -1,4 +1,4 @@
-# Artem Puzik - Senior Full-Stack Developer
+# Artem Puzik - Strong Middle+ Full-Stack Developer
 
 ## 📧 Contact Information
 
@@ -13,11 +13,11 @@
 
 ## 👨‍💻 Professional Summary
 
-Results-oriented **Senior Full-Stack Developer** with **4+ years** of experience in designing, developing, and maintaining scalable web applications. Proficient in **TypeScript**, **Vue.js**, **React**, **Laravel**, and modern frameworks and technologies to build responsive and user-friendly interfaces. Strong ability to collaborate with cross-functional teams and deliver high-quality solutions on time.
+Results-oriented **Strong Middle+ Full-Stack Developer** with **4+ years** of experience in designing, developing, and maintaining scalable web applications. Proficient in **TypeScript**, **Vue.js**, **React**, **Laravel**, and modern frameworks and technologies to build responsive and user-friendly interfaces. Strong ability to collaborate with cross-functional teams and deliver high-quality solutions on time.
 
 **Key Strengths:**
 
--   🚀 Scalable Architecture Design
+-   🚀 Modular Architecture & DDD
 -   📱 Cross-Platform Development
 -   🤖 AI/ML Integration
 -   👥 Team Leadership
@@ -26,43 +26,55 @@ Results-oriented **Senior Full-Stack Developer** with **4+ years** of experience
 
 ## 💼 Work Experience
 
-### **Senior Full-Stack Developer** | ООО «Апплойд Медиа» (Belarus)
+### **Strong Middle+ Full-Stack Developer** | ООО «Апплойд Медиа» (Belarus)
 
 _January 2025 - Present_
 
-Leading development of AI-powered web applications using Vue.js, Laravel, and modern DevOps practices. Specializing in AI integration, e-commerce solutions, multi-payment systems, and scalable microservices architecture. Implemented CI/CD pipelines, Docker containerization, and Nginx load balancing for high-availability systems.
+-   Lead full-stack delivery of AI-powered web products (Vue 3/Nuxt 3, Laravel 11, TypeScript) for e-commerce and subscription funnels
+-   Built modular monolith applications with DDD (22+ modules), OpenAI GPT-4/DALL-E 3, multi-payment flows (Stripe, PayPal, SBP), and async processing via Redis queues and Horizon
+-   Delivered Nuxt 3 conversion funnels with MediaPipe gesture recognition, GTM, Amplitude analytics, and GrowthBook A/B testing
+-   Set up production infrastructure: Docker multi-stage builds, Nginx reverse proxy, CI/CD (Bitbucket Pipelines / GitHub Actions)
+-   Write and maintain E2E tests and backend test suites (PHPUnit/Pest)
 
-**Technologies:** Vue.js 3, Laravel 11, TypeScript, Docker, Nginx, CI/CD Pipelines, AI Integration, E-commerce, Payment Systems, Redis, MySQL, Temporal
+**Technologies:** Vue.js 3, Nuxt 3, Laravel 11, TypeScript, Docker, Nginx, CI/CD, Redis, MySQL, Horizon, OpenAI API, Stripe, PayPal, Temporal
 
 ---
 
 ### **Middle+ Full-Stack Developer** | SharpBit (Portugal)
 
-_2023 - 2024_
+_January 2024 – November 2024 · Full-time_
 
-Leading development of enterprise applications using Vue.js and Laravel. Delivered solutions that significantly improved application performance and user engagement.
+-   Developed and maintained Vue.js + Laravel enterprise applications for internal operations and client-facing tools
+-   Built RESTful APIs and optimized MySQL-backed workflows, reducing manual processing (validated by founder testimonial on time/resource savings)
+-   Owned features end-to-end: technical design, implementation, code review, and production releases in a remote Portugal-based team
+-   Improved application responsiveness through query optimization, caching, and frontend performance tuning
 
-**Technologies:** Vue.js, Laravel, TypeScript, MySQL, RESTful APIs
+**Technologies:** Vue.js, Laravel, TypeScript, MySQL, RESTful APIs, Git
 
 ---
 
 ### **Full-Stack Developer** | WeExpert (Poland)
 
-_2023 - 2024_
+_March 2023 – August 2024 · Contract_
 
-Building scalable web applications with modern tech stack. Collaborated with cross-functional teams to deliver high-quality solutions.
+-   Built React + Node.js (TypeScript) web applications for Polish and European clients under contract engagement
+-   Designed PostgreSQL schemas and GraphQL/REST API layers with typed contracts and migration workflows
+-   Integrated third-party services and implemented auth, validation, and error-handling patterns for production APIs
+-   Worked asynchronously with remote product stakeholders; delivered sprint-based milestones on schedule
 
-**Technologies:** React, Node.js, TypeScript, PostgreSQL, GraphQL
+**Technologies:** React, Node.js, TypeScript, PostgreSQL, GraphQL, REST APIs
 
 ---
 
 ### **React/React Native Developer** | SL Max (Belarus)
 
-_2022 - 2023_
+_June 2022 – March 2023_
 
-Mobile app development and cross-platform solutions. Created responsive and user-friendly mobile applications.
+-   Developed cross-platform React Native applications for GPS/GLONASS fleet monitoring (Android & iOS, published on Google Play)
+-   Implemented real-time location tracking, map visualization, and offline-friendly data handling for transport operators
+-   Collaborated with hardware/IoT stakeholders to align mobile UX with field-use requirements
 
-**Technologies:** React, React Native, JavaScript, Mobile UI/UX
+**Technologies:** React Native, React, JavaScript, GPS/GLONASS, Mobile UI/UX
 
 ---
 
@@ -91,22 +103,25 @@ Mobile app development and cross-platform solutions. Created responsive and user
 -   **Git/GitHub** (Expert) - Version control, CI/CD workflows, branching strategies
 -   **CI/CD** (Advanced) - GitHub Actions, Bitbucket Pipelines, automated deployment
 -   **Nginx** (Advanced) - Web server configuration, load balancing, reverse proxy
--   **AWS/Cloud** (Intermediate) - EC2, S3, CloudFront
+-   **AWS** (Basic) - S3 object storage, EC2 instance provisioning for app hosting
 -   **Temporal** (Advanced) - Workflow orchestration, async processing, durable execution
 -   **Laravel Horizon** (Advanced) - Queue management, job monitoring, scaling workers
 -   **Message brokers** (Advanced) - Redis Queue, RabbitMQ, async messaging, event-driven systems
+-   **E2E Testing** (Advanced) - End-to-end test suites for web applications
+-   **PHPUnit/Pest** (Advanced) - Laravel backend unit and feature tests
 
 ### **Analytics & Experimentation**
 
+-   **Google Tag Manager (GTM)** (Advanced) - Tag configuration, data layer, event tracking, conversion pixels
 -   **Amplitude** (Advanced) - Product analytics, user behavior tracking, funnels, retention
 -   **Meta Pixel** (Advanced) - Conversion tracking, audience insights, ad attribution
 -   **GrowthBook** (Advanced) - A/B testing, feature flags, experimentation platform
 
 ### **AI & Emerging Technologies**
 
--   **AI Integration** (Advanced) - OpenAI API, Anthropic, Google AI, embedding models
--   **AI agents** (Advanced) - Anthropic Claude, Cursor AI, agentic workflows, prompt engineering
--   **AI development tools** (Advanced) - Daily use of Anthropic Claude and Cursor for development, refactoring, code review, problem-solving
+-   **AI Integration** (Advanced) - OpenAI API, Google AI, embedding models, structured prompts
+-   **AI agents** (Advanced) - Cursor agents, multi-model workflows, prompt engineering
+-   **AI development tools** (Advanced) - Daily use of Cursor and LLMs (Claude, GPT, Gemini, etc.) — model picked per task for development, refactoring, code review
 -   **MediaPipe** (Advanced) - Computer vision, gesture recognition, real-time ML in browser
 -   **OpenAI API** (Advanced) - GPT-4, DALL-E 3, embeddings, fine-tuning
 -   **PWA** (Intermediate) - Service workers, offline functionality, installable apps
@@ -289,6 +304,6 @@ I'm available for new projects and opportunities. Whether you need a complete we
 
 ---
 
-**Last Updated:** October 2025
+**Last Updated:** June 2026
 
 ---

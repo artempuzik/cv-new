@@ -553,22 +553,18 @@ h6 {
 }
 
 .skill-progress.animate {
-    width: var(--progress-width, 0);
+    animation: progressAnimation 1.5s ease forwards;
 }
 
 .mb-6 {
     margin-bottom: 2rem;
 }
 
-/* .skill-progress.animate {
-    animation: progressAnimation 1.5s ease forwards;
-}
-
 @keyframes progressAnimation {
     to {
         width: var(--progress-width);
     }
-} */
+}
 
 /* ===== PROJECTS SECTION ===== */
 .projects-grid {

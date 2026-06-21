@@ -13,7 +13,7 @@
 
 ## 👨‍💻 Professional Summary
 
-Results-oriented **Strong Middle+ Full-Stack Developer** with **4+ years** of experience in designing, developing, and maintaining scalable web applications. Proficient in **TypeScript**, **Vue.js**, **React**, **Laravel**, and modern frameworks and technologies to build responsive and user-friendly interfaces. Strong ability to collaborate with cross-functional teams and deliver high-quality solutions on time.
+**Strong Middle+ Full-Stack Developer** with **4+ years** of experience designing, building, and maintaining scalable web applications end-to-end — from **Vue.js**/**React** frontends to **Laravel**/**TypeScript** backends. Comfortable owning features across the stack, collaborating with cross-functional remote teams, and delivering production-ready solutions on schedule.
 
 **Key Strengths:**
 
@@ -30,13 +30,13 @@ Results-oriented **Strong Middle+ Full-Stack Developer** with **4+ years** of ex
 
 _January 2025 - Present_
 
--   Lead full-stack delivery of AI-powered web products (Vue 3/Nuxt 3, Laravel 11, TypeScript) for e-commerce and subscription funnels
+-   Lead full-stack delivery of AI-powered web products (Vue 3/Nuxt 4, Laravel 12, TypeScript) for e-commerce and subscription funnels
 -   Built modular monolith applications with DDD (22+ modules), OpenAI GPT-4/DALL-E 3, multi-payment flows (Stripe, PayPal, SBP), and async processing via Redis queues and Horizon
--   Delivered Nuxt 3 conversion funnels with MediaPipe gesture recognition, GTM, Amplitude analytics, and GrowthBook A/B testing
+-   Delivered Nuxt 4 conversion funnels with MediaPipe gesture recognition, GTM, Amplitude analytics, and GrowthBook A/B testing
 -   Set up production infrastructure: Docker multi-stage builds, Nginx reverse proxy, CI/CD (Bitbucket Pipelines / GitHub Actions)
 -   Write and maintain E2E tests and backend test suites (PHPUnit/Pest)
 
-**Technologies:** Vue.js 3, Nuxt 3, Laravel 11, TypeScript, Docker, Nginx, CI/CD, Redis, MySQL, Horizon, OpenAI API, Stripe, PayPal, Temporal
+**Technologies:** Vue.js 3, Nuxt 4, Laravel 12, TypeScript, Docker, Nginx, CI/CD, Redis, MySQL, Horizon, OpenAI API, Stripe, PayPal, Temporal
 
 ---
 
@@ -91,7 +91,7 @@ _June 2022 – March 2023_
 
 ### **Backend Development**
 
--   **Laravel 11** (Expert) - Eloquent ORM, Blade templates, Artisan CLI, queues, events
+-   **Laravel 12** (Expert) - Eloquent ORM, Blade templates, Artisan CLI, queues, events
 -   **PHP 8.3** (Advanced) - Attributes, Enums, Match expressions, readonly classes
 -   **Node.js** (Intermediate) - Express.js, RESTful APIs, async I/O
 -   **RESTful APIs** (Advanced) - API design, authentication, documentation, versioning
@@ -234,6 +234,14 @@ Bachelor's degree in Engineering with focus on technical problem-solving and ana
 ### **Nadya Gorodetskaya** - Founder/Creative Director at MOTIOHEAD
 
 > "Artem's talent, knowledge, and communication were beyond all expectations. A truly sophisticated TOP level professional. I was amazed by the result of his work."
+
+### **Viktor Kozinin** - CEO at SL Max
+
+> "Artem is a highly skilled developer with excellent problem-solving abilities. He delivered our mobile application on time and exceeded our expectations with his attention to detail."
+
+### **Ramin Malikov** - Co-Founder & IoT Engineer at VIOTYS LLC
+
+> "Artem was great to work with. He delivered on-time for an urgent job and was in constant contact throughout the project."
 
 ---
 

@@ -304,10 +304,11 @@ h6 {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: contain;
     border: 8px solid var(--color-card);
     box-shadow: 0 20px 40px var(--color-shadow);
     transition: transform 0.3s ease;
+    background: #ffffff;
 }
 
 .profile-image:hover {
@@ -471,29 +472,34 @@ h6 {
 /* ===== SKILLS SECTION ===== */
 .skills-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    max-width: 760px;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 1.25rem;
+    max-width: 1060px;
     margin: 0 auto;
+    align-items: start;
 }
 
 .skill-category {
     background: var(--color-card);
-    padding: 2rem;
-    border-radius: 20px;
+    padding: 1.6rem 1.75rem;
+    border-radius: 18px;
     box-shadow: 0 10px 30px var(--color-shadow-sm);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
 }
 
 .skill-category:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 38px var(--color-shadow-sm);
 }
 
 .skill-category-title {
-    font-size: 1.3rem;
+    font-size: 0.82rem;
     font-weight: 700;
-    margin-bottom: 1.5rem;
-    color: var(--color-text);
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: var(--color-text-muted);
     display: flex;
     align-items: center;
 }
@@ -501,70 +507,101 @@ h6 {
 .skill-category-title i {
     color: var(--color-primary);
     margin-right: 0.5rem;
+    font-size: 0.95rem;
 }
 
-.skill-items {
+.skill-chips {
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-bottom: 1rem;
 }
 
-.skill-item {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.skill-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.skill-name {
+.skill-chip {
+    display: inline-block;
+    padding: 0.34rem 0.72rem;
+    border-radius: 999px;
+    font-size: 0.86rem;
     font-weight: 600;
+    line-height: 1.35;
+    color: #4c5fd7;
+    background: rgba(102, 126, 234, 0.1);
+    border: 1px solid rgba(102, 126, 234, 0.22);
+}
+
+[data-theme='dark'] .skill-chip,
+.theme-dark .skill-chip {
+    color: #a5b4fc;
+    background: rgba(102, 126, 234, 0.18);
+    border-color: rgba(102, 126, 234, 0.32);
+}
+
+.skill-proof {
+    position: relative;
+    margin: 0;
+    padding-left: 1.15rem;
+    font-size: 0.92rem;
+    line-height: 1.55;
     color: var(--color-text);
+    opacity: 0.85;
 }
 
-.skill-level {
-    font-size: 0.85rem;
+.skill-proof::before {
+    content: '\2192';
+    position: absolute;
+    left: 0;
+    top: 0;
     color: var(--color-primary);
-    font-weight: 600;
+    font-weight: 700;
 }
 
-.skill-bar {
-    height: 8px;
-    background: var(--color-border);
-    border-radius: 4px;
-    overflow: hidden;
+/* "Also worked with" — deliberately quieter than the core cards */
+.skill-category-secondary {
+    grid-column: 1 / -1;
+    background: transparent;
+    box-shadow: none;
+    border: 1px dashed var(--color-border);
+    padding: 1.4rem 1.75rem;
 }
 
-[data-theme="dark"] .skill-bar,
-.theme-dark .skill-bar {
-    background: rgba(255, 255, 255, 0.15);
+.skill-category-secondary:hover {
+    transform: none;
+    box-shadow: none;
 }
 
-.skill-progress {
-    height: 100%;
-    background: var(--gradient-primary);
-    border-radius: 4px;
-    transition: width 1.5s ease;
-    width: 0;
+.skill-category-secondary .skill-chip {
+    color: var(--color-text);
+    background: transparent;
+    border-color: var(--color-border);
+    font-weight: 500;
+    opacity: 0.85;
 }
 
-.skill-progress.animate {
-    animation: progressAnimation 1.5s ease forwards;
+.skill-category-secondary .skill-proof {
+    font-size: 0.86rem;
+    opacity: 0.65;
 }
 
-.mb-6 {
-    margin-bottom: 2rem;
+/* Scroll reveal — only applied once JS has run, so the cards stay
+   visible if the script fails or is blocked. See index.html. */
+.js-reveal .skill-category {
+    opacity: 0;
+    transform: translateY(16px);
 }
 
-@keyframes progressAnimation {
-    to {
-        width: var(--progress-width);
+.js-reveal .skill-category.animate {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .js-reveal .skill-category {
+        opacity: 1;
+        transform: none;
     }
 }
+
 
 /* ===== PROJECTS SECTION ===== */
 .projects-grid {
@@ -1137,10 +1174,12 @@ h6 {
         padding: 0.75rem 1rem;
     }
 
-    .skill-info {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.25rem;
+    .skill-category {
+        padding: 1.35rem 1.25rem;
+    }
+
+    .skill-chip {
+        font-size: 0.82rem;
     }
 
     .project-tech {

@@ -26,7 +26,7 @@ pandoc generate-resume.md \
     --to html5 \
     --css resume-template.css \
     --standalone \
-    --metadata title="Artem Puzik - Strong Middle+ Full-Stack Developer" \
+    --metadata title="Artem Puzik - Full-Stack Developer (Vue/Laravel)" \
     --output resume.html
 
 if [ $? -eq 0 ]; then
@@ -40,17 +40,17 @@ fi
 echo "📄 Converting HTML to PDF..."
 prince resume.html \
     --pdf-profile="PDF/A-1b" \
-    --pdf-title="Artem Puzik - Strong Middle+ Full-Stack Developer" \
+    --pdf-title="Artem Puzik - Full-Stack Developer (Vue/Laravel)" \
     --pdf-author="Artem Puzik" \
-    --pdf-subject="Strong Middle+ Full-Stack Developer Resume" \
-    --pdf-keywords="Full-Stack, Vue.js, Laravel, TypeScript, AI, DevOps" \
-    --output puzik-cv.pdf
+    --pdf-subject="Full-Stack Developer Resume - Vue/Nuxt, Laravel, Payments & AI" \
+    --pdf-keywords="Full-Stack, Vue.js, Nuxt, Laravel, PHP, TypeScript, Payments, Stripe, AI, DevOps" \
+    --output Artem-Puzik-Full-Stack-Developer-CV.pdf
 
 if [ $? -eq 0 ]; then
-    echo "✅ PDF generated successfully: puzik-cv.pdf"
+    echo "✅ PDF generated successfully: Artem-Puzik-Full-Stack-Developer-CV.pdf"
     echo "📁 Files created:"
     echo "   - resume.html (HTML version)"
-    echo "   - puzik-cv.pdf (PDF version)"
+    echo "   - Artem-Puzik-Full-Stack-Developer-CV.pdf (PDF version)"
     echo ""
     echo "🎉 Resume generation complete!"
 else
@@ -62,5 +62,5 @@ fi
 read -p "📖 Open PDF? (y/n): " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then
-    open puzik-cv.pdf
+    open Artem-Puzik-Full-Stack-Developer-CV.pdf
 fi

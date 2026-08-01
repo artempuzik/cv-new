@@ -11,19 +11,32 @@ alwaysApply: false
 - **generate-resume.md** — Main content source: contact, summary, experience, skills, projects, education, etc. Used to generate `resume.html` via Pandoc.
 - **resume.html** — HTML resume (generated from `generate-resume.md` or kept in sync manually). Styled with `resume-template.css`.
 - **index.html** — Public site: hero, about, experience timeline, skills grid, projects, testimonials, contact. Must reflect the same facts as the resume.
-- **generate-pdf.sh** — Builds PDF from `generate-resume.md` → `resume.html` (Pandoc) then HTML → PDF (Prince). Output e.g. `puzik-cv.pdf`.
+- **generate-pdf.sh** — Builds PDF from `generate-resume.md` → `resume.html` (Pandoc) then HTML → PDF (Prince). Output: `Artem-Puzik-Full-Stack-Developer-CV.pdf` (the filename is what a recruiter sees first — keep it human-readable).
+
+## Machine readability (CV screening)
+
+Resumes are routinely parsed by ATS and LLM screeners. Keep the PDF text layer extractable and the wording literal:
+
+- Plain section headings (`Contact`, `Professional Summary`, `Professional Experience`, `Technical Skills`, `Education`), no emoji in headings — emoji garble in text extraction.
+- Spell technologies the way a job description does: `Vue.js`, `Nuxt.js`, `TypeScript`, `REST API`, `CI/CD`, `PostgreSQL`.
+- Keep the `Experience by technology` line in the summary — screeners are often asked "how many years of X".
+- Verify extraction after layout changes with PDFKit:
+  `swift -e 'import PDFKit; print(PDFDocument(url: URL(fileURLWithPath: "Artem-Puzik-Full-Stack-Developer-CV.pdf"))!.string!)'`
+  A naive regex over the raw PDF is NOT a valid check — it misses hex-encoded strings and reports false failures.
+- Never use hidden or white-on-white keyword text. It is detected and it disqualifies.
 
 ## Keeping files in sync
 
-1. **Skills** — The same set of skills with the same descriptions must appear in all three:
-   - `generate-resume.md` (sections: Frontend, Backend, DevOps & Tools, Analytics & Experimentation, AI & Emerging Technologies, Databases & Storage)
-   - `resume.html` (same section titles and list items)
-   - `index.html` (skill categories and skill items; names may include short descriptions in parentheses)
+1. **Skills** — The same set of technologies must appear in all three files. Presentation differs by medium, content does not:
+   - `generate-resume.md` / `resume.html` — grouped bold labels (Architecture, Backend, Frontend, Payments and e-commerce, Databases, DevOps and infrastructure, AI in product, Applied ML in the browser, AI-assisted engineering, Analytics and experimentation, Testing and quality, Also worked with)
+   - `index.html` — the same groups as `.skill-category` cards: a `.skill-chips` row plus one `.skill-proof` line stating what that group actually shipped in production
 
-2. **When adding, removing, or editing a skill:**
-   - Update `generate-resume.md` first (canonical list and wording).
-   - Update `resume.html` to match (same categories and items).
-   - Update `index.html`: same categories, same items; keep `skill-name` + `skill-level` and optional short description in the name.
+2. **Rules for the skills block:**
+   - **No self-assessed levels** (Expert / Advanced / Intermediate) and **no percentage bars** — they were removed deliberately: unverifiable, and they invite hostile probing at interview. Do not reintroduce them.
+   - **No model or version numbers that date the CV** (e.g. "GPT-4", "DALL-E 3"). Describe capabilities and engineering patterns instead — they do not expire.
+   - **No methodology claims the candidate cannot defend in depth** (e.g. DDD was removed in favour of "modular monolith with explicit domain boundaries").
+   - Every group on the site needs a `.skill-proof` line — a fact from production, not a restatement of the chips.
+   - Add a technology only with real project evidence; prefer depth in a few areas over a long shallow list.
 
 3. **Experience (jobs):** Keep company, period, role, description, and technologies identical across `generate-resume.md`, `resume.html`, and the experience/timeline block in `index.html`.
 
@@ -43,7 +56,7 @@ alwaysApply: false
 
 - Prioritise depth in 2–3 core areas (e.g. Vue/Laravel + AI/agents + payments or data) rather than listing many shallow skills.
 - Add a new skill to the three files only when you have real project or learning evidence (e.g. shipped feature, course, pet project).
-- Once per quarter: review the skills list, remove obsolete or weak items, tighten descriptions, align level (Expert/Advanced/Intermediate/Learning) with actual use.
-- Keep “Learning” and “Intermediate” to a small number so the resume stays credible; prefer “Advanced” for things you use regularly in production.
+- Once per quarter: review the skills list, remove obsolete or weak items, tighten descriptions.
+- Keep the list short enough that every entry could be defended for ten minutes at interview.
 
 When the user asks to “add a skill” or “update skills,” apply the sync rules above and do not inject the strategy text into any project file.

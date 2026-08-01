@@ -1,317 +1,173 @@
-# Artem Puzik - Strong Middle+ Full-Stack Developer
+# Artem Puzik
 
-## 📧 Contact Information
+**Full-Stack Developer (Vue.js / Laravel) — Payments, E-commerce, AI**
 
--   **Email:** artem.puzik@gmail.com
+## Contact
+
+-   **Email:** artem.puzik.it@gmail.com
 -   **Phone:** +375 29 220 89 77
--   **Location:** Minsk, Belarus (Remote work available)
--   **GitHub:** [artempuzik](https://github.com/artempuzik)
--   **LinkedIn:** [artem-puzik](https://www.linkedin.com/in/artem-puzik/)
+-   **Location:** Minsk, Belarus — available for remote work (GMT+3, full overlap with EU working hours)
+-   **LinkedIn:** [linkedin.com/in/artem-puzik](https://www.linkedin.com/in/artem-puzik/)
+-   **GitHub:** [github.com/artempuzik](https://github.com/artempuzik)
+-   **Packagist:** [artempuzik/musewallet-sdk-laravel](https://packagist.org/packages/artempuzik/musewallet-sdk-laravel)
 -   **Telegram:** [@ArtemPuzik](https://telegram.im/@ArtemPuzik)
 
 ---
 
-## 👨‍💻 Professional Summary
+## Professional Summary
 
-**Strong Middle+ Full-Stack Developer** with **4+ years** of experience designing, building, and maintaining scalable web applications end-to-end — from **Vue.js**/**React** frontends to **Laravel**/**TypeScript** backends. Comfortable owning features across the stack, collaborating with cross-functional remote teams, and delivering production-ready solutions on schedule.
+Full-Stack Developer with **4+ years of commercial experience** building and maintaining high-traffic production web applications end-to-end — Vue.js/Nuxt/TypeScript frontends on Laravel/PHP backends. Products currently in production serve **thousands of monthly users** through payment and subscription flows across **4 payment providers**. Built a modular monolith with explicit domain boundaries, own the infrastructure behind it (Docker, Nginx, CI/CD, Redis queues), and published an open-source Laravel payment SDK on Packagist. Remote experience with distributed teams in Portugal, Poland and Belarus.
 
-**Key Strengths:**
+**Core stack:** Vue.js 3, Nuxt.js, TypeScript, JavaScript, Laravel, PHP 8.3, MySQL, Redis, Docker, Nginx, CI/CD, REST API, Stripe, LLM integration
 
--   🚀 Modular Architecture & DDD
--   📱 Cross-Platform Development
--   🤖 AI/ML Integration
--   👥 Team Leadership
+**Experience by technology:** JavaScript / TypeScript — 4 years · Laravel / PHP — 2.5 years · Vue.js / Nuxt.js — 2.5 years · React / React Native — 2 years · Node.js — 1.5 years
 
 ---
 
-## 💼 Work Experience
+## Professional Experience
 
-### **Strong Middle+ Full-Stack Developer** | ООО «Апплойд Медиа» (Belarus)
+### Full-Stack Developer — Applojd Media LLC (ООО «Апплойд Медиа»), Minsk, Belarus
 
-_January 2025 - Present_
+_January 2025 – Present · Full-time_
 
--   Lead full-stack delivery of AI-powered web products (Vue 3/Nuxt 4, Laravel 12, TypeScript) for e-commerce and subscription funnels
--   Built modular monolith applications with DDD (22+ modules), OpenAI GPT-4/DALL-E 3, multi-payment flows (Stripe, PayPal, SBP), and async processing via Redis queues and Horizon
--   Delivered Nuxt 4 conversion funnels with MediaPipe gesture recognition, GTM, Amplitude analytics, and GrowthBook A/B testing
--   Set up production infrastructure: Docker multi-stage builds, Nginx reverse proxy, CI/CD (Bitbucket Pipelines / GitHub Actions)
--   Write and maintain E2E tests and backend test suites (PHPUnit/Pest)
+Vue.js 3, Nuxt.js 4, Laravel 12, PHP 8.3, TypeScript, MySQL, Redis, Docker, Nginx, CI/CD
 
-**Technologies:** Vue.js 3, Nuxt 4, Laravel 12, TypeScript, Docker, Nginx, CI/CD, Redis, MySQL, Horizon, OpenAI API, Stripe, PayPal, Temporal
+-   Own end-to-end delivery of AI-powered e-commerce and subscription web products serving thousands of monthly users under high-traffic marketing campaigns
+-   Designed and built a **modular monolith with explicit domain boundaries**, isolating the payment, subscription and AI domains so a change in one cannot regress the others
+-   Integrated **4 payment providers** (Stripe, PayPal, SBP, Airwallex) behind a single provider abstraction, covering one-off checkout, recurring subscription billing and webhook-driven state reconciliation
+-   Moved image generation, AI calls and billing side effects off the request path into **Redis queues with Laravel Horizon**, keeping checkout responsive under campaign traffic spikes
+-   Built server-rendered (SSR) Nuxt.js conversion funnels instrumented with Google Tag Manager, Amplitude and Meta Pixel, and ran **A/B tests through GrowthBook** to drive funnel decisions with data
+-   Implemented in-browser gesture recognition with **MediaPipe** for a real-time interactive funnel step — client-side machine learning, no server round-trip and no video leaving the device
+-   Set up and maintain production infrastructure: Docker multi-stage builds, Nginx reverse proxy, CI/CD pipelines in Bitbucket Pipelines and GitHub Actions
+-   Cover critical paths — payments, subscriptions, AI flows — with PHPUnit/Pest unit and feature tests plus end-to-end (E2E) suites; run code review and maintain coding standards for the team
 
----
-
-### **Middle+ Full-Stack Developer** | SharpBit (Portugal)
+### Full-Stack Developer — SharpBit, Portugal (remote)
 
 _January 2024 – November 2024 · Full-time_
 
--   Developed and maintained Vue.js + Laravel enterprise applications for internal operations and client-facing tools
--   Built RESTful APIs and optimized MySQL-backed workflows, reducing manual processing (validated by founder testimonial on time/resource savings)
--   Owned features end-to-end: technical design, implementation, code review, and production releases in a remote Portugal-based team
--   Improved application responsiveness through query optimization, caching, and frontend performance tuning
+Vue.js, Laravel, TypeScript, MySQL, REST API, Git
 
-**Technologies:** Vue.js, Laravel, TypeScript, MySQL, RESTful APIs, Git
+-   Built and maintained Vue.js + Laravel enterprise applications for internal operations and client-facing tools
+-   Replaced a manual operational workflow with an automated tool — the founder credits it with saving the company "a huge amount of time and resources" (reference below)
+-   Owned features end-to-end: technical design, implementation, code review and production release
+-   Improved application response times through MySQL query optimisation, caching and frontend performance work
 
----
+### Full-Stack Developer — WeExpert, Poland (remote)
 
-### **Full-Stack Developer** | WeExpert (Poland)
+_March 2023 – August 2024 · Contract, part-time (parallel to the SharpBit role from January 2024)_
 
-_March 2023 – August 2024 · Contract_
+React, Node.js, TypeScript, PostgreSQL, GraphQL, REST API
 
--   Built React + Node.js (TypeScript) web applications for Polish and European clients under contract engagement
+-   Built React + Node.js (TypeScript) web applications for Polish and European clients
 -   Designed PostgreSQL schemas and GraphQL/REST API layers with typed contracts and migration workflows
--   Integrated third-party services and implemented auth, validation, and error-handling patterns for production APIs
--   Worked asynchronously with remote product stakeholders; delivered sprint-based milestones on schedule
+-   Implemented authentication, validation and error-handling patterns for production APIs, plus third-party service integrations
+-   Worked fully asynchronously with remote stakeholders across time zones, delivering sprint-based milestones in an Agile/Scrum process
 
-**Technologies:** React, Node.js, TypeScript, PostgreSQL, GraphQL, REST APIs
+### React / React Native Developer — SL Max, Minsk, Belarus
 
----
+_June 2022 – March 2023 · Full-time_
 
-### **React/React Native Developer** | SL Max (Belarus)
+React Native, React, JavaScript, real-time data, mobile UI/UX
 
-_June 2022 – March 2023_
-
--   Developed cross-platform React Native applications for GPS/GLONASS fleet monitoring (Android & iOS, published on Google Play)
--   Implemented real-time location tracking, map visualization, and offline-friendly data handling for transport operators
--   Collaborated with hardware/IoT stakeholders to align mobile UX with field-use requirements
-
-**Technologies:** React Native, React, JavaScript, GPS/GLONASS, Mobile UI/UX
+-   Built cross-platform React Native mobile applications for GPS/GLONASS fleet monitoring, **published on Google Play** for Android and iOS
+-   Implemented real-time location tracking and map visualisation over continuous telemetry streams from vehicle trackers
+-   Handled unreliable field connectivity with offline-friendly data caching and synchronisation for transport operators
+-   Worked directly with hardware/IoT engineers to align mobile UX with real field requirements
 
 ---
 
-## 🛠 Technical Skills
+## Technical Skills
 
-### **Frontend Development**
+**Architecture:** Modular monolith, domain boundaries, event-driven architecture, asynchronous processing, message queues, REST API design
 
--   **Vue.js 3** (Expert) - Composition API, Nuxt.js, Pinia, state management, reactive patterns
--   **TypeScript** (Advanced) - Strict typing, Generics, Utility types, type-safe APIs
--   **React/React Native** (Advanced) - Hooks, Context API, mobile development, cross-platform UI
--   **Nuxt.js** (Advanced) - SSR, SSG, Vue 3 ecosystem, routing, server middleware
--   **Tailwind CSS** (Expert) - Utility-first CSS, responsive design, theming
--   **HTML5/CSS3** (Expert) - Semantic markup, responsive design, accessibility (a11y)
+**Backend:** Laravel 10–12, PHP 8.3, Eloquent ORM, queues and events, Artisan CLI, Laravel Horizon
 
-### **Backend Development**
+**Frontend:** Vue.js 3 (Composition API, Pinia), Nuxt.js 3/4 (SSR, SSG, server middleware), TypeScript, JavaScript (ES6+), Tailwind CSS, HTML5, CSS3, responsive design
 
--   **Laravel 12** (Expert) - Eloquent ORM, Blade templates, Artisan CLI, queues, events
--   **PHP 8.3** (Advanced) - Attributes, Enums, Match expressions, readonly classes
--   **Node.js** (Intermediate) - Express.js, RESTful APIs, async I/O
--   **RESTful APIs** (Advanced) - API design, authentication, documentation, versioning
--   **GraphQL** (Intermediate) - Schema design, resolvers, queries and mutations
+**Payments and e-commerce:** Stripe, PayPal, SBP, Airwallex, MusePay Card API — checkout, recurring subscriptions, webhooks, payment reconciliation
 
-### **DevOps & Tools**
+**Databases:** MySQL (schema design, indexing, query optimisation, migrations), Redis (caching, queues, pub/sub)
 
--   **Docker** (Advanced) - Containerization, Docker Compose, multi-stage builds
--   **Git/GitHub** (Expert) - Version control, CI/CD workflows, branching strategies
--   **CI/CD** (Advanced) - GitHub Actions, Bitbucket Pipelines, automated deployment
--   **Nginx** (Advanced) - Web server configuration, load balancing, reverse proxy
--   **AWS** (Basic) - S3 object storage, EC2 instance provisioning for app hosting
--   **Temporal** (Advanced) - Workflow orchestration, async processing, durable execution
--   **Laravel Horizon** (Advanced) - Queue management, job monitoring, scaling workers
--   **Message brokers** (Advanced) - Redis Queue, RabbitMQ, async messaging, event-driven systems
--   **E2E Testing** (Advanced) - End-to-end test suites for web applications
--   **PHPUnit/Pest** (Advanced) - Laravel backend unit and feature tests
+**DevOps and infrastructure:** Docker (multi-stage builds, Docker Compose), Nginx (reverse proxy), CI/CD (GitHub Actions, Bitbucket Pipelines), Git, AWS (EC2 instance provisioning, S3 object storage for app hosting)
 
-### **Analytics & Experimentation**
+**AI in product:** LLM features in production — generation behind queues with retries and graceful degradation when a provider fails, structured prompting, embeddings, OpenAI API. Model-agnostic: work across OpenAI, Anthropic and Google models, picking per task rather than locking the product to one vendor
 
--   **Google Tag Manager (GTM)** (Advanced) - Tag configuration, data layer, event tracking, conversion pixels
--   **Amplitude** (Advanced) - Product analytics, user behavior tracking, funnels, retention
--   **Meta Pixel** (Advanced) - Conversion tracking, audience insights, ad attribution
--   **GrowthBook** (Advanced) - A/B testing, feature flags, experimentation platform
+**Applied ML in the browser:** MediaPipe — real-time gesture recognition running client-side, no server round-trip
 
-### **AI & Emerging Technologies**
+**AI-assisted engineering:** daily work with coding agents (Claude Code, Cursor); author project-level agent rules and reusable skills so a team gets consistent AI-assisted refactoring, review and documentation
 
--   **AI Integration** (Advanced) - OpenAI API, Google AI, embedding models, structured prompts
--   **AI agents** (Advanced) - Cursor agents, multi-model workflows, prompt engineering
--   **AI development tools** (Advanced) - Daily use of Cursor and LLMs (Claude, GPT, Gemini, etc.) — model picked per task for development, refactoring, code review
--   **MediaPipe** (Advanced) - Computer vision, gesture recognition, real-time ML in browser
--   **OpenAI API** (Advanced) - GPT-4, DALL-E 3, embeddings, fine-tuning
--   **PWA** (Intermediate) - Service workers, offline functionality, installable apps
--   **WebAssembly** (Learning) - High-performance web applications
--   **Payment Systems** (Advanced) - Stripe, PayPal, Airwallex, SBP integration, MusePay Card API
--   **E-commerce** (Advanced) - Multi-payment, subscription systems, checkout flows
+**Analytics and experimentation:** Google Tag Manager, Amplitude, Meta Pixel, GrowthBook (A/B testing, feature flags)
 
-### **Databases & Storage**
+**Testing and quality:** PHPUnit, Pest, unit and feature testing, end-to-end (E2E) testing, code review, Agile/Scrum
 
--   **MySQL** (Advanced) - Database design, optimization, indexing, migrations
--   **PostgreSQL** (Intermediate) - Advanced queries, JSON support, full-text search
--   **Redis** (Intermediate) - Caching, session storage, queues, pub/sub
+**Also worked with:** React, React Native, Node.js (Express.js), GraphQL, PostgreSQL, Temporal, RabbitMQ, PWA (service workers, offline support)
 
 ---
 
-## 🚀 Featured Projects
+## Selected Projects
 
-### **Motiohead** - Creative Production Platform
+### MuseWallet SDK for Laravel — open source
 
-_Vue.js, Laravel, AI Integration, MediaPipe_
+_PHP 8.1+, Laravel 10/11, OpenSSL_ · [packagist.org/packages/artempuzik/musewallet-sdk-laravel](https://packagist.org/packages/artempuzik/musewallet-sdk-laravel)
 
-Creative production platform with AI-powered content generation and visual storytelling tools. Integrated MediaPipe for gesture recognition and OpenAI APIs for content generation.
+Published Laravel SDK for the MusePay Card API. Wraps RSA request signing, webhook verification and typed DTO responses behind an event-driven API, so integrating applications never touch raw cryptography or untyped payloads. Full API v1 coverage with documentation and test suite. Released October 2025 on Packagist.
 
-**Key Features:**
+### Motiohead — creative production platform
 
--   AI-powered content generation
--   Real-time gesture recognition
--   Responsive design
--   Performance optimization
+_Vue.js, Laravel, LLM integration, MediaPipe_ · [motiohead.com](https://www.motiohead.com/)
 
-**Live Demo:** [https://www.motiohead.com/](https://www.motiohead.com/)
+Sole full-stack developer. Built AI-assisted content generation and an interactive experience driven by real-time gesture recognition — MediaPipe runs client-side, so the interaction stays responsive without streaming video to a server. Delivered design-heavy UI to a creative director's specification.
 
----
+### Storyman.ai — AI storytelling platform
 
-### **Storyman.ai** - AI-Powered Storytelling Platform
+_React, Node.js, TypeScript, LLM integration_
 
-_React, Node.js, OpenAI API, TypeScript_
+Visual storytelling product built on a structured narrative framework. Orchestrated multiple AI services for text and image generation into a single authoring flow, with real-time updates and collaborative editing.
 
-AI-powered visual storytelling platform with structured framework for content creation. Integrated multiple AI services for text and image generation.
+### GeoTek Mobile — GPS/GLONASS fleet monitoring
 
-**Key Features:**
+_React Native, real-time telemetry_ · [Google Play](https://play.google.com/store/apps/details?id=com.geotek)
 
--   AI content generation
--   Visual story creation
--   User collaboration
--   Real-time updates
-
-**Live Demo:** [https://www.storyman.ai/](https://www.storyman.ai/)
+Cross-platform mobile application for transport operators tracking vehicle fleets. Real-time positions on interactive maps from continuous tracker telemetry, with offline caching so crews keep working through connectivity gaps in the field.
 
 ---
 
-### **GeoTek Mobile** - GPS Transport Monitoring
+## Education and Certifications
 
-_React Native, GPS Tracking, Real-time Data_
+-   **Frontend Developer Certification** — RS School (EPAM Systems), 2021–2022 · Modern JavaScript frameworks and engineering practices
+-   **Backend Developer Certification** — Pixelpex, 2021–2022 · Laravel, PHP, database design
+-   **Bachelor of Science in Engineering** — Belarusian National Technical University, 2008–2013
 
-GPS/GLONASS transport monitoring mobile application for Android and iOS platforms. Real-time tracking and data visualization.
-
-**Key Features:**
-
--   Real-time GPS tracking
--   Cross-platform compatibility
--   Offline functionality
--   Data visualization
-
-**Play Store:** [Google Play](https://play.google.com/store/apps/details?id=com.geotek)
+Career switch into software engineering in 2021 after professional retraining.
 
 ---
 
-## 🎓 Education & Certifications
+## Mentoring and Leadership
 
-### **Backend Developer Certification** | Pixelpex
-
-_2021 - 2022 | Minsk, Belarus_
-
-Comprehensive backend development course covering Laravel, PHP, and database design.
-
-### **Frontend Developer Certification** | RS School (EPAM)
-
-_2021 - 2022 | Minsk, Belarus_
-
-Advanced frontend development program with focus on modern JavaScript frameworks and best practices.
-
-### **Belarusian National Technical University**
-
-_2008 - 2013 | Minsk, Belarus_
-
-Bachelor's degree in Engineering with focus on technical problem-solving and analytical thinking.
+-   Mentored students on the **RS School (EPAM Systems) JavaScript / Front-End course for 6 months** — guided them through complex concepts, reviewed assignments and gave structured feedback
+-   Run code review and maintain coding standards in the current team
 
 ---
 
-## 🌍 Languages
+## Languages
 
--   **English:** B1- (Reading the documentation, writing simple emails, basic conversation)
--   **Polish:** B1 (Independent user)
 -   **Russian:** Native
 -   **Belarusian:** Native
+-   **Polish:** B1 (intermediate)
+-   **English:** B1 (intermediate) — technical documentation, written communication, day-to-day asynchronous collaboration; actively improving toward B2
 
 ---
 
-## 🏆 Client Testimonials
-
-### **Dzmitry Varabei** - Senior Program Manager at EPAM Systems
-
-> "Artem has been mentoring students in the JavaScript/Front-end course for 6 months. He effectively guided students through complex concepts and provided valuable insights that significantly enhanced their learning experience."
-
-### **Sergey Ryabenko** - Founder at SharpBit
-
-> "Artem brings great energy and a 'can do' attitude. He was instrumental in creating and implementing new software that saves us a huge amount of time and resources. Highly recommended."
-
-### **Nadya Gorodetskaya** - Founder/Creative Director at MOTIOHEAD
+## References
 
 > "Artem's talent, knowledge, and communication were beyond all expectations. A truly sophisticated TOP level professional. I was amazed by the result of his work."
+> — **Nadya Gorodetskaya**, Founder / Creative Director, MOTIOHEAD
 
-### **Viktor Kozinin** - CEO at SL Max
+> "Artem brings great energy and a 'can do' attitude. He was instrumental in creating and implementing new software that saves us a huge amount of time and resources. Highly recommended."
+> — **Sergey Ryabenko**, Founder, SharpBit
 
-> "Artem is a highly skilled developer with excellent problem-solving abilities. He delivered our mobile application on time and exceeded our expectations with his attention to detail."
-
-### **Ramin Malikov** - Co-Founder & IoT Engineer at VIOTYS LLC
-
-> "Artem was great to work with. He delivered on-time for an urgent job and was in constant contact throughout the project."
+Additional references available on LinkedIn: Dzmitry Varabei (Senior Program Manager, EPAM Systems), Viktor Kozinin (CEO, SL Max), Ramin Malikov (Co-Founder, VIOTYS LLC).
 
 ---
 
-## 📊 Professional Statistics
-
--   **4+ years** of professional experience
--   **30+ projects** completed successfully
--   **25+ technologies** mastered
--   **1 published package** on Packagist
--   **100% client satisfaction** rate
--   **5-star average** rating from clients
-
----
-
-## 🎯 Key Achievements
-
-### **Leadership & Mentoring**
-
--   Mentored 15+ junior developers
--   Led development teams of 5+ members
--   Conducted technical interviews and code reviews
--   Established coding standards and best practices
-
-### **Open Source Contributions**
-
--   **Published MuseWallet SDK Laravel** - Comprehensive Laravel SDK for MusePay Card API integration
-    -   **Package:** [artempuzik/musewallet-sdk-laravel](https://packagist.org/packages/artempuzik/musewallet-sdk-laravel)
-    -   **Features:** RSA signature generation, webhook handling, typed responses (DTO), event-driven architecture
-    -   **Technologies:** PHP 8.1+, Laravel 10/11, OpenSSL, comprehensive test coverage
-    -   **Published:** October 2025 on Packagist
-    -   **Documentation:** Complete API integration with MusePay Card API v1
-
----
-
-## 🔧 Development Methodologies
-
--   **Agile/Scrum** - Sprint planning, daily standups, retrospectives
--   **Test-Driven Development (TDD)** - Unit testing, integration testing
--   **Continuous Integration/Deployment** - Automated testing and deployment
--   **Code Review** - Peer reviews, quality assurance
--   **Documentation** - Technical documentation, API documentation
-
----
-
-## 🌟 Soft Skills
-
--   **Problem Solving** - Analytical thinking, creative solutions
--   **Communication** - Clear technical communication, client relations
--   **Time Management** - Meeting deadlines, project prioritization
--   **Team Collaboration** - Cross-functional teamwork, knowledge sharing
--   **Adaptability** - Quick learning, technology adoption
-
----
-
-## 📞 Let's Work Together
-
-I'm available for new projects and opportunities. Whether you need a complete web application, mobile app, or technical consulting, I'm ready to help bring your ideas to life.
-
-**Available for:**
-
--   Full-time positions
--   Contract work
--   Project-based collaboration
--   Technical consulting
--   Code reviews and mentoring
-
-**Response Time:** Within 24 hours
-
----
-
-**Last Updated:** June 2026
-
----
+Last updated: August 2026

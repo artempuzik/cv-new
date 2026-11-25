@@ -60,9 +60,6 @@
                         <button type="button" class="theme-toggle btn ms-2" id="themeToggle" aria-label="Toggle theme">
                             <i class="fas fa-moon" id="themeIcon"></i>
                         </button>
-                        <button class="btn btn-primary ms-3" data-bs-toggle="modal" data-bs-target="#contactModal">
-                            Let's Talk
-                        </button>
                     </div>
                 </div>
             </div>
@@ -97,29 +94,18 @@
                                 </div>
                             </div>
                             <div class="hero-actions">
-                                <button
-                                    class="btn btn-primary btn-lg me-3"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#contactModal"
-                                >
-                                    <i class="fas fa-rocket me-2"></i>Start Project
-                                </button>
-                                <a href="#projects" class="btn btn-outline-primary btn-lg me-3">
-                                    <i class="fas fa-eye me-2"></i>View Work
-                                </a>
-                                <button class="btn btn-outline-primary btn-lg" onclick="downloadPDF()">
+                                <button class="btn btn-primary btn-lg me-3" onclick="downloadPDF()">
                                     <i class="fas fa-file-pdf me-2"></i>Download CV
                                 </button>
+                                <a href="#contact" class="btn btn-outline-primary btn-lg">
+                                    <i class="fas fa-envelope me-2"></i>Contact
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="hero-image">
                             <img src="./assets/avatar.png" alt="Artem Puzik" class="profile-image" />
-                            <div class="floating-card">
-                                <i class="fas fa-check-circle text-success"></i>
-                                <span>Available for new projects</span>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -196,15 +182,11 @@
                                         <li>Designed and built a <strong>modular monolith with explicit domain boundaries</strong>, isolating business domains so a change in one cannot regress the others</li>
                                         <li>Built payment and subscription flows across <strong>multiple payment providers</strong> — one-off checkout, recurring billing, upsells and webhook-driven state reconciliation</li>
                                         <li>Moved AI generation, document rendering and billing side effects off the request path into <strong>Redis queues with Laravel Horizon</strong>, with failure recovery, so checkout stays responsive under traffic spikes</li>
-                                        <li>Built LLM-powered product features, including a conversational assistant with server-side prompts and per-user rate limiting</li>
+                                        <li>Built LLM-powered product features, including a conversational assistant with per-user rate limiting, and in-browser real-time computer vision with <strong>MediaPipe</strong> — client-side machine learning, no video leaving the device</li>
                                         <li>Built conversion funnels with product analytics and <strong>A/B testing</strong>, so funnel changes ship on data rather than opinion</li>
-                                        <li>Implemented in-browser real-time computer vision with <strong>MediaPipe</strong> for an interactive funnel step — client-side machine learning, no server round-trip and no video leaving the device</li>
-                                        <li>Run production infrastructure: Docker multi-stage builds, Traefik and Nginx reverse proxy with SSL, CI/CD pipelines, error monitoring and alerting</li>
-                                        <li>Write step-by-step runbooks for risky production changes — staged rollout, no lost queue jobs, one-step rollback</li>
-                                        <li>Own the test suite at every level: <strong>PHPUnit</strong> unit and feature tests for API endpoints, middleware, queued jobs and payment webhooks, including race-condition and idempotency cases; <strong>Vitest</strong> unit tests on the frontend; <strong>Playwright E2E</strong> suites that walk each conversion funnel from landing page to payment and assert the analytics events sent at every step</li>
-                                        <li>Quality gates: static analysis (Larastan, vue-tsc), linting and pre-commit hooks that run the relevant tests by scope; run code review and maintain coding standards for the team</li>
-                                        <li>Use AI agents deeply in development and testing, and <strong>write my own Claude Code skills</strong> for the team: a test-design skill that builds exhaustive case matrices (inputs, auth, state, dependency failures, races, rate limits); an architecture review that compares every changed file with its closest existing analogue in the codebase; an E2E QA skill that runs the funnel suites, builds an HTML report of findings</li>
-                                        <li>Run agent workflows end-to-end — plan, implement, review, test — with project-level rules and architecture docs that keep agent output consistent with codebase conventions</li>
+                                        <li>Run production infrastructure: Docker multi-stage builds, Traefik and Nginx reverse proxy with SSL, CI/CD pipelines, error monitoring and alerting, plus step-by-step runbooks for risky production changes</li>
+                                        <li>Own the test suite at every level: <strong>PHPUnit</strong> unit and feature tests for API endpoints, queued jobs and payment webhooks, including race-condition and idempotency cases; <strong>Vitest</strong> on the frontend; <strong>Playwright E2E</strong> suites that walk each funnel from landing page to payment and assert analytics events. Quality gates: static analysis (Larastan, vue-tsc), pre-commit hooks, code review for the team</li>
+                                        <li><strong>Write my own Claude Code skills</strong> for the team — test design with exhaustive case matrices, architecture review against the closest existing analogue in the codebase, and E2E QA reporting — and run plan → implement → review → test agent workflows on top of project-level rules</li>
                                     </ul>
                                     <p class="mb-0"><strong>Stack:</strong> Vue 3, Nuxt 4, Laravel 12, PHP 8.3, TypeScript, MySQL, Redis, Horizon, Docker, Traefik, Nginx, CI/CD, LLM integration</p>
                                 </div>
@@ -310,7 +292,6 @@
                             <span class="skill-chip">TypeScript</span>
                             <span class="skill-chip">Tailwind CSS</span>
                             <span class="skill-chip">Pinia</span>
-                            <span class="skill-chip">Inertia.js</span>
                             <span class="skill-chip">Vite</span>
                         </div>
                         <p class="skill-proof">Single-page apps and conversion funnels running high-traffic marketing campaigns</p>
@@ -660,18 +641,15 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="section-header">
-                            <h2 class="section-title">Let's Work Together</h2>
-                            <p class="section-subtitle">
-                                Ready to bring your ideas to life? Let's discuss your project and create something
-                                amazing.
-                            </p>
+                            <h2 class="section-title">Contact</h2>
+                            <p class="section-subtitle">Feel free to reach out by email, Telegram or LinkedIn.</p>
                         </div>
                         <div class="contact-info">
                             <div class="contact-item">
                                 <i class="fas fa-envelope text-primary"></i>
                                 <div>
                                     <h5>Email</h5>
-                                    <p>artem.puzik.it@gmail.com</p>
+                                    <p><a href="mailto:artem.puzik.it@gmail.com">artem.puzik.it@gmail.com</a></p>
                                 </div>
                             </div>
                             <div class="contact-item">
@@ -690,30 +668,23 @@
                             </div>
                         </div>
                         <div class="social-links">
-                            <a href="https://github.com/artempuzik" target="_blank" class="social-link">
+                            <a href="https://github.com/artempuzik" target="_blank" class="social-link" aria-label="GitHub" rel="noopener">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/artem-puzik/" target="_blank" class="social-link">
+                            <a href="https://www.linkedin.com/in/artem-puzik/" target="_blank" class="social-link" aria-label="LinkedIn" rel="noopener">
                                 <i class="fab fa-linkedin"></i>
                             </a>
-                            <a href="https://telegram.im/@ArtemPuzik" target="_blank" class="social-link">
+                            <a href="https://telegram.im/@ArtemPuzik" target="_blank" class="social-link" aria-label="Telegram" rel="noopener">
                                 <i class="fab fa-telegram"></i>
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="contact-form-card">
-                            <h3>Start a Project</h3>
-                            <p>Tell me about your project and I'll get back to you within 24 hours.</p>
-                            <button
-                                class="btn btn-primary btn-lg w-100 mb-3"
-                                data-bs-toggle="modal"
-                                data-bs-target="#contactModal"
-                            >
-                                <i class="fas fa-rocket me-2"></i>Get Started
-                            </button>
+                            <h3>Resume</h3>
+                            <p>Full CV in PDF: experience, skills, education and references.</p>
                             <button class="btn btn-primary btn-lg w-100" onclick="downloadPDF()">
-                                <i class="fas fa-file-pdf me-2"></i>Download Resume
+                                <i class="fas fa-file-pdf me-2"></i>Download CV
                             </button>
                         </div>
                     </div>
@@ -734,77 +705,6 @@
                 </div>
             </div>
         </footer>
-
-        <!-- Contact Modal -->
-        <div class="modal fade" id="contactModal" tabindex="-1">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Start Your Project</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form id="contactForm">
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label for="name" class="form-label">Full Name *</label>
-                                    <input type="text" class="form-control" id="name" required />
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="email" class="form-label">Email *</label>
-                                    <input type="email" class="form-control" id="email" required />
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="company" class="form-label">Company</label>
-                                <input type="text" class="form-control" id="company" />
-                            </div>
-                            <div class="mb-3">
-                                <label for="projectType" class="form-label">Project Type</label>
-                                <select class="form-select" id="projectType">
-                                    <option value="">Select project type</option>
-                                    <option value="web-app">Web Application</option>
-                                    <option value="mobile-app">Mobile Application</option>
-                                    <option value="ecommerce">E-commerce Platform</option>
-                                    <option value="ai-integration">AI Integration</option>
-                                    <option value="consulting">Technical Consulting</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="budget" class="form-label">Budget Range</label>
-                                <select class="form-select" id="budget">
-                                    <option value="">Select budget range</option>
-                                    <option value="5k-10k">$5,000 - $10,000</option>
-                                    <option value="10k-25k">$10,000 - $25,000</option>
-                                    <option value="25k-50k">$25,000 - $50,000</option>
-                                    <option value="50k+">$50,000+</option>
-                                    <option value="discuss">Let's discuss</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Project Details *</label>
-                                <textarea
-                                    class="form-control"
-                                    id="message"
-                                    rows="5"
-                                    placeholder="Describe your project, requirements, and goals..."
-                                    required
-                                ></textarea>
-                            </div>
-                            <div class="text-end">
-                                <button type="button" class="btn btn-secondary me-2" data-bs-dismiss="modal">
-                                    Cancel
-                                </button>
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="fas fa-paper-plane me-2"></i>Send Message
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -844,57 +744,6 @@
                         });
                     }
                 });
-            });
-
-            // Form submission
-            document.getElementById('contactForm').addEventListener('submit', function (e) {
-                e.preventDefault();
-
-                // Get form data
-                const name = document.getElementById('name').value;
-                const email = document.getElementById('email').value;
-                const company = document.getElementById('company').value;
-                const projectType = document.getElementById('projectType').value;
-                const budget = document.getElementById('budget').value;
-                const message = document.getElementById('message').value;
-
-                // Create email content
-                const emailSubject = `New Project Inquiry from ${name}`;
-                const emailBody = `
-                    New project inquiry from your CV website:
-
-                    Name: ${name}
-                    Email: ${email}
-                    Company: ${company || 'Not specified'}
-                    Project Type: ${projectType || 'Not specified'}
-                    Budget Range: ${budget || 'Not specified'}
-
-                    Project Details:
-                    ${message}
-
-                    ---
-                    This message was sent from your CV contact form.
-                `;
-
-                // Create mailto link
-                const mailtoLink = `mailto:artem.puzik.it@gmail.com?subject=${encodeURIComponent(
-                    emailSubject
-                )}&body=${encodeURIComponent(emailBody)}`;
-
-                // Open default email client
-                window.open(mailtoLink);
-
-                // Show success message
-                alert(
-                    'Thank you for your message! Your email client will open with a pre-filled message. Please send the email to complete your inquiry.'
-                );
-
-                // Close modal
-                const modal = bootstrap.Modal.getInstance(document.getElementById('contactModal'));
-                modal.hide();
-
-                // Reset form
-                this.reset();
             });
 
             // Navbar background on scroll

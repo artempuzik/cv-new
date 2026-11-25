@@ -19,7 +19,7 @@ Full-Stack Developer with **4+ years of commercial experience** building and mai
 
 **Core stack:** Vue.js 3, Nuxt.js, TypeScript, JavaScript, Laravel, PHP 8.3, MySQL, Redis, Docker, Nginx, CI/CD, REST API, payment provider integration, LLM integration
 
-**Experience by technology:** JavaScript / TypeScript — 4 years · Laravel / PHP — 2.5 years · Vue.js / Nuxt.js — 2.5 years · React / React Native — 2 years · Node.js — 1.5 years
+**Experience by technology:** JavaScript / TypeScript — 4 years · Laravel / PHP — 3 years · Vue.js / Nuxt.js — 3 years · React / React Native — 2 years · Node.js — 1.5 years
 
 ---
 
@@ -35,15 +35,11 @@ Vue.js 3, Nuxt.js 4, Laravel 12, PHP 8.3, TypeScript, MySQL, Redis, Laravel Hori
 -   Designed and built a **modular monolith with explicit domain boundaries**, isolating business domains so a change in one cannot regress the others
 -   Built payment and subscription flows across **multiple payment providers** — one-off checkout, recurring billing, upsells and webhook-driven state reconciliation
 -   Moved AI generation, document rendering and billing side effects off the request path into **Redis queues with Laravel Horizon**, with failure recovery, so checkout stays responsive under traffic spikes
--   Built LLM-powered product features, including a conversational assistant with server-side prompts and per-user rate limiting
+-   Built LLM-powered product features, including a conversational assistant with per-user rate limiting, and in-browser real-time computer vision with **MediaPipe** — client-side machine learning, no video leaving the device
 -   Built conversion funnels with product analytics and **A/B testing**, so funnel changes ship on data rather than opinion
--   Implemented in-browser real-time computer vision with **MediaPipe** for an interactive funnel step — client-side machine learning, no server round-trip and no video leaving the device
--   Run production infrastructure: Docker multi-stage builds, Traefik and Nginx reverse proxy with SSL, CI/CD pipelines, error monitoring and alerting
--   Write step-by-step runbooks for risky production changes — staged rollout, no lost queue jobs, one-step rollback
--   Own the test suite at every level: **PHPUnit** unit and feature tests for API endpoints, middleware, queued jobs and payment webhooks, including race-condition and idempotency cases; **Vitest** unit tests on the frontend; **Playwright E2E** suites that walk each conversion funnel from landing page to payment and assert the analytics events sent at every step
--   Quality gates: static analysis (Larastan, vue-tsc), linting and pre-commit hooks that run the relevant tests by scope; run code review and maintain coding standards for the team
--   Use AI agents deeply in development and testing, and **write my own Claude Code skills** for the team: a test-design skill that builds exhaustive case matrices (inputs, auth, state, dependency failures, races, rate limits); an architecture review that compares every changed file with its closest existing analogue in the codebase; an E2E QA skill that runs the funnel suites, builds an HTML report of findings
--   Run agent workflows end-to-end — plan, implement, review, test — with project-level rules and architecture docs that keep agent output consistent with codebase conventions
+-   Run production infrastructure: Docker multi-stage builds, Traefik and Nginx reverse proxy with SSL, CI/CD pipelines, error monitoring and alerting, plus step-by-step runbooks for risky production changes
+-   Own the test suite at every level: **PHPUnit** unit and feature tests for API endpoints, queued jobs and payment webhooks, including race-condition and idempotency cases; **Vitest** on the frontend; **Playwright E2E** suites that walk each funnel from landing page to payment and assert analytics events. Quality gates: static analysis (Larastan, vue-tsc), pre-commit hooks, code review for the team
+-   **Write my own Claude Code skills** for the team — test design with exhaustive case matrices, architecture review against the closest existing analogue in the codebase, and E2E QA reporting — and run plan → implement → review → test agent workflows on top of project-level rules
 
 ### Full-Stack Developer — SharpBit, Portugal (remote)
 
@@ -86,7 +82,7 @@ React Native, React, JavaScript, real-time data, mobile UI/UX
 
 **Backend:** Laravel 10–12, PHP 8.3, Eloquent ORM, queues and events, Laravel Horizon, Inertia.js, token-based authentication, rate limiting, Artisan CLI
 
-**Frontend:** Vue.js 3 (Composition API, Pinia), Nuxt.js 3/4 (SPA, server middleware), Inertia.js, Vite, TypeScript, JavaScript (ES6+), Tailwind CSS, HTML5, CSS3, responsive design
+**Frontend:** Vue.js 3 (Composition API, Pinia), Nuxt.js 3/4 (SPA, server middleware), Vite, TypeScript, JavaScript (ES6+), Tailwind CSS, HTML5, CSS3, responsive design
 
 **Payments and e-commerce:** Stripe, PayPal, payment provider integration — checkout, recurring subscriptions, upsells, webhooks, payment reconciliation
 
@@ -152,7 +148,7 @@ Career switch into software engineering in 2021 after professional retraining.
 -   **Russian:** Native
 -   **Belarusian:** Native
 -   **Polish:** B1 (intermediate)
--   **English:** B1 (intermediate) — technical documentation, written communication, day-to-day asynchronous collaboration; actively improving toward B2
+-   **English:** B1 (intermediate) — technical documentation, written communication, day-to-day asynchronous collaboration
 
 ---
 

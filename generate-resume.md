@@ -9,14 +9,13 @@
 -   **Location:** Minsk, Belarus — available for remote work (GMT+3, full overlap with EU working hours)
 -   **LinkedIn:** [linkedin.com/in/artem-puzik](https://www.linkedin.com/in/artem-puzik/)
 -   **GitHub:** [github.com/artempuzik](https://github.com/artempuzik)
--   **Packagist:** [artempuzik/musewallet-sdk-laravel](https://packagist.org/packages/artempuzik/musewallet-sdk-laravel)
 -   **Telegram:** [@ArtemPuzik](https://telegram.im/@ArtemPuzik)
 
 ---
 
 ## Professional Summary
 
-Full-Stack Developer with **4+ years of commercial experience** building and maintaining high-traffic production web applications end-to-end — Vue.js/Nuxt/TypeScript frontends on Laravel/PHP backends. Currently building payment, subscription and AI features for high-traffic e-commerce products. Built a modular monolith with explicit domain boundaries, own the infrastructure behind it (Docker, Traefik, Nginx, CI/CD, Redis queues), and published an open-source Laravel payment SDK on Packagist. Use AI agents deeply across development and testing — write my own Claude Code skills for test design, architecture review and E2E QA. Remote experience with distributed teams in Portugal, Poland and Belarus.
+Full-Stack Developer with **4+ years of commercial experience** building and maintaining high-traffic production web applications end-to-end — Vue.js/Nuxt/TypeScript frontends on Laravel/PHP backends. Currently building payment, subscription and AI features for high-traffic e-commerce products. Built a modular monolith with explicit domain boundaries, own the infrastructure behind it (Docker, Traefik, Nginx, CI/CD, Redis queues). Use AI agents deeply across development and testing — write my own Claude Code skills for test design, architecture review and E2E QA. Remote experience with distributed teams in Portugal, Poland and Belarus.
 
 **Core stack:** Vue.js 3, Nuxt.js, TypeScript, JavaScript, Laravel, PHP 8.3, MySQL, Redis, Docker, Nginx, CI/CD, REST API, Stripe, PayPal, LLM integration
 
@@ -90,7 +89,7 @@ React Native, React, JavaScript, real-time data, mobile UI/UX
 
 **Frontend:** Vue.js 3 (Composition API, Pinia), Nuxt.js 3/4 (SPA, server middleware), Inertia.js, Vite, TypeScript, JavaScript (ES6+), Tailwind CSS, HTML5, CSS3, responsive design
 
-**Payments and e-commerce:** Stripe, PayPal, MusePay Card API, payment provider integration — checkout, recurring subscriptions, upsells, webhooks, payment reconciliation, fraud checks
+**Payments and e-commerce:** Stripe, PayPal, payment provider integration — checkout, recurring subscriptions, upsells, webhooks, payment reconciliation, fraud checks
 
 **Databases:** MySQL (schema design, indexing, query optimisation, migrations), Redis (caching, queues, pub/sub)
 
@@ -111,12 +110,6 @@ React Native, React, JavaScript, real-time data, mobile UI/UX
 ---
 
 ## Selected Projects
-
-### MuseWallet SDK for Laravel — open source
-
-_PHP 8.1+, Laravel 10/11, OpenSSL_ · [packagist.org/packages/artempuzik/musewallet-sdk-laravel](https://packagist.org/packages/artempuzik/musewallet-sdk-laravel)
-
-Published Laravel SDK for the MusePay Card API. Wraps RSA request signing, webhook verification and typed DTO responses behind an event-driven API, so integrating applications never touch raw cryptography or untyped payloads. Full API v1 coverage with documentation and test suite. Released October 2025 on Packagist.
 
 ### Motiohead — creative production platform
 

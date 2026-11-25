@@ -16,15 +16,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
             rel="stylesheet"
         />
 
         <!-- Icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
-        <!-- Bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="./styles.css" />
@@ -41,675 +38,574 @@
     </head>
     <body>
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="#home">
-                    <span class="brand-text">AP</span>
+        <header class="site-header sticky top-0 z-50 h-16 border-b border-transparent bg-zinc-50/80 backdrop-blur-md transition-colors dark:bg-ink/80 [&.is-scrolled]:border-zinc-200 dark:[&.is-scrolled]:border-zinc-800">
+            <div class="mx-auto flex h-full max-w-6xl items-center gap-8 px-6">
+                <a class="flex items-center gap-2.5 font-bold" href="#home" aria-label="Artem Puzik — home">
+                    <span class="grid h-8 w-8 place-items-center rounded-lg bg-zinc-900 font-mono text-xs font-semibold text-zinc-50 dark:bg-zinc-100 dark:text-zinc-900">AP</span>
+                    <span>Artem Puzik</span>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="navbar-nav ms-auto">
-                        <a class="nav-link" href="#home">Home</a>
-                        <a class="nav-link" href="#about">About</a>
-                        <a class="nav-link" href="#experience">Experience</a>
-                        <a class="nav-link" href="#skills">Skills</a>
-                        <a class="nav-link" href="#projects">Projects</a>
-                        <a class="nav-link" href="#contact">Contact</a>
-                        <button type="button" class="theme-toggle btn ms-2" id="themeToggle" aria-label="Toggle theme">
-                            <i class="fas fa-moon" id="themeIcon"></i>
-                        </button>
-                    </div>
+                <nav class="site-nav ml-auto hidden gap-6 md:flex" aria-label="Sections">
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#experience">Experience</a>
+                    <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </nav>
+                <div class="ml-auto flex items-center gap-2.5 md:ml-0">
+                    <button type="button" class="grid h-9 w-9 place-items-center rounded-full border border-zinc-300 text-zinc-600 transition hover:border-zinc-500 hover:text-zinc-900 dark:border-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-100" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon" id="themeIcon"></i>
+                    </button>
+                    <a class="inline-flex items-center gap-2 rounded-full bg-zinc-900 px-3.5 py-2 text-sm font-semibold text-zinc-50 transition hover:opacity-85 dark:bg-zinc-100 dark:text-zinc-900" href="./Artem-Puzik-Full-Stack-Developer-CV.pdf" download>
+                        <i class="fas fa-arrow-down"></i>CV
+                    </a>
                 </div>
             </div>
-        </nav>
+        </header>
 
-        <!-- Hero Section -->
-        <section id="home" class="hero-section">
-            <div class="container">
-                <div class="row align-items-center min-vh-100">
-                    <div class="col-lg-6">
-                        <div class="hero-content">
-                            <div class="badge bg-primary-subtle text-primary mb-3">
-                                <i class="fas fa-code me-2"></i>Full-Stack Developer · Vue/Nuxt · Laravel
+        <main>
+            <!-- Hero Section -->
+            <section id="home" class="border-b border-zinc-200 py-14 dark:border-zinc-800 md:py-24">
+                <div class="mx-auto grid max-w-6xl items-center gap-10 px-6 md:grid-cols-[1.5fr_1fr] md:gap-16">
+                    <div class="hero-content">
+                        <p class="mb-6 inline-flex items-center gap-2 font-mono text-[0.82rem] font-medium text-teal-700 before:h-2 before:w-2 before:rounded-full before:bg-current before:ring-4 before:ring-teal-600/10 dark:text-teal-400">Full-Stack Developer · Vue/Nuxt · Laravel</p>
+                        <h1 class="mb-6 text-5xl font-extrabold leading-none tracking-tighter md:text-7xl">Artem Puzik</h1>
+                        <p class="mb-9 max-w-[36ch] text-lg leading-relaxed text-zinc-600 dark:text-zinc-400 md:text-xl">
+                            I build high-traffic web products end-to-end — Vue 3/Nuxt on Laravel, with payments,
+                            subscriptions and AI running in production.
+                        </p>
+                        <dl class="mb-10 grid divide-y divide-zinc-200 border-y border-zinc-200 dark:divide-zinc-800 dark:border-zinc-800 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
+                            <div class="flex items-baseline gap-4 py-3 sm:block sm:px-5 sm:py-4 sm:first:pl-0">
+                                <dt class="min-w-[2.6rem] text-3xl font-bold tracking-tight">4+</dt>
+                                <dd class="font-mono text-xs leading-snug text-zinc-600 dark:text-zinc-400 sm:mt-1">Years in production</dd>
                             </div>
-                            <h1 class="hero-title">Hi, I'm <span class="text-gradient">Artem Puzik</span></h1>
-                            <p class="hero-subtitle">
-                                I build high-traffic web products end-to-end — Vue 3/Nuxt on Laravel, with payments,
-                                subscriptions and AI running in production.
-                            </p>
-                            <div class="hero-stats">
-                                <div class="stat-item">
-                                    <span class="stat-number">4+</span>
-                                    <span class="stat-label">Years in production</span>
-                                </div>
-                                <div class="stat-item">
-                                    <span class="stat-number">3</span>
-                                    <span class="stat-label">Countries, remote teams</span>
-                                </div>
-                                <div class="stat-item">
-                                    <span class="stat-number">6</span>
-                                    <span class="stat-label">Months mentoring at RS School</span>
-                                </div>
+                            <div class="flex items-baseline gap-4 py-3 sm:block sm:px-5 sm:py-4 sm:first:pl-0">
+                                <dt class="min-w-[2.6rem] text-3xl font-bold tracking-tight">3</dt>
+                                <dd class="font-mono text-xs leading-snug text-zinc-600 dark:text-zinc-400 sm:mt-1">Countries, remote teams</dd>
                             </div>
-                            <div class="hero-actions">
-                                <button class="btn btn-primary btn-lg me-3" onclick="downloadPDF()">
-                                    <i class="fas fa-file-pdf me-2"></i>Download CV
-                                </button>
-                                <a href="#contact" class="btn btn-outline-primary btn-lg">
-                                    <i class="fas fa-envelope me-2"></i>Contact
+                            <div class="flex items-baseline gap-4 py-3 sm:block sm:px-5 sm:py-4 sm:first:pl-0">
+                                <dt class="min-w-[2.6rem] text-3xl font-bold tracking-tight">6</dt>
+                                <dd class="font-mono text-xs leading-snug text-zinc-600 dark:text-zinc-400 sm:mt-1">Months mentoring at RS School</dd>
+                            </div>
+                        </dl>
+                        <div class="flex flex-wrap gap-3">
+                            <a class="btn btn-primary" href="./Artem-Puzik-Full-Stack-Developer-CV.pdf" download>
+                                <i class="fas fa-file-arrow-down"></i>Download CV
+                            </a>
+                            <a class="btn btn-ghost" href="#contact">
+                                <i class="fas fa-envelope"></i>Contact
+                            </a>
+                        </div>
+                    </div>
+                    <div class="-order-1 w-full max-w-[132px] md:order-none md:max-w-[360px] md:justify-self-end">
+                        <img src="./assets/avatar.png" alt="Artem Puzik" class="aspect-square w-full rounded-2xl border border-zinc-200 bg-zinc-100 object-cover dark:border-zinc-800 dark:bg-zinc-900 md:aspect-[4/5] md:rounded-3xl" />
+                        <p class="mt-3 flex items-center gap-2 font-mono text-xs text-zinc-600 dark:text-zinc-400"><i class="fas fa-location-dot text-teal-700 dark:text-teal-400"></i>Minsk, Belarus · remote, GMT+3</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="border-b border-zinc-200 py-16 dark:border-zinc-800 md:py-24">
+                <div class="mx-auto grid max-w-6xl gap-8 px-6 lg:grid-cols-[260px_1fr] lg:gap-12">
+                    <header class="self-start lg:sticky lg:top-24">
+                        <span class="section-index">01</span>
+                        <h2 class="section-title">About</h2>
+                    </header>
+                    <div>
+                        <p class="mb-5 text-xl font-medium leading-snug tracking-tight md:text-[1.35rem]">
+                            Full-stack developer working on high-traffic e-commerce and subscription products —
+                            modular architecture, payment systems and AI in production.
+                        </p>
+                        <p class="max-w-[68ch] leading-relaxed text-zinc-600 dark:text-zinc-400">
+                            4+ years shipping production web applications end-to-end, from Vue 3/Nuxt frontends to
+                            Laravel/TypeScript backends. I currently build payment, subscription and AI features for
+                            high-traffic e-commerce products. I also run the infrastructure behind them — Docker,
+                            Traefik, Nginx, CI/CD, Redis queues — and use AI agents deeply in development and testing
+                            and write my own skills for test design, code review and E2E QA. Remote experience with
+                            teams in Portugal, Poland and Belarus.
+                        </p>
+                        <ul class="key-highlights mt-8 grid gap-3 sm:grid-cols-2">
+                            <li class="highlight-item card flex items-start gap-3.5 p-4 text-[0.93rem] leading-normal">
+                                <i class="fas fa-cubes grid h-8 w-8 flex-none place-items-center rounded-lg bg-teal-600/10 text-sm text-teal-700 dark:bg-teal-400/10 dark:text-teal-400"></i>
+                                <span>Modular architecture — isolated business domains</span>
+                            </li>
+                            <li class="highlight-item card flex items-start gap-3.5 p-4 text-[0.93rem] leading-normal">
+                                <i class="fas fa-credit-card grid h-8 w-8 flex-none place-items-center rounded-lg bg-teal-600/10 text-sm text-teal-700 dark:bg-teal-400/10 dark:text-teal-400"></i>
+                                <span>Payments &amp; subscriptions — checkout, recurring billing, webhooks, reconciliation</span>
+                            </li>
+                            <li class="highlight-item card flex items-start gap-3.5 p-4 text-[0.93rem] leading-normal">
+                                <i class="fas fa-brain grid h-8 w-8 flex-none place-items-center rounded-lg bg-teal-600/10 text-sm text-teal-700 dark:bg-teal-400/10 dark:text-teal-400"></i>
+                                <span>AI in production — LLM features behind queues, in-browser ML with MediaPipe</span>
+                            </li>
+                            <li class="highlight-item card flex items-start gap-3.5 p-4 text-[0.93rem] leading-normal">
+                                <i class="fas fa-robot grid h-8 w-8 flex-none place-items-center rounded-lg bg-teal-600/10 text-sm text-teal-700 dark:bg-teal-400/10 dark:text-teal-400"></i>
+                                <span>AI-driven development &amp; testing — own Claude Code skills for test design, review and E2E QA</span>
+                            </li>
+                            <li class="highlight-item card flex items-start gap-3.5 p-4 text-[0.93rem] leading-normal">
+                                <i class="fas fa-chart-line grid h-8 w-8 flex-none place-items-center rounded-lg bg-teal-600/10 text-sm text-teal-700 dark:bg-teal-400/10 dark:text-teal-400"></i>
+                                <span>Conversion analytics &amp; A/B testing — GTM, Amplitude, GrowthBook</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="border-b border-zinc-200 py-16 dark:border-zinc-800 md:py-24">
+                <div class="mx-auto grid max-w-6xl gap-8 px-6 lg:grid-cols-[260px_1fr] lg:gap-12">
+                    <header class="self-start lg:sticky lg:top-24">
+                        <span class="section-index">02</span>
+                        <h2 class="section-title">Experience</h2>
+                        <p class="section-subtitle">4+ years shipping production products for teams across Europe</p>
+                    </header>
+                    <div class="experience-timeline flex flex-col divide-y divide-zinc-200 dark:divide-zinc-800">
+                        <article class="timeline-item grid gap-2 py-8 first:pt-0 md:grid-cols-[170px_1fr] md:gap-7 md:py-9">
+                            <div>
+                                <p class="font-mono text-xs leading-relaxed text-zinc-600 dark:text-zinc-400">January 2025 – Present</p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold leading-snug tracking-tight">Full-Stack Developer</h3>
+                                <h4 class="mt-1 font-medium text-teal-700 dark:text-teal-400">Applojd Media LLC (Belarus)</h4>
+                                <ul class="bullet-list mt-4 flex flex-col gap-2.5">
+                                    <li>Own end-to-end delivery of AI-powered e-commerce and subscription web products running high-traffic marketing campaigns — backend API, single-page frontends and landing pages</li>
+                                    <li>Designed and built a <strong>modular monolith with explicit domain boundaries</strong>, isolating business domains so a change in one cannot regress the others</li>
+                                    <li>Built payment and subscription flows across <strong>multiple payment providers</strong> — one-off checkout, recurring billing, upsells and webhook-driven state reconciliation</li>
+                                    <li>Moved AI generation, document rendering and billing side effects off the request path into <strong>Redis queues with Laravel Horizon</strong>, with failure recovery, so checkout stays responsive under traffic spikes</li>
+                                    <li>Built LLM-powered product features, including a conversational assistant with per-user rate limiting, and in-browser real-time computer vision with <strong>MediaPipe</strong> — client-side machine learning, no video leaving the device</li>
+                                    <li>Built conversion funnels with product analytics and <strong>A/B testing</strong>, so funnel changes ship on data rather than opinion</li>
+                                    <li>Run production infrastructure: Docker multi-stage builds, Traefik and Nginx reverse proxy with SSL, CI/CD pipelines, error monitoring and alerting, plus step-by-step runbooks for risky production changes</li>
+                                    <li>Own the test suite at every level: <strong>PHPUnit</strong> unit and feature tests for API endpoints, queued jobs and payment webhooks, including race-condition and idempotency cases; <strong>Vitest</strong> on the frontend; <strong>Playwright E2E</strong> suites that walk each funnel from landing page to payment and assert analytics events. Quality gates: static analysis (Larastan, vue-tsc), pre-commit hooks, code review for the team</li>
+                                    <li><strong>Write my own Claude Code skills</strong> for the team — test design with exhaustive case matrices, architecture review against the closest existing analogue in the codebase, and E2E QA reporting — and run plan → implement → review → test agent workflows on top of project-level rules</li>
+                                </ul>
+                                <p class="mt-5 border-t border-dashed border-zinc-200 pt-4 font-mono text-xs leading-relaxed text-zinc-600 dark:border-zinc-800 dark:text-zinc-400"><strong>Stack:</strong> Vue 3, Nuxt 4, Laravel 12, PHP 8.3, TypeScript, MySQL, Redis, Horizon, Docker, Traefik, Nginx, CI/CD, LLM integration</p>
+                            </div>
+                        </article>
+                        <article class="timeline-item grid gap-2 py-8 first:pt-0 md:grid-cols-[170px_1fr] md:gap-7 md:py-9">
+                            <div>
+                                <p class="font-mono text-xs leading-relaxed text-zinc-600 dark:text-zinc-400">January 2024 – November 2024 · Full-time, remote</p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold leading-snug tracking-tight">Full-Stack Developer</h3>
+                                <h4 class="mt-1 font-medium text-teal-700 dark:text-teal-400">SharpBit (Portugal)</h4>
+                                <ul class="bullet-list mt-4 flex flex-col gap-2.5">
+                                    <li>Built and maintained Vue.js + Laravel enterprise applications for internal operations and client-facing tools</li>
+                                    <li>Replaced a manual operational workflow with an automated tool — the founder credits it with saving the company "a huge amount of time and resources" (see testimonial below)</li>
+                                    <li>Owned features end-to-end: technical design, implementation, code review, production release</li>
+                                    <li>Improved application responsiveness through MySQL query optimisation, caching and frontend performance work</li>
+                                </ul>
+                                <p class="mt-5 border-t border-dashed border-zinc-200 pt-4 font-mono text-xs leading-relaxed text-zinc-600 dark:border-zinc-800 dark:text-zinc-400"><strong>Stack:</strong> Vue.js, Laravel, TypeScript, MySQL, REST APIs, Git</p>
+                            </div>
+                        </article>
+                        <article class="timeline-item grid gap-2 py-8 first:pt-0 md:grid-cols-[170px_1fr] md:gap-7 md:py-9">
+                            <div>
+                                <p class="font-mono text-xs leading-relaxed text-zinc-600 dark:text-zinc-400">March 2023 – August 2024 · Contract (part-time, parallel to the SharpBit role from January 2024)</p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold leading-snug tracking-tight">Full-Stack Developer</h3>
+                                <h4 class="mt-1 font-medium text-teal-700 dark:text-teal-400">WeExpert (Poland)</h4>
+                                <ul class="bullet-list mt-4 flex flex-col gap-2.5">
+                                    <li>Built React + Node.js (TypeScript) applications for Polish and European clients</li>
+                                    <li>Designed PostgreSQL schemas and GraphQL/REST API layers with typed contracts and migration workflows</li>
+                                    <li>Implemented auth, validation and error-handling patterns for production APIs, plus third-party service integrations</li>
+                                    <li>Worked fully async with remote stakeholders across time zones, delivering sprint-based milestones</li>
+                                </ul>
+                                <p class="mt-5 border-t border-dashed border-zinc-200 pt-4 font-mono text-xs leading-relaxed text-zinc-600 dark:border-zinc-800 dark:text-zinc-400"><strong>Stack:</strong> React, Node.js, TypeScript, PostgreSQL, GraphQL, REST APIs</p>
+                            </div>
+                        </article>
+                        <article class="timeline-item grid gap-2 py-8 first:pt-0 md:grid-cols-[170px_1fr] md:gap-7 md:py-9">
+                            <div>
+                                <p class="font-mono text-xs leading-relaxed text-zinc-600 dark:text-zinc-400">June 2022 – March 2023</p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold leading-snug tracking-tight">React / React Native Developer</h3>
+                                <h4 class="mt-1 font-medium text-teal-700 dark:text-teal-400">SL Max (Belarus)</h4>
+                                <ul class="bullet-list mt-4 flex flex-col gap-2.5">
+                                    <li>Built cross-platform React Native apps for GPS/GLONASS fleet monitoring, <strong>published on Google Play</strong> for Android and iOS</li>
+                                    <li>Implemented real-time location tracking and map visualisation over continuous telemetry streams from vehicle trackers</li>
+                                    <li>Handled unreliable field connectivity with offline-friendly data caching and sync for transport operators</li>
+                                    <li>Worked directly with hardware/IoT engineers to align mobile UX with real field use</li>
+                                </ul>
+                                <p class="mt-5 border-t border-dashed border-zinc-200 pt-4 font-mono text-xs leading-relaxed text-zinc-600 dark:border-zinc-800 dark:text-zinc-400"><strong>Stack:</strong> React Native, React, JavaScript, real-time data, mobile UI/UX</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="border-b border-zinc-200 py-16 dark:border-zinc-800 md:py-24">
+                <div class="mx-auto max-w-6xl px-6">
+                    <header class="mb-12 max-w-2xl">
+                        <span class="section-index">03</span>
+                        <h2 class="section-title">Technical Expertise</h2>
+                        <p class="section-subtitle">What I use in production, and what it has actually shipped</p>
+                    </header>
+
+                    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                        <div class="skill-category card flex flex-col p-6 transition hover:border-teal-600/40 hover:shadow-lg hover:shadow-zinc-900/5 dark:hover:border-teal-400/30">
+                            <h3 class="mb-4 flex items-center gap-2.5 font-semibold"><i class="fas fa-cubes w-4 text-center text-sm text-teal-700 dark:text-teal-400"></i>Architecture</h3>
+                            <div class="skill-chips mb-5 flex flex-wrap gap-1.5">
+                                <span class="skill-chip chip">Modular monolith</span>
+                                <span class="skill-chip chip">Domain boundaries</span>
+                                <span class="skill-chip chip">Message queues</span>
+                                <span class="skill-chip chip">Event-driven</span>
+                                <span class="skill-chip chip">Async processing</span>
+                            </div>
+                            <p class="skill-proof mt-auto border-t border-zinc-200 pt-4 text-sm leading-relaxed text-zinc-600 dark:border-zinc-800 dark:text-zinc-400">Business domains isolated in production, so one can change without regressing the others</p>
+                        </div>
+                        <div class="skill-category card flex flex-col p-6 transition hover:border-teal-600/40 hover:shadow-lg hover:shadow-zinc-900/5 dark:hover:border-teal-400/30">
+                            <h3 class="mb-4 flex items-center gap-2.5 font-semibold"><i class="fas fa-credit-card w-4 text-center text-sm text-teal-700 dark:text-teal-400"></i>Payments &amp; E-commerce</h3>
+                            <div class="skill-chips mb-5 flex flex-wrap gap-1.5">
+                                <span class="skill-chip chip">Stripe</span>
+                                <span class="skill-chip chip">PayPal</span>
+                                <span class="skill-chip chip">Provider integration</span>
+                                <span class="skill-chip chip">Subscriptions</span>
+                                <span class="skill-chip chip">Webhooks</span>
+                            </div>
+                            <p class="skill-proof mt-auto border-t border-zinc-200 pt-4 text-sm leading-relaxed text-zinc-600 dark:border-zinc-800 dark:text-zinc-400">Checkout, recurring billing, upsells and webhook-driven reconciliation across multiple providers in production</p>
+                        </div>
+                        <div class="skill-category card flex flex-col p-6 transition hover:border-teal-600/40 hover:shadow-lg hover:shadow-zinc-900/5 dark:hover:border-teal-400/30">
+                            <h3 class="mb-4 flex items-center gap-2.5 font-semibold"><i class="fas fa-server w-4 text-center text-sm text-teal-700 dark:text-teal-400"></i>Backend</h3>
+                            <div class="skill-chips mb-5 flex flex-wrap gap-1.5">
+                                <span class="skill-chip chip">Laravel 10–12</span>
+                                <span class="skill-chip chip">PHP 8.3</span>
+                                <span class="skill-chip chip">REST APIs</span>
+                                <span class="skill-chip chip">Eloquent</span>
+                                <span class="skill-chip chip">Queues &amp; events</span>
+                                <span class="skill-chip chip">Horizon</span>
+                                <span class="skill-chip chip">Inertia.js</span>
+                                <span class="skill-chip chip">Auth &amp; rate limiting</span>
+                            </div>
+                            <p class="skill-proof mt-auto border-t border-zinc-200 pt-4 text-sm leading-relaxed text-zinc-600 dark:border-zinc-800 dark:text-zinc-400">Billing, LLM calls, image generation and document rendering moved off the request path into Redis queues, with failure recovery</p>
+                        </div>
+                        <div class="skill-category card flex flex-col p-6 transition hover:border-teal-600/40 hover:shadow-lg hover:shadow-zinc-900/5 dark:hover:border-teal-400/30">
+                            <h3 class="mb-4 flex items-center gap-2.5 font-semibold"><i class="fas fa-palette w-4 text-center text-sm text-teal-700 dark:text-teal-400"></i>Frontend</h3>
+                            <div class="skill-chips mb-5 flex flex-wrap gap-1.5">
+                                <span class="skill-chip chip">Vue 3</span>
+                                <span class="skill-chip chip">Nuxt 3/4</span>
+                                <span class="skill-chip chip">TypeScript</span>
+                                <span class="skill-chip chip">Tailwind CSS</span>
+                                <span class="skill-chip chip">Pinia</span>
+                                <span class="skill-chip chip">Vite</span>
+                            </div>
+                            <p class="skill-proof mt-auto border-t border-zinc-200 pt-4 text-sm leading-relaxed text-zinc-600 dark:border-zinc-800 dark:text-zinc-400">Single-page apps and conversion funnels running high-traffic marketing campaigns</p>
+                        </div>
+                        <div class="skill-category card flex flex-col p-6 transition hover:border-teal-600/40 hover:shadow-lg hover:shadow-zinc-900/5 dark:hover:border-teal-400/30">
+                            <h3 class="mb-4 flex items-center gap-2.5 font-semibold"><i class="fas fa-brain w-4 text-center text-sm text-teal-700 dark:text-teal-400"></i>AI in production</h3>
+                            <div class="skill-chips mb-5 flex flex-wrap gap-1.5">
+                                <span class="skill-chip chip">LLM integration</span>
+                                <span class="skill-chip chip">OpenAI API</span>
+                                <span class="skill-chip chip">AI chat</span>
+                                <span class="skill-chip chip">Structured prompting</span>
+                                <span class="skill-chip chip">Embeddings</span>
+                                <span class="skill-chip chip">Async pipelines</span>
+                                <span class="skill-chip chip">MediaPipe</span>
+                            </div>
+                            <p class="skill-proof mt-auto border-t border-zinc-200 pt-4 text-sm leading-relaxed text-zinc-600 dark:border-zinc-800 dark:text-zinc-400">AI generation runs behind queues with retries and failure recovery; conversational features with per-user rate limits</p>
+                        </div>
+                        <div class="skill-category card flex flex-col p-6 transition hover:border-teal-600/40 hover:shadow-lg hover:shadow-zinc-900/5 dark:hover:border-teal-400/30">
+                            <h3 class="mb-4 flex items-center gap-2.5 font-semibold"><i class="fas fa-terminal w-4 text-center text-sm text-teal-700 dark:text-teal-400"></i>AI-assisted engineering</h3>
+                            <div class="skill-chips mb-5 flex flex-wrap gap-1.5">
+                                <span class="skill-chip chip">Claude Code</span>
+                                <span class="skill-chip chip">Cursor</span>
+                                <span class="skill-chip chip">Claude Design</span>
+                                <span class="skill-chip chip">Coding agents &amp; subagents</span>
+                                <span class="skill-chip chip">Custom skills</span>
+                                <span class="skill-chip chip">AI test design</span>
+                                <span class="skill-chip chip">AI code review</span>
+                                <span class="skill-chip chip">Agent rules</span>
+                            </div>
+                            <p class="skill-proof mt-auto border-t border-zinc-200 pt-4 text-sm leading-relaxed text-zinc-600 dark:border-zinc-800 dark:text-zinc-400">I write my own skills: test design with exhaustive case matrices, architecture review against existing code, and E2E QA that runs funnel suites and reports findings; UI prototyping with Claude Design</p>
+                        </div>
+                        <div class="skill-category card flex flex-col p-6 transition hover:border-teal-600/40 hover:shadow-lg hover:shadow-zinc-900/5 dark:hover:border-teal-400/30">
+                            <h3 class="mb-4 flex items-center gap-2.5 font-semibold"><i class="fas fa-gears w-4 text-center text-sm text-teal-700 dark:text-teal-400"></i>Infrastructure &amp; delivery</h3>
+                            <div class="skill-chips mb-5 flex flex-wrap gap-1.5">
+                                <span class="skill-chip chip">Docker</span>
+                                <span class="skill-chip chip">Traefik</span>
+                                <span class="skill-chip chip">Nginx</span>
+                                <span class="skill-chip chip">GitHub Actions</span>
+                                <span class="skill-chip chip">Bitbucket Pipelines</span>
+                                <span class="skill-chip chip">Redis</span>
+                                <span class="skill-chip chip">AWS (EC2, S3)</span>
+                                <span class="skill-chip chip">Error monitoring</span>
+                            </div>
+                            <p class="skill-proof mt-auto border-t border-zinc-200 pt-4 text-sm leading-relaxed text-zinc-600 dark:border-zinc-800 dark:text-zinc-400">Multi-stage builds, Traefik in front of several services, deployment pipelines and runbooks for risky changes — set up and maintained by me; EC2 hosting with S3 storage</p>
+                        </div>
+                        <div class="skill-category card flex flex-col p-6 transition hover:border-teal-600/40 hover:shadow-lg hover:shadow-zinc-900/5 dark:hover:border-teal-400/30">
+                            <h3 class="mb-4 flex items-center gap-2.5 font-semibold"><i class="fas fa-database w-4 text-center text-sm text-teal-700 dark:text-teal-400"></i>Data</h3>
+                            <div class="skill-chips mb-5 flex flex-wrap gap-1.5">
+                                <span class="skill-chip chip">MySQL</span>
+                                <span class="skill-chip chip">Redis</span>
+                                <span class="skill-chip chip">Schema design</span>
+                                <span class="skill-chip chip">Indexing</span>
+                                <span class="skill-chip chip">Query optimisation</span>
+                            </div>
+                            <p class="skill-proof mt-auto border-t border-zinc-200 pt-4 text-sm leading-relaxed text-zinc-600 dark:border-zinc-800 dark:text-zinc-400">Schemas and indexes for the payment and subscription domains; caching and queue storage on Redis</p>
+                        </div>
+                        <div class="skill-category card flex flex-col p-6 transition hover:border-teal-600/40 hover:shadow-lg hover:shadow-zinc-900/5 dark:hover:border-teal-400/30">
+                            <h3 class="mb-4 flex items-center gap-2.5 font-semibold"><i class="fas fa-chart-line w-4 text-center text-sm text-teal-700 dark:text-teal-400"></i>Analytics &amp; experimentation</h3>
+                            <div class="skill-chips mb-5 flex flex-wrap gap-1.5">
+                                <span class="skill-chip chip">GTM</span>
+                                <span class="skill-chip chip">Amplitude</span>
+                                <span class="skill-chip chip">Meta Pixel</span>
+                                <span class="skill-chip chip">GrowthBook</span>
+                                <span class="skill-chip chip">BigQuery</span>
+                            </div>
+                            <p class="skill-proof mt-auto border-t border-zinc-200 pt-4 text-sm leading-relaxed text-zinc-600 dark:border-zinc-800 dark:text-zinc-400">Funnels instrumented end-to-end; A/B tests decide what ships instead of opinion</p>
+                        </div>
+                        <div class="skill-category card flex flex-col p-6 transition hover:border-teal-600/40 hover:shadow-lg hover:shadow-zinc-900/5 dark:hover:border-teal-400/30">
+                            <h3 class="mb-4 flex items-center gap-2.5 font-semibold"><i class="fas fa-vial w-4 text-center text-sm text-teal-700 dark:text-teal-400"></i>Testing</h3>
+                            <div class="skill-chips mb-5 flex flex-wrap gap-1.5">
+                                <span class="skill-chip chip">PHPUnit</span>
+                                <span class="skill-chip chip">Vitest</span>
+                                <span class="skill-chip chip">Playwright (E2E)</span>
+                                <span class="skill-chip chip">Unit &amp; feature tests</span>
+                                <span class="skill-chip chip">Race &amp; idempotency tests</span>
+                                <span class="skill-chip chip">Larastan</span>
+                                <span class="skill-chip chip">Pint / ESLint</span>
+                                <span class="skill-chip chip">Code review</span>
+                            </div>
+                            <p class="skill-proof mt-auto border-t border-zinc-200 pt-4 text-sm leading-relaxed text-zinc-600 dark:border-zinc-800 dark:text-zinc-400">Unit, feature and E2E levels on payments, subscriptions and AI flows; E2E suites walk every funnel to payment and assert analytics events at each step</p>
+                        </div>
+                        <div class="skill-category flex flex-col rounded-2xl border border-dashed border-zinc-300 p-6 dark:border-zinc-700">
+                            <h3 class="mb-4 flex items-center gap-2.5 font-semibold"><i class="fas fa-layer-group w-4 text-center text-sm text-teal-700 dark:text-teal-400"></i>Also worked with</h3>
+                            <div class="skill-chips mb-5 flex flex-wrap gap-1.5">
+                                <span class="skill-chip chip">React</span>
+                                <span class="skill-chip chip">React Native</span>
+                                <span class="skill-chip chip">Node.js (Express)</span>
+                                <span class="skill-chip chip">GraphQL</span>
+                                <span class="skill-chip chip">PostgreSQL</span>
+                                <span class="skill-chip chip">Temporal</span>
+                                <span class="skill-chip chip">RabbitMQ</span>
+                                <span class="skill-chip chip">PWA</span>
+                            </div>
+                            <p class="skill-proof mt-auto border-t border-zinc-200 pt-4 text-sm leading-relaxed text-zinc-600 dark:border-zinc-800 dark:text-zinc-400">Used on past projects or alongside the core stack — happy to work in, not what I'd claim depth in</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="border-b border-zinc-200 py-16 dark:border-zinc-800 md:py-24">
+                <div class="mx-auto max-w-6xl px-6">
+                    <header class="mb-12 max-w-2xl">
+                        <span class="section-index">04</span>
+                        <h2 class="section-title">Featured Projects</h2>
+                        <p class="section-subtitle">Production work — what the problem was and how it was solved</p>
+                    </header>
+
+                    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                        <article class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-zinc-900/5">
+                            <div class="aspect-[16/10] overflow-hidden border-b border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-800">
+                                <img src="assets/motiohead.png" alt="Motiohead" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+                            </div>
+                            <div class="flex flex-1 flex-col p-6">
+                                <h3 class="mb-2.5 text-lg font-bold tracking-tight">Motiohead</h3>
+                                <p class="mb-5 text-[0.92rem] leading-relaxed text-zinc-600 dark:text-zinc-400">
+                                    Sole full-stack developer. AI-assisted content generation plus an interactive
+                                    experience driven by real-time gesture recognition — MediaPipe runs client-side, so
+                                    the interaction stays responsive without streaming video to a server.
+                                </p>
+                                <div class="flex flex-wrap gap-1.5">
+                                    <span class="chip">Vue.js</span>
+                                    <span class="chip">Laravel</span>
+                                    <span class="chip">LLM Integration</span>
+                                    <span class="chip">MediaPipe</span>
+                                </div>
+                                <a class="mt-auto inline-flex items-center gap-2 pt-5 text-sm font-semibold text-teal-700 hover:text-teal-900 dark:text-teal-400 dark:hover:text-teal-300" href="https://www.motiohead.com/" target="_blank" rel="noopener">
+                                    Live site <i class="fas fa-arrow-up-right-from-square text-xs"></i>
                                 </a>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="hero-image">
-                            <img src="./assets/avatar.png" alt="Artem Puzik" class="profile-image" />
-                        </div>
+                        </article>
+
+                        <article class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-zinc-900/5">
+                            <div class="aspect-[16/10] overflow-hidden border-b border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-800">
+                                <img src="assets/storyman.png" alt="Storyman.ai" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+                            </div>
+                            <div class="flex flex-1 flex-col p-6">
+                                <h3 class="mb-2.5 text-lg font-bold tracking-tight">Storyman.ai</h3>
+                                <p class="mb-5 text-[0.92rem] leading-relaxed text-zinc-600 dark:text-zinc-400">
+                                    Visual storytelling product built on a structured narrative framework. Orchestrated
+                                    multiple AI services for text and image generation into a single authoring flow,
+                                    with real-time updates and collaborative editing.
+                                </p>
+                                <div class="flex flex-wrap gap-1.5">
+                                    <span class="chip">React</span>
+                                    <span class="chip">Node.js</span>
+                                    <span class="chip">LLM Integration</span>
+                                    <span class="chip">TypeScript</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="group card flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-zinc-900/5">
+                            <div class="aspect-[16/10] overflow-hidden border-b border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-800">
+                                <img src="assets/geotek.webp" alt="GeoTek Mobile" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+                            </div>
+                            <div class="flex flex-1 flex-col p-6">
+                                <h3 class="mb-2.5 text-lg font-bold tracking-tight">GeoTek Mobile</h3>
+                                <p class="mb-5 text-[0.92rem] leading-relaxed text-zinc-600 dark:text-zinc-400">
+                                    Cross-platform app for transport operators tracking vehicle fleets. Real-time
+                                    positions on interactive maps from continuous tracker telemetry, with offline caching
+                                    so crews keep working through connectivity gaps in the field.
+                                </p>
+                                <div class="flex flex-wrap gap-1.5">
+                                    <span class="chip">React Native</span>
+                                    <span class="chip">GPS Tracking</span>
+                                    <span class="chip">Real-time Data</span>
+                                    <span class="chip">Mobile UI/UX</span>
+                                </div>
+                                <a class="mt-auto inline-flex items-center gap-2 pt-5 text-sm font-semibold text-teal-700 hover:text-teal-900 dark:text-teal-400 dark:hover:text-teal-300" href="https://play.google.com/store/apps/details?id=com.geotek" target="_blank" rel="noopener">
+                                    Google Play <i class="fas fa-arrow-up-right-from-square text-xs"></i>
+                                </a>
+                            </div>
+                        </article>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- About Section -->
-        <section id="about" class="section">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <div class="section-header">
-                            <h2 class="section-title">About Me</h2>
-                            <p class="section-subtitle">
-                                Full-stack developer working on high-traffic e-commerce and subscription products —
-                                modular architecture, payment systems and AI in production.
-                            </p>
-                        </div>
-                        <div class="about-content">
-                            <p>
-                                4+ years shipping production web applications end-to-end, from Vue 3/Nuxt frontends to
-                                Laravel/TypeScript backends. I currently build payment, subscription and AI features for
-                                high-traffic e-commerce products. I also run the
-                                infrastructure behind them — Docker, Traefik, Nginx, CI/CD, Redis queues — and
-                                use AI agents deeply in development and testing
-                                and write my own skills for test design, code review and E2E QA. Remote experience with teams in Portugal,
-                                Poland and Belarus.
-                            </p>
-                            <div class="key-highlights">
-                                <div class="highlight-item">
-                                    <i class="fas fa-cubes text-primary"></i>
-                                    <span>Modular architecture — isolated business domains</span>
-                                </div>
-                                <div class="highlight-item">
-                                    <i class="fas fa-credit-card text-primary"></i>
-                                    <span>Payments & subscriptions — checkout, recurring billing, webhooks, reconciliation</span>
-                                </div>
-                                <div class="highlight-item">
-                                    <i class="fas fa-brain text-primary"></i>
-                                    <span>AI in production — LLM features behind queues, in-browser ML with MediaPipe</span>
-                                </div>
-                                <div class="highlight-item">
-                                    <i class="fas fa-robot text-primary"></i>
-                                    <span>AI-driven development &amp; testing — own Claude Code skills for test design, review and E2E QA</span>
-                                </div>
-                                <div class="highlight-item">
-                                    <i class="fas fa-chart-line text-primary"></i>
-                                    <span>Conversion analytics & A/B testing — GTM, Amplitude, GrowthBook</span>
-                                </div>
-                            </div>
-                        </div>
+            <!-- Testimonials Section -->
+            <section id="references" class="border-b border-zinc-200 py-16 dark:border-zinc-800 md:py-24">
+                <div class="mx-auto max-w-6xl px-6">
+                    <header class="mb-12 max-w-2xl">
+                        <span class="section-index">05</span>
+                        <h2 class="section-title">References</h2>
+                        <p class="section-subtitle">What founders, managers and clients say about working with me</p>
+                    </header>
+
+                    <div class="gap-5 [column-width:300px] md:columns-3">
+                        <figure class="card mb-5 break-inside-avoid p-6">
+                            <blockquote class="leading-relaxed">
+                                "Artem's talent, knowledge, and communication were beyond all expectations. A truly
+                                sophisticated TOP level professional. I was amazed by the result of his work."
+                            </blockquote>
+                            <figcaption class="mt-5 flex items-center gap-3 border-t border-zinc-200 pt-4 dark:border-zinc-800">
+                                <span class="grid h-9 w-9 flex-none place-items-center rounded-full bg-teal-600/10 font-mono text-xs font-medium text-teal-700 dark:bg-teal-400/10 dark:text-teal-400" aria-hidden="true">NG</span>
+                                <span class="flex flex-col leading-snug">
+                                    <a href="https://www.linkedin.com/in/nadya-gorodetskaya/" target="_blank" rel="noopener" class="text-[0.93rem] font-semibold hover:text-teal-700 dark:hover:text-teal-400">Nadya Gorodetskaya</a>
+                                    <span class="text-[0.82rem] text-zinc-600 dark:text-zinc-400">Founder/Creative Director at MOTIOHEAD</span>
+                                </span>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="card mb-5 break-inside-avoid p-6">
+                            <blockquote class="leading-relaxed">
+                                "Artem brings great energy and a 'can do' attitude. He was instrumental in creating and
+                                implementing new software that saves us a huge amount of time and resources. Highly
+                                recommended."
+                            </blockquote>
+                            <figcaption class="mt-5 flex items-center gap-3 border-t border-zinc-200 pt-4 dark:border-zinc-800">
+                                <span class="grid h-9 w-9 flex-none place-items-center rounded-full bg-teal-600/10 font-mono text-xs font-medium text-teal-700 dark:bg-teal-400/10 dark:text-teal-400" aria-hidden="true">SR</span>
+                                <span class="flex flex-col leading-snug">
+                                    <a href="https://www.linkedin.com/in/sergey-ryabenko/" target="_blank" rel="noopener" class="text-[0.93rem] font-semibold hover:text-teal-700 dark:hover:text-teal-400">Sergey Ryabenko</a>
+                                    <span class="text-[0.82rem] text-zinc-600 dark:text-zinc-400">Founder at SharpBit</span>
+                                </span>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="card mb-5 break-inside-avoid p-6">
+                            <blockquote class="leading-relaxed">
+                                "Artem has been mentoring students in the JavaScript/Front-end course for 6 months. He
+                                effectively guided students through complex concepts and provided valuable insights
+                                that significantly enhanced their learning experience."
+                            </blockquote>
+                            <figcaption class="mt-5 flex items-center gap-3 border-t border-zinc-200 pt-4 dark:border-zinc-800">
+                                <span class="grid h-9 w-9 flex-none place-items-center rounded-full bg-teal-600/10 font-mono text-xs font-medium text-teal-700 dark:bg-teal-400/10 dark:text-teal-400" aria-hidden="true">DV</span>
+                                <span class="flex flex-col leading-snug">
+                                    <a href="https://www.linkedin.com/in/dzmitry-varabei-88730b21/" target="_blank" rel="noopener" class="text-[0.93rem] font-semibold hover:text-teal-700 dark:hover:text-teal-400">Dzmitry Varabei</a>
+                                    <span class="text-[0.82rem] text-zinc-600 dark:text-zinc-400">Senior Program Manager at EPAM Systems</span>
+                                </span>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="card mb-5 break-inside-avoid p-6">
+                            <blockquote class="leading-relaxed">
+                                "Artem is a highly skilled developer with excellent problem-solving abilities. He
+                                delivered our mobile application on time and exceeded our expectations with his
+                                attention to detail."
+                            </blockquote>
+                            <figcaption class="mt-5 flex items-center gap-3 border-t border-zinc-200 pt-4 dark:border-zinc-800">
+                                <span class="grid h-9 w-9 flex-none place-items-center rounded-full bg-teal-600/10 font-mono text-xs font-medium text-teal-700 dark:bg-teal-400/10 dark:text-teal-400" aria-hidden="true">VK</span>
+                                <span class="flex flex-col leading-snug">
+                                    <a href="https://www.linkedin.com/in/kozinin/" target="_blank" rel="noopener" class="text-[0.93rem] font-semibold hover:text-teal-700 dark:hover:text-teal-400">Viktor Kozinin</a>
+                                    <span class="text-[0.82rem] text-zinc-600 dark:text-zinc-400">CEO at SL Max</span>
+                                </span>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="card mb-5 break-inside-avoid p-6">
+                            <blockquote class="leading-relaxed">
+                                "Artem was great to work with. He delivered on-time for an urgent job and was in
+                                constant contact throughout the project."
+                            </blockquote>
+                            <figcaption class="mt-5 flex items-center gap-3 border-t border-zinc-200 pt-4 dark:border-zinc-800">
+                                <span class="grid h-9 w-9 flex-none place-items-center rounded-full bg-teal-600/10 font-mono text-xs font-medium text-teal-700 dark:bg-teal-400/10 dark:text-teal-400" aria-hidden="true">RM</span>
+                                <span class="flex flex-col leading-snug">
+                                    <a href="https://www.linkedin.com/in/melikramin/" target="_blank" rel="noopener" class="text-[0.93rem] font-semibold hover:text-teal-700 dark:hover:text-teal-400">Ramin Malikov</a>
+                                    <span class="text-[0.82rem] text-zinc-600 dark:text-zinc-400">Co-Founder &amp; IoT Engineer at VIOTYS LLC</span>
+                                </span>
+                            </figcaption>
+                        </figure>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="section bg-light">
-            <div class="container">
-                <div class="section-header text-center">
-                    <h2 class="section-title">Work Experience</h2>
-                    <p class="section-subtitle">4+ years shipping production products for teams across Europe</p>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-9">
-                        <div class="experience-timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-content">
-                                    <h4>Applojd Media LLC (Belarus)</h4>
-                                    <p class="timeline-period">January 2025 – Present</p>
-                                    <p class="timeline-role">Full-Stack Developer</p>
-                                    <ul class="timeline-achievements">
-                                        <li>Own end-to-end delivery of AI-powered e-commerce and subscription web products running high-traffic marketing campaigns — backend API, single-page frontends and landing pages</li>
-                                        <li>Designed and built a <strong>modular monolith with explicit domain boundaries</strong>, isolating business domains so a change in one cannot regress the others</li>
-                                        <li>Built payment and subscription flows across <strong>multiple payment providers</strong> — one-off checkout, recurring billing, upsells and webhook-driven state reconciliation</li>
-                                        <li>Moved AI generation, document rendering and billing side effects off the request path into <strong>Redis queues with Laravel Horizon</strong>, with failure recovery, so checkout stays responsive under traffic spikes</li>
-                                        <li>Built LLM-powered product features, including a conversational assistant with per-user rate limiting, and in-browser real-time computer vision with <strong>MediaPipe</strong> — client-side machine learning, no video leaving the device</li>
-                                        <li>Built conversion funnels with product analytics and <strong>A/B testing</strong>, so funnel changes ship on data rather than opinion</li>
-                                        <li>Run production infrastructure: Docker multi-stage builds, Traefik and Nginx reverse proxy with SSL, CI/CD pipelines, error monitoring and alerting, plus step-by-step runbooks for risky production changes</li>
-                                        <li>Own the test suite at every level: <strong>PHPUnit</strong> unit and feature tests for API endpoints, queued jobs and payment webhooks, including race-condition and idempotency cases; <strong>Vitest</strong> on the frontend; <strong>Playwright E2E</strong> suites that walk each funnel from landing page to payment and assert analytics events. Quality gates: static analysis (Larastan, vue-tsc), pre-commit hooks, code review for the team</li>
-                                        <li><strong>Write my own Claude Code skills</strong> for the team — test design with exhaustive case matrices, architecture review against the closest existing analogue in the codebase, and E2E QA reporting — and run plan → implement → review → test agent workflows on top of project-level rules</li>
-                                    </ul>
-                                    <p class="mb-0"><strong>Stack:</strong> Vue 3, Nuxt 4, Laravel 12, PHP 8.3, TypeScript, MySQL, Redis, Horizon, Docker, Traefik, Nginx, CI/CD, LLM integration</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-content">
-                                    <h4>SharpBit (Portugal)</h4>
-                                    <p class="timeline-period">January 2024 – November 2024 · Full-time, remote</p>
-                                    <p class="timeline-role">Full-Stack Developer</p>
-                                    <ul class="timeline-achievements">
-                                        <li>Built and maintained Vue.js + Laravel enterprise applications for internal operations and client-facing tools</li>
-                                        <li>Replaced a manual operational workflow with an automated tool — the founder credits it with saving the company "a huge amount of time and resources" (see testimonial below)</li>
-                                        <li>Owned features end-to-end: technical design, implementation, code review, production release</li>
-                                        <li>Improved application responsiveness through MySQL query optimisation, caching and frontend performance work</li>
-                                    </ul>
-                                    <p class="mb-0"><strong>Stack:</strong> Vue.js, Laravel, TypeScript, MySQL, REST APIs, Git</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-content">
-                                    <h4>WeExpert (Poland)</h4>
-                                    <p class="timeline-period">March 2023 – August 2024 · Contract (part-time, parallel to the SharpBit role from January 2024)</p>
-                                    <p class="timeline-role">Full-Stack Developer</p>
-                                    <ul class="timeline-achievements">
-                                        <li>Built React + Node.js (TypeScript) applications for Polish and European clients</li>
-                                        <li>Designed PostgreSQL schemas and GraphQL/REST API layers with typed contracts and migration workflows</li>
-                                        <li>Implemented auth, validation and error-handling patterns for production APIs, plus third-party service integrations</li>
-                                        <li>Worked fully async with remote stakeholders across time zones, delivering sprint-based milestones</li>
-                                    </ul>
-                                    <p class="mb-0"><strong>Stack:</strong> React, Node.js, TypeScript, PostgreSQL, GraphQL, REST APIs</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-content">
-                                    <h4>SL Max (Belarus)</h4>
-                                    <p class="timeline-period">June 2022 – March 2023</p>
-                                    <p class="timeline-role">React / React Native Developer</p>
-                                    <ul class="timeline-achievements">
-                                        <li>Built cross-platform React Native apps for GPS/GLONASS fleet monitoring, <strong>published on Google Play</strong> for Android and iOS</li>
-                                        <li>Implemented real-time location tracking and map visualisation over continuous telemetry streams from vehicle trackers</li>
-                                        <li>Handled unreliable field connectivity with offline-friendly data caching and sync for transport operators</li>
-                                        <li>Worked directly with hardware/IoT engineers to align mobile UX with real field use</li>
-                                    </ul>
-                                    <p class="mb-0"><strong>Stack:</strong> React Native, React, JavaScript, real-time data, mobile UI/UX</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="section">
-            <div class="container">
-                <div class="section-header text-center">
-                    <h2 class="section-title">Technical Expertise</h2>
-                    <p class="section-subtitle">What I use in production, and what it has actually shipped</p>
-                </div>
-
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3 class="skill-category-title"><i class="fas fa-cubes me-2"></i>Architecture</h3>
-                        <div class="skill-chips">
-                            <span class="skill-chip">Modular monolith</span>
-                            <span class="skill-chip">Domain boundaries</span>
-                            <span class="skill-chip">Message queues</span>
-                            <span class="skill-chip">Event-driven</span>
-                            <span class="skill-chip">Async processing</span>
-                        </div>
-                        <p class="skill-proof">Business domains isolated in production, so one can change without regressing the others</p>
-                    </div>
-                    <div class="skill-category">
-                        <h3 class="skill-category-title"><i class="fas fa-credit-card me-2"></i>Payments &amp; E-commerce</h3>
-                        <div class="skill-chips">
-                            <span class="skill-chip">Stripe</span>
-                            <span class="skill-chip">PayPal</span>
-                            <span class="skill-chip">Provider integration</span>
-                            <span class="skill-chip">Subscriptions</span>
-                            <span class="skill-chip">Webhooks</span>
-                        </div>
-                        <p class="skill-proof">Checkout, recurring billing, upsells and webhook-driven reconciliation across multiple providers in production</p>
-                    </div>
-                    <div class="skill-category">
-                        <h3 class="skill-category-title"><i class="fas fa-server me-2"></i>Backend</h3>
-                        <div class="skill-chips">
-                            <span class="skill-chip">Laravel 10–12</span>
-                            <span class="skill-chip">PHP 8.3</span>
-                            <span class="skill-chip">REST APIs</span>
-                            <span class="skill-chip">Eloquent</span>
-                            <span class="skill-chip">Queues &amp; events</span>
-                            <span class="skill-chip">Horizon</span>
-                            <span class="skill-chip">Inertia.js</span>
-                            <span class="skill-chip">Auth &amp; rate limiting</span>
-                        </div>
-                        <p class="skill-proof">Billing, LLM calls, image generation and document rendering moved off the request path into Redis queues, with failure recovery</p>
-                    </div>
-                    <div class="skill-category">
-                        <h3 class="skill-category-title"><i class="fas fa-palette me-2"></i>Frontend</h3>
-                        <div class="skill-chips">
-                            <span class="skill-chip">Vue 3</span>
-                            <span class="skill-chip">Nuxt 3/4</span>
-                            <span class="skill-chip">TypeScript</span>
-                            <span class="skill-chip">Tailwind CSS</span>
-                            <span class="skill-chip">Pinia</span>
-                            <span class="skill-chip">Vite</span>
-                        </div>
-                        <p class="skill-proof">Single-page apps and conversion funnels running high-traffic marketing campaigns</p>
-                    </div>
-                    <div class="skill-category">
-                        <h3 class="skill-category-title"><i class="fas fa-brain me-2"></i>AI in production</h3>
-                        <div class="skill-chips">
-                            <span class="skill-chip">LLM integration</span>
-                            <span class="skill-chip">OpenAI API</span>
-                            <span class="skill-chip">AI chat</span>
-                            <span class="skill-chip">Structured prompting</span>
-                            <span class="skill-chip">Embeddings</span>
-                            <span class="skill-chip">Async pipelines</span>
-                            <span class="skill-chip">MediaPipe</span>
-                        </div>
-                        <p class="skill-proof">AI generation runs behind queues with retries and failure recovery; conversational features with per-user rate limits</p>
-                    </div>
-                    <div class="skill-category">
-                        <h3 class="skill-category-title"><i class="fas fa-terminal me-2"></i>AI-assisted engineering</h3>
-                        <div class="skill-chips">
-                            <span class="skill-chip">Claude Code</span>
-                            <span class="skill-chip">Cursor</span>
-                            <span class="skill-chip">Coding agents &amp; subagents</span>
-                            <span class="skill-chip">Custom skills</span>
-                            <span class="skill-chip">AI test design</span>
-                            <span class="skill-chip">AI code review</span>
-                            <span class="skill-chip">Agent rules</span>
-                        </div>
-                        <p class="skill-proof">I write my own skills: test design with exhaustive case matrices, architecture review against existing code, and E2E QA that runs funnel suites and reports findings</p>
-                    </div>
-                    <div class="skill-category">
-                        <h3 class="skill-category-title"><i class="fas fa-gears me-2"></i>Infrastructure &amp; delivery</h3>
-                        <div class="skill-chips">
-                            <span class="skill-chip">Docker</span>
-                            <span class="skill-chip">Traefik</span>
-                            <span class="skill-chip">Nginx</span>
-                            <span class="skill-chip">GitHub Actions</span>
-                            <span class="skill-chip">Bitbucket Pipelines</span>
-                            <span class="skill-chip">Redis</span>
-                            <span class="skill-chip">AWS (EC2, S3)</span>
-                            <span class="skill-chip">Error monitoring</span>
-                        </div>
-                        <p class="skill-proof">Multi-stage builds, Traefik in front of several services, deployment pipelines and runbooks for risky changes — set up and maintained by me; EC2 hosting with S3 storage</p>
-                    </div>
-                    <div class="skill-category">
-                        <h3 class="skill-category-title"><i class="fas fa-database me-2"></i>Data</h3>
-                        <div class="skill-chips">
-                            <span class="skill-chip">MySQL</span>
-                            <span class="skill-chip">Redis</span>
-                            <span class="skill-chip">Schema design</span>
-                            <span class="skill-chip">Indexing</span>
-                            <span class="skill-chip">Query optimisation</span>
-                        </div>
-                        <p class="skill-proof">Schemas and indexes for the payment and subscription domains; caching and queue storage on Redis</p>
-                    </div>
-                    <div class="skill-category">
-                        <h3 class="skill-category-title"><i class="fas fa-chart-line me-2"></i>Analytics &amp; experimentation</h3>
-                        <div class="skill-chips">
-                            <span class="skill-chip">GTM</span>
-                            <span class="skill-chip">Amplitude</span>
-                            <span class="skill-chip">Meta Pixel</span>
-                            <span class="skill-chip">GrowthBook</span>
-                            <span class="skill-chip">BigQuery</span>
-                        </div>
-                        <p class="skill-proof">Funnels instrumented end-to-end; A/B tests decide what ships instead of opinion</p>
-                    </div>
-                    <div class="skill-category">
-                        <h3 class="skill-category-title"><i class="fas fa-vial me-2"></i>Testing</h3>
-                        <div class="skill-chips">
-                            <span class="skill-chip">PHPUnit</span>
-                            <span class="skill-chip">Vitest</span>
-                            <span class="skill-chip">Playwright (E2E)</span>
-                            <span class="skill-chip">Unit &amp; feature tests</span>
-                            <span class="skill-chip">Race &amp; idempotency tests</span>
-                            <span class="skill-chip">Larastan</span>
-                            <span class="skill-chip">Pint / ESLint</span>
-                            <span class="skill-chip">Code review</span>
-                        </div>
-                        <p class="skill-proof">Unit, feature and E2E levels on payments, subscriptions and AI flows; E2E suites walk every funnel to payment and assert analytics events at each step</p>
-                    </div>
-                    <div class="skill-category skill-category-secondary">
-                        <h3 class="skill-category-title"><i class="fas fa-layer-group me-2"></i>Also worked with</h3>
-                        <div class="skill-chips">
-                            <span class="skill-chip">React</span>
-                            <span class="skill-chip">React Native</span>
-                            <span class="skill-chip">Node.js (Express)</span>
-                            <span class="skill-chip">GraphQL</span>
-                            <span class="skill-chip">PostgreSQL</span>
-                            <span class="skill-chip">Temporal</span>
-                            <span class="skill-chip">RabbitMQ</span>
-                            <span class="skill-chip">PWA</span>
-                        </div>
-                        <p class="skill-proof">Used on past projects or alongside the core stack — happy to work in, not what I'd claim depth in</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <div class="container">
-                <div class="section-header text-center">
-                    <h2 class="section-title">Featured Projects</h2>
-                    <p class="section-subtitle">Production work — what the problem was and how it was solved</p>
-                </div>
-
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/motiohead.png" alt="Motiohead" />
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://www.motiohead.com/" target="_blank" class="btn btn-light btn-sm">
-                                        <i class="fas fa-external-link-alt me-1"></i>Live Demo
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Motiohead</h3>
-                            <p class="project-description">
-                                Sole full-stack developer. AI-assisted content generation plus an interactive
-                                experience driven by real-time gesture recognition — MediaPipe runs client-side, so the
-                                interaction stays responsive without streaming video to a server.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Vue.js</span>
-                                <span class="tech-tag">Laravel</span>
-                                <span class="tech-tag">LLM Integration</span>
-                                <span class="tech-tag">MediaPipe</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/storyman.png" alt="Storyman.ai" />
-                            
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Storyman.ai</h3>
-                            <p class="project-description">
-                                Visual storytelling product built on a structured narrative framework. Orchestrated
-                                multiple AI services for text and image generation into a single authoring flow, with
-                                real-time updates and collaborative editing.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">LLM Integration</span>
-                                <span class="tech-tag">TypeScript</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/geotek.webp" alt="GeoTek Mobile" />
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a
-                                        href="https://play.google.com/store/apps/details?id=com.geotek"
-                                        target="_blank"
-                                        class="btn btn-light btn-sm"
-                                    >
-                                        <i class="fab fa-google-play me-1"></i>Play Store
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">GeoTek Mobile</h3>
-                            <p class="project-description">
-                                Cross-platform app for transport operators tracking vehicle fleets. Real-time positions
-                                on interactive maps from continuous tracker telemetry, with offline caching so crews keep
-                                working through connectivity gaps in the field.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">React Native</span>
-                                <span class="tech-tag">GPS Tracking</span>
-                                <span class="tech-tag">Real-time Data</span>
-                                <span class="tech-tag">Mobile UI/UX</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section class="section bg-light">
-            <div class="container">
-                <div class="section-header text-center">
-                    <h2 class="section-title">Client Testimonials</h2>
-                    <p class="section-subtitle">What clients say about working with me</p>
-                </div>
-
-                <div class="testimonials-grid">
-                    <div class="testimonial-card">
-                        <div class="testimonial-header">
-                            <img src="assets/belarus.svg" alt="Belarus" class="testimonial-avatar flag-avatar" />
-                            <div class="testimonial-info">
-                                <h4>
-                                    <a
-                                        href="https://www.linkedin.com/in/dzmitry-varabei-88730b21/"
-                                        target="_blank"
-                                        class="testimonial-link"
-                                        >Dzmitry Varabei</a
-                                    >
-                                </h4>
-                                <p>Senior Program Manager at EPAM Systems</p>
-                            </div>
-                        </div>
-                        <p class="testimonial-text">
-                            "Artem has been mentoring students in the JavaScript/Front-end course for 6 months. He
-                            effectively guided students through complex concepts and provided valuable insights that
-                            significantly enhanced their learning experience."
-                        </p>
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="testimonial-header">
-                            <img src="assets/portugal.svg" alt="Portugal" class="testimonial-avatar flag-avatar" />
-                            <div class="testimonial-info">
-                                <h4>
-                                    <a
-                                        href="https://www.linkedin.com/in/sergey-ryabenko/"
-                                        target="_blank"
-                                        class="testimonial-link"
-                                        >Sergey Ryabenko</a
-                                    >
-                                </h4>
-                                <p>Founder at SharpBit</p>
-                            </div>
-                        </div>
-                        <p class="testimonial-text">
-                            "Artem brings great energy and a 'can do' attitude. He was instrumental in creating and
-                            implementing new software that saves us a huge amount of time and resources. Highly
-                            recommended."
-                        </p>
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="testimonial-header">
-                            <img src="assets/england.svg" alt="England" class="testimonial-avatar flag-avatar" />
-                            <div class="testimonial-info">
-                                <h4>
-                                    <a
-                                        href="https://www.linkedin.com/in/nadya-gorodetskaya/"
-                                        target="_blank"
-                                        class="testimonial-link"
-                                        >Nadya Gorodetskaya</a
-                                    >
-                                </h4>
-                                <p>Founder/Creative Director at MOTIOHEAD</p>
-                            </div>
-                        </div>
-                        <p class="testimonial-text">
-                            "Artem's talent, knowledge, and communication were beyond all expectations. A truly
-                            sophisticated TOP level professional. I was amazed by the result of his work."
-                        </p>
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="testimonial-header">
-                            <img src="assets/belarus.svg" alt="Belarus" class="testimonial-avatar flag-avatar" />
-                            <div class="testimonial-info">
-                                <h4>
-                                    <a
-                                        href="https://www.linkedin.com/in/kozinin/"
-                                        target="_blank"
-                                        class="testimonial-link"
-                                        >Viktor Kozinin</a
-                                    >
-                                </h4>
-                                <p>CEO at SL Max</p>
-                            </div>
-                        </div>
-                        <p class="testimonial-text">
-                            "Artem is a highly skilled developer with excellent problem-solving abilities. He delivered
-                            our mobile application on time and exceeded our expectations with his attention to detail."
-                        </p>
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="testimonial-header">
-                            <img src="assets/russia.svg" alt="Russia" class="testimonial-avatar flag-avatar" />
-                            <div class="testimonial-info">
-                                <h4>
-                                    <a
-                                        href="https://www.linkedin.com/in/melikramin/"
-                                        target="_blank"
-                                        class="testimonial-link"
-                                        >Ramin Malikov</a
-                                    >
-                                </h4>
-                                <p>Co-Founder & IoT Engineer at VIOTYS LLC</p>
-                            </div>
-                        </div>
-                        <p class="testimonial-text">
-                            "Artem was great to work with. He delivered on-time for an urgent job and was in constant
-                            contact throughout the project."
-                        </p>
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="section-header">
+            <!-- Contact Section -->
+            <section id="contact" class="border-b border-zinc-200 py-16 dark:border-zinc-800 md:py-24">
+                <div class="mx-auto max-w-6xl px-6">
+                    <div class="card grid gap-9 p-8 md:grid-cols-[1fr_1.2fr] md:gap-14 md:p-14">
+                        <div>
+                            <span class="section-index">06</span>
                             <h2 class="section-title">Contact</h2>
                             <p class="section-subtitle">Feel free to reach out by email, Telegram or LinkedIn.</p>
-                        </div>
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <i class="fas fa-envelope text-primary"></i>
-                                <div>
-                                    <h5>Email</h5>
-                                    <p><a href="mailto:artem.puzik.it@gmail.com">artem.puzik.it@gmail.com</a></p>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-phone text-primary"></i>
-                                <div>
-                                    <h5>Phone</h5>
-                                    <p>+375 29 220 89 77</p>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-map-marker-alt text-primary"></i>
-                                <div>
-                                    <h5>Location</h5>
-                                    <p>Minsk, Belarus (Remote work available)</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="social-links">
-                            <a href="https://github.com/artempuzik" target="_blank" class="social-link" aria-label="GitHub" rel="noopener">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/artem-puzik/" target="_blank" class="social-link" aria-label="LinkedIn" rel="noopener">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://telegram.im/@ArtemPuzik" target="_blank" class="social-link" aria-label="Telegram" rel="noopener">
-                                <i class="fab fa-telegram"></i>
+                            <a class="btn btn-primary mt-8" href="./Artem-Puzik-Full-Stack-Developer-CV.pdf" download>
+                                <i class="fas fa-file-arrow-down"></i>Download CV
                             </a>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="contact-form-card">
-                            <h3>Resume</h3>
-                            <p>Full CV in PDF: experience, skills, education and references.</p>
-                            <button class="btn btn-primary btn-lg w-100" onclick="downloadPDF()">
-                                <i class="fas fa-file-pdf me-2"></i>Download CV
-                            </button>
-                        </div>
+                        <ul class="flex flex-col divide-y divide-zinc-200 dark:divide-zinc-800">
+                            <li class="grid grid-cols-[22px_1fr] items-center gap-2.5 py-4 first:pt-0 last:pb-0 sm:grid-cols-[22px_96px_1fr]">
+                                <i class="fas fa-envelope text-center text-teal-700 dark:text-teal-400"></i>
+                                <span class="hidden font-mono text-xs uppercase tracking-wide text-zinc-400 dark:text-zinc-500 sm:block">Email</span>
+                                <a class="break-all font-medium text-zinc-900 hover:text-teal-700 dark:text-zinc-100 dark:hover:text-teal-400" href="mailto:artem.puzik.it@gmail.com">artem.puzik.it@gmail.com</a>
+                            </li>
+                            <li class="grid grid-cols-[22px_1fr] items-center gap-2.5 py-4 first:pt-0 last:pb-0 sm:grid-cols-[22px_96px_1fr]">
+                                <i class="fas fa-phone text-center text-teal-700 dark:text-teal-400"></i>
+                                <span class="hidden font-mono text-xs uppercase tracking-wide text-zinc-400 dark:text-zinc-500 sm:block">Phone</span>
+                                <a class="break-all font-medium text-zinc-900 hover:text-teal-700 dark:text-zinc-100 dark:hover:text-teal-400" href="tel:+375292208977">+375 29 220 89 77</a>
+                            </li>
+                            <li class="grid grid-cols-[22px_1fr] items-center gap-2.5 py-4 first:pt-0 last:pb-0 sm:grid-cols-[22px_96px_1fr]">
+                                <i class="fab fa-telegram text-center text-teal-700 dark:text-teal-400"></i>
+                                <span class="hidden font-mono text-xs uppercase tracking-wide text-zinc-400 dark:text-zinc-500 sm:block">Telegram</span>
+                                <a class="break-all font-medium text-zinc-900 hover:text-teal-700 dark:text-zinc-100 dark:hover:text-teal-400" href="https://telegram.im/@ArtemPuzik" target="_blank" rel="noopener">@ArtemPuzik</a>
+                            </li>
+                            <li class="grid grid-cols-[22px_1fr] items-center gap-2.5 py-4 first:pt-0 last:pb-0 sm:grid-cols-[22px_96px_1fr]">
+                                <i class="fab fa-linkedin text-center text-teal-700 dark:text-teal-400"></i>
+                                <span class="hidden font-mono text-xs uppercase tracking-wide text-zinc-400 dark:text-zinc-500 sm:block">LinkedIn</span>
+                                <a class="break-all font-medium text-zinc-900 hover:text-teal-700 dark:text-zinc-100 dark:hover:text-teal-400" href="https://www.linkedin.com/in/artem-puzik/" target="_blank" rel="noopener">in/artem-puzik</a>
+                            </li>
+                            <li class="grid grid-cols-[22px_1fr] items-center gap-2.5 py-4 first:pt-0 last:pb-0 sm:grid-cols-[22px_96px_1fr]">
+                                <i class="fab fa-github text-center text-teal-700 dark:text-teal-400"></i>
+                                <span class="hidden font-mono text-xs uppercase tracking-wide text-zinc-400 dark:text-zinc-500 sm:block">GitHub</span>
+                                <a class="break-all font-medium text-zinc-900 hover:text-teal-700 dark:text-zinc-100 dark:hover:text-teal-400" href="https://github.com/artempuzik" target="_blank" rel="noopener">artempuzik</a>
+                            </li>
+                            <li class="grid grid-cols-[22px_1fr] items-center gap-2.5 py-4 first:pt-0 last:pb-0 sm:grid-cols-[22px_96px_1fr]">
+                                <i class="fas fa-location-dot text-center text-teal-700 dark:text-teal-400"></i>
+                                <span class="hidden font-mono text-xs uppercase tracking-wide text-zinc-400 dark:text-zinc-500 sm:block">Location</span>
+                                <span class="font-medium">Minsk, Belarus (Remote work available)</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </main>
 
         <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <p>&copy; 2026 Artem Puzik. All rights reserved.</p>
-                    </div>
-                    <div class="col-md-6 text-end">
-                        <p>Built with ❤️ using modern web technologies</p>
-                    </div>
-                </div>
+        <footer class="py-8">
+            <div class="mx-auto flex max-w-6xl items-center justify-between px-6 font-mono text-xs text-zinc-500">
+                <p>&copy; 2026 Artem Puzik</p>
+                <a class="hover:text-zinc-900 dark:hover:text-zinc-100" href="#home">Back to top <i class="fas fa-arrow-up"></i></a>
             </div>
         </footer>
 
-        <!-- Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-        <!-- Custom JS -->
         <script>
             // Theme toggle
             (function () {
@@ -721,89 +617,43 @@
                     icon.className = isDark ? 'fas fa-sun' : 'fas fa-moon';
                 }
                 updateIcon();
-                if (toggle) {
-                    toggle.addEventListener('click', function () {
-                        var current = root.getAttribute('data-theme');
-                        var next = current === 'dark' ? 'light' : 'dark';
-                        root.setAttribute('data-theme', next);
-                        localStorage.setItem('theme', next);
-                        updateIcon();
-                    });
-                }
+                toggle.addEventListener('click', function () {
+                    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+                    root.setAttribute('data-theme', next);
+                    localStorage.setItem('theme', next);
+                    updateIcon();
+                });
             })();
 
-            // Smooth scrolling for navigation links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start',
-                        });
-                    }
-                });
-            });
-
-            // Navbar background on scroll
-            window.addEventListener('scroll', function () {
-                const navbar = document.querySelector('.navbar');
-                if (window.scrollY > 50) {
-                    navbar.classList.add('navbar-scrolled');
-                } else {
-                    navbar.classList.remove('navbar-scrolled');
+            // Header border once the page is scrolled
+            (function () {
+                var header = document.querySelector('.site-header');
+                function onScroll() {
+                    header.classList.toggle('is-scrolled', window.scrollY > 8);
                 }
-            });
+                onScroll();
+                window.addEventListener('scroll', onScroll, { passive: true });
+            })();
 
-            // Reveal skill cards on scroll.
-            // The cards are only hidden once this script has run (html.js-reveal), so the
-            // section stays fully readable if JS fails, is blocked, or IntersectionObserver
-            // never fires. A timeout reveals everything regardless as a second safety net.
-            const skillCards = document.querySelectorAll('.skill-category');
-
-            if (skillCards.length && 'IntersectionObserver' in window) {
-                document.documentElement.classList.add('js-reveal');
-
-                const revealAll = () => skillCards.forEach(card => card.classList.add('animate'));
-
-                const observer = new IntersectionObserver(
+            // Highlight the nav link of the section in view
+            (function () {
+                if (!('IntersectionObserver' in window)) return;
+                var links = document.querySelectorAll('.site-nav a');
+                var map = {};
+                links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
+                var observer = new IntersectionObserver(
                     function (entries) {
-                        entries.forEach(entry => {
-                            if (entry.isIntersecting) {
-                                entry.target.classList.add('animate');
-                                observer.unobserve(entry.target);
-                            }
+                        entries.forEach(function (entry) {
+                            if (!entry.isIntersecting) return;
+                            links.forEach(function (a) { a.classList.remove('is-active'); });
+                            var link = map[entry.target.id];
+                            if (link) link.classList.add('is-active');
                         });
                     },
-                    { threshold: 0.15, rootMargin: '0px 0px -60px 0px' }
+                    { rootMargin: '-45% 0px -50% 0px' }
                 );
-
-                skillCards.forEach((card, i) => {
-                    card.style.transitionDelay = `${Math.min(i, 5) * 60}ms`;
-                    observer.observe(card);
-                });
-
-                setTimeout(revealAll, 2500);
-            }
-
-            // Download PDF function
-            function downloadPDF() {
-                // Check if PDF exists, if not show message
-                const link = document.createElement('a');
-                link.href = './Artem-Puzik-Full-Stack-Developer-CV.pdf';
-                link.download = 'Artem-Puzik-Full-Stack-Developer-CV.pdf';
-
-                // Try to download, if file doesn't exist, show message
-                link.onerror = function() {
-                    alert('PDF file not found. Please generate the PDF first using the generate-pdf.sh script.');
-                };
-
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-            }
-
+                document.querySelectorAll('main section[id]').forEach(function (s) { observer.observe(s); });
+            })();
         </script>
     </body>
 </html>

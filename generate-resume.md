@@ -94,7 +94,7 @@ React Native, React, JavaScript, real-time data, mobile UI/UX
 
 **Applied ML in the browser:** MediaPipe — real-time gesture recognition running client-side, no server round-trip
 
-**AI-assisted engineering:** coding agents and subagents in daily development and testing (Claude Code, Cursor); write custom skills for test design, architecture review and E2E QA reporting; plan → implement → review → test agent workflows; project-level agent rules and architecture docs that keep agent output consistent with the codebase
+**AI-assisted engineering:** coding agents and subagents in daily development and testing (Claude Code, Cursor); UI prototyping with Claude Design; write custom skills for test design, architecture review and E2E QA reporting; plan → implement → review → test agent workflows; project-level agent rules and architecture docs that keep agent output consistent with the codebase
 
 **Analytics and experimentation:** Google Tag Manager, Amplitude, Meta Pixel, GrowthBook (A/B testing, feature flags), BigQuery
 

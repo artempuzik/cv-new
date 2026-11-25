@@ -9,7 +9,7 @@ Artem Puzik's CV: a PDF resume and a public one-page site. The content is in Eng
 | `generate-resume.md` | **Source of truth** for the resume content: contact, summary, experience, skills, projects, education |
 | `resume.html` | Generated from `generate-resume.md` by Pandoc, styled with `resume-template.css` |
 | `Artem-Puzik-Full-Stack-Developer-CV.pdf` | Built from `resume.html` by Prince. Served by the site's "Download CV" button. Keep the filename human-readable: recruiters see it first |
-| `index.html` + `styles.css` | Public site: hero, about, experience timeline, skills grid, projects, testimonials, contact. Bootstrap plus CSS variables for the light/dark theme |
+| `index.html` + `src/input.css` → `styles.css` | Public site: hero, about, experience timeline, skills grid, projects, references, contact. Tailwind CSS v3 utilities; light/dark theme via `data-theme` on `<html>` (`dark:` variant). `styles.css` is compiled and committed — run `npm run build:css` after changing classes in `index.html` or `src/input.css`; never edit `styles.css` by hand |
 | `generate-pdf.sh` | `generate-resume.md` → `resume.html` (Pandoc) → PDF (Prince) |
 | `private/` | Personal notes, roadmaps, numbers to confirm. Git-ignored |
 

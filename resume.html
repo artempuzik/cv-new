@@ -78,7 +78,6 @@ Laravel Horizon, Docker, Traefik, Nginx, CI/CD, LLM integration</p>
 <li>Designed and built a <strong>modular monolith with explicit domain boundaries</strong>, isolating business domains so a change in one cannot regress the others</li>
 <li>Built payment and subscription flows across <strong>multiple payment providers</strong> — one-off checkout, recurring billing, upsells and webhook-driven state reconciliation</li>
 <li>Moved AI generation, document rendering and billing side effects off the request path into <strong>Redis queues with Laravel Horizon</strong>, with failure recovery, so checkout stays responsive under traffic spikes</li>
-<li>Built LLM-powered product features, including a conversational assistant with per-user rate limiting, and in-browser real-time computer vision with <strong>MediaPipe</strong> — client-side machine learning, no video leaving the device</li>
 <li>Built conversion funnels with product analytics and <strong>A/B testing</strong>, so funnel changes ship on data rather than opinion</li>
 <li>Run production infrastructure: Docker multi-stage builds, Traefik and Nginx reverse proxy with SSL, CI/CD pipelines, error monitoring and alerting, plus step-by-step runbooks for risky production changes</li>
 <li>Own the test suite at every level: <strong>PHPUnit</strong> unit and feature tests for API endpoints, queued jobs and payment webhooks, including race-condition and idempotency cases; <strong>Vitest</strong> on the frontend; <strong>Playwright E2E</strong> suites that walk each funnel from landing page to payment and assert analytics events. Quality gates: static analysis (Larastan, vue-tsc), pre-commit hooks, code review for the team</li>
@@ -149,12 +148,10 @@ builds, Docker Compose), Traefik and Nginx (reverse proxy, SSL), error
 monitoring, CI/CD (GitHub Actions, Bitbucket Pipelines), Git, AWS (EC2
 instance provisioning, S3 object storage for app hosting)</p>
 <p><strong>AI in product:</strong> LLM features in production — text and
-image generation behind queues with retries and failure recovery,
-conversational features with rate limiting, structured prompting,
+image generation behind queues with retries and failure recovery, structured prompting,
 embeddings. Work with OpenAI, Anthropic and Google model APIs, picking
 per task rather than locking into one vendor</p>
-<p><strong>Applied ML in the browser:</strong> MediaPipe — real-time
-gesture recognition running client-side, no server round-trip</p>
+<p><strong>Applied ML in the browser:</strong> MediaPipe — real-time gesture recognition running client-side</p>
 <p><strong>AI-assisted engineering:</strong> coding agents and subagents
 in daily development and testing (Claude Code, Cursor); UI prototyping with Claude Design; write custom
 skills for test design, architecture review and E2E QA reporting; plan →

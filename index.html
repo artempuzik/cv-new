@@ -151,7 +151,7 @@
                             <div class="key-highlights">
                                 <div class="highlight-item">
                                     <i class="fas fa-cubes text-primary"></i>
-                                    <span>Modular architecture — payment, subscription and AI domains isolated</span>
+                                    <span>Modular architecture — isolated business domains</span>
                                 </div>
                                 <div class="highlight-item">
                                     <i class="fas fa-credit-card text-primary"></i>
@@ -188,23 +188,22 @@
                         <div class="experience-timeline">
                             <div class="timeline-item">
                                 <div class="timeline-content">
-                                    <h4>ООО «Апплойд Медиа» (Belarus)</h4>
+                                    <h4>Applojd Media LLC (Belarus)</h4>
                                     <p class="timeline-period">January 2025 – Present</p>
                                     <p class="timeline-role">Full-Stack Developer</p>
                                     <ul class="timeline-achievements">
                                         <li>Own end-to-end delivery of AI-powered e-commerce and subscription web products running high-traffic marketing campaigns — backend API, single-page frontends and landing pages</li>
-                                        <li>Designed and built a <strong>modular monolith with explicit domain boundaries</strong>, isolating the payment, subscription and AI domains so a change in one cannot regress the others</li>
-                                        <li>Built payment and subscription flows across <strong>multiple payment providers</strong> — one-off checkout, recurring billing, upsells and webhook-driven state reconciliation — and integrated a new provider end-to-end</li>
-                                        <li>Applied standard checkout and API protection: fraud checks, authentication and rate limiting</li>
-                                        <li>Moved AI generation, document rendering and billing side effects off the request path into <strong>Redis queues with Laravel Horizon</strong>, with stuck-job detection and recovery, so checkout stays responsive under traffic spikes</li>
+                                        <li>Designed and built a <strong>modular monolith with explicit domain boundaries</strong>, isolating business domains so a change in one cannot regress the others</li>
+                                        <li>Built payment and subscription flows across <strong>multiple payment providers</strong> — one-off checkout, recurring billing, upsells and webhook-driven state reconciliation</li>
+                                        <li>Moved AI generation, document rendering and billing side effects off the request path into <strong>Redis queues with Laravel Horizon</strong>, with failure recovery, so checkout stays responsive under traffic spikes</li>
                                         <li>Built LLM-powered product features, including a conversational assistant with server-side prompts and per-user rate limiting</li>
                                         <li>Built conversion funnels with product analytics and <strong>A/B testing</strong>, so funnel changes ship on data rather than opinion</li>
                                         <li>Implemented in-browser real-time computer vision with <strong>MediaPipe</strong> for an interactive funnel step — client-side machine learning, no server round-trip and no video leaving the device</li>
                                         <li>Run production infrastructure: Docker multi-stage builds, Traefik and Nginx reverse proxy with SSL, CI/CD pipelines, error monitoring and alerting</li>
                                         <li>Write step-by-step runbooks for risky production changes — staged rollout, no lost queue jobs, one-step rollback</li>
-                                        <li>Own the test suite at every level: <strong>PHPUnit</strong> unit and feature tests for API endpoints, middleware, queued jobs and payment webhooks, including race-condition and idempotency cases; <strong>Vitest</strong> unit tests on the frontend; <strong>Playwright E2E</strong> suites that walk each conversion funnel from landing page to test-card payment and assert the analytics events sent at every step</li>
+                                        <li>Own the test suite at every level: <strong>PHPUnit</strong> unit and feature tests for API endpoints, middleware, queued jobs and payment webhooks, including race-condition and idempotency cases; <strong>Vitest</strong> unit tests on the frontend; <strong>Playwright E2E</strong> suites that walk each conversion funnel from landing page to payment and assert the analytics events sent at every step</li>
                                         <li>Quality gates: static analysis (Larastan, vue-tsc), linting and pre-commit hooks that run the relevant tests by scope; run code review and maintain coding standards for the team</li>
-                                        <li>Use AI agents deeply in development and testing, and <strong>write my own Claude Code skills</strong> for the team: a test-design skill that builds exhaustive case matrices (inputs, auth, state, dependency failures, races, rate limits); an architecture review that compares every changed file with its closest existing analogue in the codebase; an E2E QA skill that runs the funnel suites, builds an HTML report of findings with commit attribution and maps results to the task</li>
+                                        <li>Use AI agents deeply in development and testing, and <strong>write my own Claude Code skills</strong> for the team: a test-design skill that builds exhaustive case matrices (inputs, auth, state, dependency failures, races, rate limits); an architecture review that compares every changed file with its closest existing analogue in the codebase; an E2E QA skill that runs the funnel suites, builds an HTML report of findings</li>
                                         <li>Run agent workflows end-to-end — plan, implement, review, test — with project-level rules and architecture docs that keep agent output consistent with codebase conventions</li>
                                     </ul>
                                     <p class="mb-0"><strong>Stack:</strong> Vue 3, Nuxt 4, Laravel 12, PHP 8.3, TypeScript, MySQL, Redis, Horizon, Docker, Traefik, Nginx, CI/CD, LLM integration</p>
@@ -276,7 +275,7 @@
                             <span class="skill-chip">Event-driven</span>
                             <span class="skill-chip">Async processing</span>
                         </div>
-                        <p class="skill-proof">Payment, subscription and AI domains isolated in production, so one can change without regressing the others</p>
+                        <p class="skill-proof">Business domains isolated in production, so one can change without regressing the others</p>
                     </div>
                     <div class="skill-category">
                         <h3 class="skill-category-title"><i class="fas fa-credit-card me-2"></i>Payments &amp; E-commerce</h3>
@@ -284,7 +283,6 @@
                             <span class="skill-chip">Stripe</span>
                             <span class="skill-chip">PayPal</span>
                             <span class="skill-chip">Provider integration</span>
-                            <span class="skill-chip">Fraud checks</span>
                             <span class="skill-chip">Subscriptions</span>
                             <span class="skill-chip">Webhooks</span>
                         </div>
@@ -302,7 +300,7 @@
                             <span class="skill-chip">Inertia.js</span>
                             <span class="skill-chip">Auth &amp; rate limiting</span>
                         </div>
-                        <p class="skill-proof">Billing, LLM calls, image generation and document rendering moved off the request path into Redis queues, with stuck-job recovery</p>
+                        <p class="skill-proof">Billing, LLM calls, image generation and document rendering moved off the request path into Redis queues, with failure recovery</p>
                     </div>
                     <div class="skill-category">
                         <h3 class="skill-category-title"><i class="fas fa-palette me-2"></i>Frontend</h3>
@@ -328,7 +326,7 @@
                             <span class="skill-chip">Async pipelines</span>
                             <span class="skill-chip">MediaPipe</span>
                         </div>
-                        <p class="skill-proof">AI generation runs behind queues with retries and stuck-job recovery; conversational features with per-user rate limits</p>
+                        <p class="skill-proof">AI generation runs behind queues with retries and failure recovery; conversational features with per-user rate limits</p>
                     </div>
                     <div class="skill-category">
                         <h3 class="skill-category-title"><i class="fas fa-terminal me-2"></i>AI-assisted engineering</h3>
@@ -341,7 +339,7 @@
                             <span class="skill-chip">AI code review</span>
                             <span class="skill-chip">Agent rules</span>
                         </div>
-                        <p class="skill-proof">I write my own skills: test design with exhaustive case matrices, architecture review against existing code, and E2E QA that runs funnel suites and reports findings with commit attribution</p>
+                        <p class="skill-proof">I write my own skills: test design with exhaustive case matrices, architecture review against existing code, and E2E QA that runs funnel suites and reports findings</p>
                     </div>
                     <div class="skill-category">
                         <h3 class="skill-category-title"><i class="fas fa-gears me-2"></i>Infrastructure &amp; delivery</h3>
@@ -391,7 +389,7 @@
                             <span class="skill-chip">Pint / ESLint</span>
                             <span class="skill-chip">Code review</span>
                         </div>
-                        <p class="skill-proof">Unit, feature and E2E levels on payments, subscriptions and AI flows; E2E suites walk every funnel to a test-card payment and assert analytics events at each step</p>
+                        <p class="skill-proof">Unit, feature and E2E levels on payments, subscriptions and AI flows; E2E suites walk every funnel to payment and assert analytics events at each step</p>
                     </div>
                     <div class="skill-category skill-category-secondary">
                         <h3 class="skill-category-title"><i class="fas fa-layer-group me-2"></i>Also worked with</h3>

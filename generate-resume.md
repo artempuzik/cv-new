@@ -17,7 +17,7 @@
 
 Full-Stack Developer with **4+ years of commercial experience** building and maintaining high-traffic production web applications end-to-end — Vue.js/Nuxt/TypeScript frontends on Laravel/PHP backends. Currently building payment, subscription and AI features for high-traffic e-commerce products. Built a modular monolith with explicit domain boundaries, own the infrastructure behind it (Docker, Traefik, Nginx, CI/CD, Redis queues). Use AI agents deeply across development and testing — write my own Claude Code skills for test design, architecture review and E2E QA. Remote experience with distributed teams in Portugal, Poland and Belarus.
 
-**Core stack:** Vue.js 3, Nuxt.js, TypeScript, JavaScript, Laravel, PHP 8.3, MySQL, Redis, Docker, Nginx, CI/CD, REST API, Stripe, PayPal, LLM integration
+**Core stack:** Vue.js 3, Nuxt.js, TypeScript, JavaScript, Laravel, PHP 8.3, MySQL, Redis, Docker, Nginx, CI/CD, REST API, payment provider integration, LLM integration
 
 **Experience by technology:** JavaScript / TypeScript — 4 years · Laravel / PHP — 2.5 years · Vue.js / Nuxt.js — 2.5 years · React / React Native — 2 years · Node.js — 1.5 years
 
@@ -25,25 +25,24 @@ Full-Stack Developer with **4+ years of commercial experience** building and mai
 
 ## Professional Experience
 
-### Full-Stack Developer — Applojd Media LLC (ООО «Апплойд Медиа»), Minsk, Belarus
+### Full-Stack Developer — Applojd Media LLC, Minsk, Belarus
 
 _January 2025 – Present · Full-time_
 
 Vue.js 3, Nuxt.js 4, Laravel 12, PHP 8.3, TypeScript, MySQL, Redis, Laravel Horizon, Docker, Traefik, Nginx, CI/CD, LLM integration
 
 -   Own end-to-end delivery of AI-powered e-commerce and subscription web products running high-traffic marketing campaigns — backend API, single-page frontends and landing pages
--   Designed and built a **modular monolith with explicit domain boundaries**, isolating the payment, subscription and AI domains so a change in one cannot regress the others
--   Built payment and subscription flows across **multiple payment providers** — one-off checkout, recurring billing, upsells and webhook-driven state reconciliation — and integrated a new provider end-to-end
--   Applied standard checkout and API protection: fraud checks, authentication and rate limiting
--   Moved AI generation, document rendering and billing side effects off the request path into **Redis queues with Laravel Horizon**, with stuck-job detection and recovery, so checkout stays responsive under traffic spikes
+-   Designed and built a **modular monolith with explicit domain boundaries**, isolating business domains so a change in one cannot regress the others
+-   Built payment and subscription flows across **multiple payment providers** — one-off checkout, recurring billing, upsells and webhook-driven state reconciliation
+-   Moved AI generation, document rendering and billing side effects off the request path into **Redis queues with Laravel Horizon**, with failure recovery, so checkout stays responsive under traffic spikes
 -   Built LLM-powered product features, including a conversational assistant with server-side prompts and per-user rate limiting
 -   Built conversion funnels with product analytics and **A/B testing**, so funnel changes ship on data rather than opinion
 -   Implemented in-browser real-time computer vision with **MediaPipe** for an interactive funnel step — client-side machine learning, no server round-trip and no video leaving the device
 -   Run production infrastructure: Docker multi-stage builds, Traefik and Nginx reverse proxy with SSL, CI/CD pipelines, error monitoring and alerting
 -   Write step-by-step runbooks for risky production changes — staged rollout, no lost queue jobs, one-step rollback
--   Own the test suite at every level: **PHPUnit** unit and feature tests for API endpoints, middleware, queued jobs and payment webhooks, including race-condition and idempotency cases; **Vitest** unit tests on the frontend; **Playwright E2E** suites that walk each conversion funnel from landing page to test-card payment and assert the analytics events sent at every step
+-   Own the test suite at every level: **PHPUnit** unit and feature tests for API endpoints, middleware, queued jobs and payment webhooks, including race-condition and idempotency cases; **Vitest** unit tests on the frontend; **Playwright E2E** suites that walk each conversion funnel from landing page to payment and assert the analytics events sent at every step
 -   Quality gates: static analysis (Larastan, vue-tsc), linting and pre-commit hooks that run the relevant tests by scope; run code review and maintain coding standards for the team
--   Use AI agents deeply in development and testing, and **write my own Claude Code skills** for the team: a test-design skill that builds exhaustive case matrices (inputs, auth, state, dependency failures, races, rate limits); an architecture review that compares every changed file with its closest existing analogue in the codebase; an E2E QA skill that runs the funnel suites, builds an HTML report of findings with commit attribution and maps results to the task
+-   Use AI agents deeply in development and testing, and **write my own Claude Code skills** for the team: a test-design skill that builds exhaustive case matrices (inputs, auth, state, dependency failures, races, rate limits); an architecture review that compares every changed file with its closest existing analogue in the codebase; an E2E QA skill that runs the funnel suites, builds an HTML report of findings
 -   Run agent workflows end-to-end — plan, implement, review, test — with project-level rules and architecture docs that keep agent output consistent with codebase conventions
 
 ### Full-Stack Developer — SharpBit, Portugal (remote)
@@ -89,13 +88,13 @@ React Native, React, JavaScript, real-time data, mobile UI/UX
 
 **Frontend:** Vue.js 3 (Composition API, Pinia), Nuxt.js 3/4 (SPA, server middleware), Inertia.js, Vite, TypeScript, JavaScript (ES6+), Tailwind CSS, HTML5, CSS3, responsive design
 
-**Payments and e-commerce:** Stripe, PayPal, payment provider integration — checkout, recurring subscriptions, upsells, webhooks, payment reconciliation, fraud checks
+**Payments and e-commerce:** Stripe, PayPal, payment provider integration — checkout, recurring subscriptions, upsells, webhooks, payment reconciliation
 
 **Databases:** MySQL (schema design, indexing, query optimisation, migrations), Redis (caching, queues, pub/sub)
 
 **DevOps and infrastructure:** Docker (multi-stage builds, Docker Compose), Traefik and Nginx (reverse proxy, SSL), error monitoring, CI/CD (GitHub Actions, Bitbucket Pipelines), Git, AWS (EC2 instance provisioning, S3 object storage for app hosting)
 
-**AI in product:** LLM features in production — text and image generation behind queues with retries and stuck-job recovery, conversational features with rate limiting, structured prompting, embeddings. Work with OpenAI, Anthropic and Google model APIs, picking per task rather than locking into one vendor
+**AI in product:** LLM features in production — text and image generation behind queues with retries and failure recovery, conversational features with rate limiting, structured prompting, embeddings. Work with OpenAI, Anthropic and Google model APIs, picking per task rather than locking into one vendor
 
 **Applied ML in the browser:** MediaPipe — real-time gesture recognition running client-side, no server round-trip
 

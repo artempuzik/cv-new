@@ -61,16 +61,15 @@ across development and testing — write my own Claude Code skills for
 test design, architecture review and E2E QA. Remote experience with
 distributed teams in Portugal, Poland and Belarus.</p>
 <p><strong>Core stack:</strong> Vue.js 3, Nuxt.js, TypeScript,
-JavaScript, Laravel, PHP 8.3, MySQL, Redis, Docker, Nginx, CI/CD, REST
-API, Stripe, PayPal, LLM integration</p>
+JavaScript, Laravel, PHP 8.3, MySQL, Redis, Docker, Nginx, CI/CD, REST API, payment provider integration, LLM integration</p>
 <p><strong>Experience by technology:</strong> JavaScript / TypeScript —
 4 years · Laravel / PHP — 2.5 years · Vue.js / Nuxt.js — 2.5 years ·
 React / React Native — 2 years · Node.js — 1.5 years</p>
 <hr />
 <h2 id="professional-experience">Professional Experience</h2>
 <h3
-id="full-stack-developer-applojd-media-llc-ооо-апплойд-медиа-minsk-belarus">Full-Stack
-Developer — Applojd Media LLC (ООО «Апплойд Медиа»), Minsk, Belarus</h3>
+id="full-stack-developer-applojd-media-llc-minsk-belarus">Full-Stack
+Developer — Applojd Media LLC, Minsk, Belarus</h3>
 <p><em>January 2025 – Present · Full-time</em></p>
 <p>Vue.js 3, Nuxt.js 4, Laravel 12, PHP 8.3, TypeScript, MySQL, Redis,
 Laravel Horizon, Docker, Traefik, Nginx, CI/CD, LLM integration</p>
@@ -79,17 +78,13 @@ Laravel Horizon, Docker, Traefik, Nginx, CI/CD, LLM integration</p>
 web products running high-traffic marketing campaigns — backend API,
 single-page frontends and landing pages</li>
 <li>Designed and built a <strong>modular monolith with explicit domain
-boundaries</strong>, isolating the payment, subscription and AI domains
-so a change in one cannot regress the others</li>
+boundaries</strong>, isolating business domains so a change in one cannot regress the others</li>
 <li>Built payment and subscription flows across <strong>multiple payment
 providers</strong> — one-off checkout, recurring billing, upsells and
-webhook-driven state reconciliation — and integrated a new provider
-end-to-end</li>
-<li>Applied standard checkout and API protection: fraud checks,
-authentication and rate limiting</li>
+webhook-driven state reconciliation</li>
 <li>Moved AI generation, document rendering and billing side effects off
 the request path into <strong>Redis queues with Laravel
-Horizon</strong>, with stuck-job detection and recovery, so checkout
+Horizon</strong>, with failure recovery, so checkout
 stays responsive under traffic spikes</li>
 <li>Built LLM-powered product features, including a conversational
 assistant with server-side prompts and per-user rate limiting</li>
@@ -109,8 +104,7 @@ rollout, no lost queue jobs, one-step rollback</li>
 feature tests for API endpoints, middleware, queued jobs and payment
 webhooks, including race-condition and idempotency cases;
 <strong>Vitest</strong> unit tests on the frontend; <strong>Playwright
-E2E</strong> suites that walk each conversion funnel from landing page
-to test-card payment and assert the analytics events sent at every
+E2E</strong> suites that walk each conversion funnel from landing page to payment and assert the analytics events sent at every
 step</li>
 <li>Quality gates: static analysis (Larastan, vue-tsc), linting and
 pre-commit hooks that run the relevant tests by scope; run code review
@@ -120,8 +114,7 @@ my own Claude Code skills</strong> for the team: a test-design skill
 that builds exhaustive case matrices (inputs, auth, state, dependency
 failures, races, rate limits); an architecture review that compares
 every changed file with its closest existing analogue in the codebase;
-an E2E QA skill that runs the funnel suites, builds an HTML report of
-findings with commit attribution and maps results to the task</li>
+an E2E QA skill that runs the funnel suites, builds an HTML report of findings</li>
 <li>Run agent workflows end-to-end — plan, implement, review, test —
 with project-level rules and architecture docs that keep agent output
 consistent with codebase conventions</li>
@@ -183,8 +176,7 @@ authentication, rate limiting, Artisan CLI</p>
 3/4 (SPA, server middleware), Inertia.js, Vite, TypeScript, JavaScript
 (ES6+), Tailwind CSS, HTML5, CSS3, responsive design</p>
 <p><strong>Payments and e-commerce:</strong> Stripe, PayPal, payment
-provider integration — checkout, recurring subscriptions, upsells,
-webhooks, payment reconciliation, fraud checks</p>
+provider integration — checkout, recurring subscriptions, upsells, webhooks, payment reconciliation</p>
 <p><strong>Databases:</strong> MySQL (schema design, indexing, query
 optimisation, migrations), Redis (caching, queues, pub/sub)</p>
 <p><strong>DevOps and infrastructure:</strong> Docker (multi-stage
@@ -192,7 +184,7 @@ builds, Docker Compose), Traefik and Nginx (reverse proxy, SSL), error
 monitoring, CI/CD (GitHub Actions, Bitbucket Pipelines), Git, AWS (EC2
 instance provisioning, S3 object storage for app hosting)</p>
 <p><strong>AI in product:</strong> LLM features in production — text and
-image generation behind queues with retries and stuck-job recovery,
+image generation behind queues with retries and failure recovery,
 conversational features with rate limiting, structured prompting,
 embeddings. Work with OpenAI, Anthropic and Google model APIs, picking
 per task rather than locking into one vendor</p>

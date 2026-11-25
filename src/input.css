@@ -1,0 +1,90 @@
+/* Source for styles.css. Build: npm run build:css (compiled styles.css is committed, no build on deploy). */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply scroll-smooth antialiased;
+        scroll-padding-top: 5rem;
+    }
+
+    body {
+        @apply bg-zinc-50 font-sans text-zinc-900 transition-colors dark:bg-ink dark:text-zinc-100;
+    }
+
+    strong {
+        @apply font-semibold text-zinc-900 dark:text-zinc-100;
+    }
+
+    :focus-visible {
+        @apply rounded outline outline-2 outline-offset-2 outline-teal-600 dark:outline-teal-400;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        html {
+            scroll-behavior: auto;
+        }
+    }
+}
+
+@layer components {
+    .btn {
+        @apply inline-flex items-center gap-2 rounded-full border border-transparent px-5 py-3 text-[0.95rem] font-semibold leading-none transition hover:-translate-y-px;
+    }
+
+    .btn-primary {
+        @apply bg-teal-700 text-white hover:bg-teal-800 dark:bg-teal-400 dark:text-teal-950 dark:hover:bg-teal-300;
+    }
+
+    .btn-ghost {
+        @apply border-zinc-300 text-zinc-900 hover:border-zinc-500 dark:border-zinc-700 dark:text-zinc-100 dark:hover:border-zinc-500;
+    }
+
+    .card {
+        @apply rounded-2xl border border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900;
+    }
+
+    .chip {
+        @apply inline-block rounded-md border border-zinc-200 bg-zinc-100 px-2.5 py-1 font-mono text-xs leading-tight text-zinc-800 dark:border-zinc-800 dark:bg-zinc-800/60 dark:text-zinc-200;
+    }
+
+    .section-index {
+        @apply mb-3 block font-mono text-xs font-medium text-teal-700 dark:text-teal-400;
+    }
+
+    .section-index::after {
+        content: ' /';
+        @apply text-zinc-400 dark:text-zinc-600;
+    }
+
+    .section-title {
+        @apply text-3xl font-bold tracking-tight md:text-4xl;
+    }
+
+    .section-subtitle {
+        @apply mt-3 text-zinc-600 dark:text-zinc-400;
+    }
+
+    .nav-link {
+        @apply relative text-sm font-medium text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100;
+    }
+
+    .nav-link.is-active {
+        @apply text-zinc-900 dark:text-zinc-100;
+    }
+
+    .nav-link.is-active::after {
+        content: '';
+        @apply absolute inset-x-0 -bottom-1.5 h-0.5 rounded bg-teal-600 dark:bg-teal-400;
+    }
+
+    .bullet-list li {
+        @apply relative pl-5 text-[0.96rem] leading-relaxed text-zinc-600 dark:text-zinc-400;
+    }
+
+    .bullet-list li::before {
+        content: '';
+        @apply absolute left-0 top-[0.72em] h-px w-2 bg-teal-600 dark:bg-teal-400;
+    }
+}

@@ -35,7 +35,6 @@ Vue.js 3, Nuxt.js 4, Laravel 12, PHP 8.3, TypeScript, MySQL, Redis, Laravel Hori
 -   Designed and built a **modular monolith with explicit domain boundaries**, isolating business domains so a change in one cannot regress the others
 -   Built payment and subscription flows across **multiple payment providers** — one-off checkout, recurring billing, upsells and webhook-driven state reconciliation
 -   Moved AI generation, document rendering and billing side effects off the request path into **Redis queues with Laravel Horizon**, with failure recovery, so checkout stays responsive under traffic spikes
--   Built LLM-powered product features, including a conversational assistant with per-user rate limiting, and in-browser real-time computer vision with **MediaPipe** — client-side machine learning, no video leaving the device
 -   Built conversion funnels with product analytics and **A/B testing**, so funnel changes ship on data rather than opinion
 -   Run production infrastructure: Docker multi-stage builds, Traefik and Nginx reverse proxy with SSL, CI/CD pipelines, error monitoring and alerting, plus step-by-step runbooks for risky production changes
 -   Own the test suite at every level: **PHPUnit** unit and feature tests for API endpoints, queued jobs and payment webhooks, including race-condition and idempotency cases; **Vitest** on the frontend; **Playwright E2E** suites that walk each funnel from landing page to payment and assert analytics events. Quality gates: static analysis (Larastan, vue-tsc), pre-commit hooks, code review for the team
@@ -90,9 +89,9 @@ React Native, React, JavaScript, real-time data, mobile UI/UX
 
 **DevOps and infrastructure:** Docker (multi-stage builds, Docker Compose), Traefik and Nginx (reverse proxy, SSL), error monitoring, CI/CD (GitHub Actions, Bitbucket Pipelines), Git, AWS (EC2 instance provisioning, S3 object storage for app hosting)
 
-**AI in product:** LLM features in production — text and image generation behind queues with retries and failure recovery, conversational features with rate limiting, structured prompting, embeddings. Work with OpenAI, Anthropic and Google model APIs, picking per task rather than locking into one vendor
+**AI in product:** LLM features in production — text and image generation behind queues with retries and failure recovery, structured prompting, embeddings. Work with OpenAI, Anthropic and Google model APIs, picking per task rather than locking into one vendor
 
-**Applied ML in the browser:** MediaPipe — real-time gesture recognition running client-side, no server round-trip
+**Applied ML in the browser:** MediaPipe — real-time gesture recognition running client-side
 
 **AI-assisted engineering:** coding agents and subagents in daily development and testing (Claude Code, Cursor); UI prototyping with Claude Design; write custom skills for test design, architecture review and E2E QA reporting; plan → implement → review → test agent workflows; project-level agent rules and architecture docs that keep agent output consistent with the codebase
 

@@ -134,7 +134,7 @@
                             </li>
                             <li class="highlight-item card flex items-start gap-3.5 p-4 text-[0.93rem] leading-normal">
                                 <i class="fas fa-brain grid h-8 w-8 flex-none place-items-center rounded-lg bg-teal-600/10 text-sm text-teal-700 dark:bg-teal-400/10 dark:text-teal-400"></i>
-                                <span>AI in production — LLM features behind queues, in-browser ML with MediaPipe</span>
+                                <span>AI in production — LLM generation behind queues with retries and failure recovery</span>
                             </li>
                             <li class="highlight-item card flex items-start gap-3.5 p-4 text-[0.93rem] leading-normal">
                                 <i class="fas fa-robot grid h-8 w-8 flex-none place-items-center rounded-lg bg-teal-600/10 text-sm text-teal-700 dark:bg-teal-400/10 dark:text-teal-400"></i>
@@ -170,7 +170,6 @@
                                     <li>Designed and built a <strong>modular monolith with explicit domain boundaries</strong>, isolating business domains so a change in one cannot regress the others</li>
                                     <li>Built payment and subscription flows across <strong>multiple payment providers</strong> — one-off checkout, recurring billing, upsells and webhook-driven state reconciliation</li>
                                     <li>Moved AI generation, document rendering and billing side effects off the request path into <strong>Redis queues with Laravel Horizon</strong>, with failure recovery, so checkout stays responsive under traffic spikes</li>
-                                    <li>Built LLM-powered product features, including a conversational assistant with per-user rate limiting, and in-browser real-time computer vision with <strong>MediaPipe</strong> — client-side machine learning, no video leaving the device</li>
                                     <li>Built conversion funnels with product analytics and <strong>A/B testing</strong>, so funnel changes ship on data rather than opinion</li>
                                     <li>Run production infrastructure: Docker multi-stage builds, Traefik and Nginx reverse proxy with SSL, CI/CD pipelines, error monitoring and alerting, plus step-by-step runbooks for risky production changes</li>
                                     <li>Own the test suite at every level: <strong>PHPUnit</strong> unit and feature tests for API endpoints, queued jobs and payment webhooks, including race-condition and idempotency cases; <strong>Vitest</strong> on the frontend; <strong>Playwright E2E</strong> suites that walk each funnel from landing page to payment and assert analytics events. Quality gates: static analysis (Larastan, vue-tsc), pre-commit hooks, code review for the team</li>
@@ -294,13 +293,12 @@
                             <div class="skill-chips mb-5 flex flex-wrap gap-1.5">
                                 <span class="skill-chip chip">LLM integration</span>
                                 <span class="skill-chip chip">OpenAI API</span>
-                                <span class="skill-chip chip">AI chat</span>
                                 <span class="skill-chip chip">Structured prompting</span>
                                 <span class="skill-chip chip">Embeddings</span>
                                 <span class="skill-chip chip">Async pipelines</span>
                                 <span class="skill-chip chip">MediaPipe</span>
                             </div>
-                            <p class="skill-proof mt-auto border-t border-zinc-200 pt-4 text-sm leading-relaxed text-zinc-600 dark:border-zinc-800 dark:text-zinc-400">AI generation runs behind queues with retries and failure recovery; conversational features with per-user rate limits</p>
+                            <p class="skill-proof mt-auto border-t border-zinc-200 pt-4 text-sm leading-relaxed text-zinc-600 dark:border-zinc-800 dark:text-zinc-400">AI generation runs behind queues with retries and failure recovery</p>
                         </div>
                         <div class="skill-category card flex flex-col p-6 transition hover:border-teal-600/40 hover:shadow-lg hover:shadow-zinc-900/5 dark:hover:border-teal-400/30">
                             <h3 class="mb-4 flex items-center gap-2.5 font-semibold"><i class="fas fa-terminal w-4 text-center text-sm text-teal-700 dark:text-teal-400"></i>AI-assisted engineering</h3>

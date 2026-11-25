@@ -88,12 +88,12 @@
                                     <span class="stat-label">Years in production</span>
                                 </div>
                                 <div class="stat-item">
-                                    <span class="stat-number">1000s</span>
-                                    <span class="stat-label">Monthly users served</span>
+                                    <span class="stat-number">3</span>
+                                    <span class="stat-label">Countries, remote teams</span>
                                 </div>
                                 <div class="stat-item">
-                                    <span class="stat-number">4</span>
-                                    <span class="stat-label">Payment providers integrated</span>
+                                    <span class="stat-number">1</span>
+                                    <span class="stat-label">Open-source Laravel SDK</span>
                                 </div>
                             </div>
                             <div class="hero-actions">
@@ -141,10 +141,11 @@
                         <div class="about-content">
                             <p>
                                 4+ years shipping production web applications end-to-end, from Vue 3/Nuxt frontends to
-                                Laravel/TypeScript backends. The products I work on serve thousands of monthly users
-                                through payment and subscription flows across four providers. I also run the
-                                infrastructure behind them — Docker, Nginx, CI/CD, Redis queues — and maintain an
-                                open-source Laravel payment SDK on Packagist. Remote experience with teams in Portugal,
+                                Laravel/TypeScript backends. I currently build payment, subscription and AI features for
+                                high-traffic e-commerce products. I also run the
+                                infrastructure behind them — Docker, Traefik, Nginx, CI/CD, Redis queues — and maintain an
+                                open-source Laravel payment SDK on Packagist. I use AI agents deeply in development and testing
+                                and write my own skills for test design, code review and E2E QA. Remote experience with teams in Portugal,
                                 Poland and Belarus.
                             </p>
                             <div class="key-highlights">
@@ -154,11 +155,15 @@
                                 </div>
                                 <div class="highlight-item">
                                     <i class="fas fa-credit-card text-primary"></i>
-                                    <span>Payments & subscriptions — Stripe, PayPal, SBP, Airwallex</span>
+                                    <span>Payments & subscriptions — checkout, recurring billing, webhooks, reconciliation</span>
                                 </div>
                                 <div class="highlight-item">
                                     <i class="fas fa-brain text-primary"></i>
                                     <span>AI in production — LLM features behind queues, in-browser ML with MediaPipe</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-robot text-primary"></i>
+                                    <span>AI-driven development &amp; testing — own Claude Code skills for test design, review and E2E QA</span>
                                 </div>
                                 <div class="highlight-item">
                                     <i class="fas fa-chart-line text-primary"></i>
@@ -187,16 +192,22 @@
                                     <p class="timeline-period">January 2025 – Present</p>
                                     <p class="timeline-role">Full-Stack Developer</p>
                                     <ul class="timeline-achievements">
-                                        <li>Own end-to-end delivery of AI-powered e-commerce and subscription products (Vue 3 / Nuxt 4, Laravel 12, TypeScript) serving thousands of monthly users under high-traffic marketing campaigns</li>
+                                        <li>Own end-to-end delivery of AI-powered e-commerce and subscription web products running high-traffic marketing campaigns — backend API, single-page frontends and landing pages</li>
                                         <li>Designed and built a <strong>modular monolith with explicit domain boundaries</strong>, isolating the payment, subscription and AI domains so a change in one cannot regress the others</li>
-                                        <li>Integrated <strong>4 payment providers</strong> (Stripe, PayPal, SBP, Airwallex) behind a single provider abstraction — one-off checkout, recurring subscriptions, webhook-driven state reconciliation</li>
-                                        <li>Moved image generation, AI calls and billing side effects off the request path into <strong>Redis queues with Horizon</strong>, keeping checkout responsive under campaign traffic spikes</li>
-                                        <li>Shipped Nuxt 4 conversion funnels instrumented with GTM, Amplitude and Meta Pixel, and ran <strong>A/B tests through GrowthBook</strong> to drive funnel decisions with data instead of opinion</li>
-                                        <li>Built in-browser gesture recognition with MediaPipe for a real-time interactive funnel step (client-side ML, no server round-trip)</li>
-                                        <li>Set up production infrastructure: Docker multi-stage builds, Nginx reverse proxy, CI/CD (Bitbucket Pipelines / GitHub Actions)</li>
-                                        <li>Cover critical paths — payments, subscriptions, AI flows — with PHPUnit/Pest and E2E suites; run code review and coding standards for the team</li>
+                                        <li>Built payment and subscription flows across <strong>multiple payment providers</strong> — one-off checkout, recurring billing, upsells and webhook-driven state reconciliation — and integrated a new provider end-to-end</li>
+                                        <li>Applied standard checkout and API protection: fraud checks, authentication and rate limiting</li>
+                                        <li>Moved AI generation, document rendering and billing side effects off the request path into <strong>Redis queues with Laravel Horizon</strong>, with stuck-job detection and recovery, so checkout stays responsive under traffic spikes</li>
+                                        <li>Built LLM-powered product features, including a conversational assistant with server-side prompts and per-user rate limiting</li>
+                                        <li>Built conversion funnels with product analytics and <strong>A/B testing</strong>, so funnel changes ship on data rather than opinion</li>
+                                        <li>Implemented in-browser real-time computer vision with <strong>MediaPipe</strong> for an interactive funnel step — client-side machine learning, no server round-trip and no video leaving the device</li>
+                                        <li>Run production infrastructure: Docker multi-stage builds, Traefik and Nginx reverse proxy with SSL, CI/CD pipelines, error monitoring and alerting</li>
+                                        <li>Write step-by-step runbooks for risky production changes — staged rollout, no lost queue jobs, one-step rollback</li>
+                                        <li>Own the test suite at every level: <strong>PHPUnit</strong> unit and feature tests for API endpoints, middleware, queued jobs and payment webhooks, including race-condition and idempotency cases; <strong>Vitest</strong> unit tests on the frontend; <strong>Playwright E2E</strong> suites that walk each conversion funnel from landing page to test-card payment and assert the analytics events sent at every step</li>
+                                        <li>Quality gates: static analysis (Larastan, vue-tsc), linting and pre-commit hooks that run the relevant tests by scope; run code review and maintain coding standards for the team</li>
+                                        <li>Use AI agents deeply in development and testing, and <strong>write my own Claude Code skills</strong> for the team: a test-design skill that builds exhaustive case matrices (inputs, auth, state, dependency failures, races, rate limits); an architecture review that compares every changed file with its closest existing analogue in the codebase; an E2E QA skill that runs the funnel suites, builds an HTML report of findings with commit attribution and maps results to the task</li>
+                                        <li>Run agent workflows end-to-end — plan, implement, review, test — with project-level rules and architecture docs that keep agent output consistent with codebase conventions</li>
                                     </ul>
-                                    <p class="mb-0"><strong>Stack:</strong> Vue 3, Nuxt 4, Laravel 12, PHP 8.3, TypeScript, MySQL, Redis, Horizon, Temporal, Docker, Nginx, CI/CD, OpenAI API, Stripe, PayPal, Airwallex</p>
+                                    <p class="mb-0"><strong>Stack:</strong> Vue 3, Nuxt 4, Laravel 12, PHP 8.3, TypeScript, MySQL, Redis, Horizon, Docker, Traefik, Nginx, CI/CD, LLM integration</p>
                                 </div>
                             </div>
                             <div class="timeline-item">
@@ -272,13 +283,13 @@
                         <div class="skill-chips">
                             <span class="skill-chip">Stripe</span>
                             <span class="skill-chip">PayPal</span>
-                            <span class="skill-chip">SBP</span>
-                            <span class="skill-chip">Airwallex</span>
+                            <span class="skill-chip">Provider integration</span>
+                            <span class="skill-chip">Fraud checks</span>
                             <span class="skill-chip">MusePay Card API</span>
                             <span class="skill-chip">Subscriptions</span>
                             <span class="skill-chip">Webhooks</span>
                         </div>
-                        <p class="skill-proof">4 providers behind one abstraction: checkout, recurring billing, webhook-driven reconciliation — plus a published Laravel SDK on Packagist</p>
+                        <p class="skill-proof">Checkout, recurring billing, upsells and webhook-driven reconciliation across multiple providers in production — plus a published Laravel SDK on Packagist</p>
                     </div>
                     <div class="skill-category">
                         <h3 class="skill-category-title"><i class="fas fa-server me-2"></i>Backend</h3>
@@ -289,8 +300,10 @@
                             <span class="skill-chip">Eloquent</span>
                             <span class="skill-chip">Queues &amp; events</span>
                             <span class="skill-chip">Horizon</span>
+                            <span class="skill-chip">Inertia.js</span>
+                            <span class="skill-chip">Auth &amp; rate limiting</span>
                         </div>
-                        <p class="skill-proof">Billing, AI calls and image generation moved off the request path into Redis queues, keeping checkout responsive under traffic spikes</p>
+                        <p class="skill-proof">Billing, LLM calls, image generation and document rendering moved off the request path into Redis queues, with stuck-job recovery</p>
                     </div>
                     <div class="skill-category">
                         <h3 class="skill-category-title"><i class="fas fa-palette me-2"></i>Frontend</h3>
@@ -300,45 +313,50 @@
                             <span class="skill-chip">TypeScript</span>
                             <span class="skill-chip">Tailwind CSS</span>
                             <span class="skill-chip">Pinia</span>
-                            <span class="skill-chip">SSR / SSG</span>
+                            <span class="skill-chip">Inertia.js</span>
+                            <span class="skill-chip">Vite</span>
                         </div>
-                        <p class="skill-proof">Server-rendered conversion funnels serving thousands of monthly users under high-traffic campaigns</p>
+                        <p class="skill-proof">Single-page apps and conversion funnels running high-traffic marketing campaigns</p>
                     </div>
                     <div class="skill-category">
                         <h3 class="skill-category-title"><i class="fas fa-brain me-2"></i>AI in production</h3>
                         <div class="skill-chips">
                             <span class="skill-chip">LLM integration</span>
                             <span class="skill-chip">OpenAI API</span>
-                            <span class="skill-chip">Model-agnostic</span>
+                            <span class="skill-chip">AI chat</span>
                             <span class="skill-chip">Structured prompting</span>
                             <span class="skill-chip">Embeddings</span>
                             <span class="skill-chip">Async pipelines</span>
                             <span class="skill-chip">MediaPipe</span>
                         </div>
-                        <p class="skill-proof">Generation runs behind queues with retries and graceful degradation when a provider fails; models chosen per task, not locked to one vendor</p>
+                        <p class="skill-proof">AI generation runs behind queues with retries and stuck-job recovery; conversational features with per-user rate limits</p>
                     </div>
                     <div class="skill-category">
                         <h3 class="skill-category-title"><i class="fas fa-terminal me-2"></i>AI-assisted engineering</h3>
                         <div class="skill-chips">
-                            <span class="skill-chip">Coding agents</span>
                             <span class="skill-chip">Claude Code</span>
                             <span class="skill-chip">Cursor</span>
-                            <span class="skill-chip">Agent rules &amp; skills</span>
-                            <span class="skill-chip">Multi-model workflows</span>
+                            <span class="skill-chip">Coding agents &amp; subagents</span>
+                            <span class="skill-chip">Custom skills</span>
+                            <span class="skill-chip">AI test design</span>
+                            <span class="skill-chip">AI code review</span>
+                            <span class="skill-chip">Agent rules</span>
                         </div>
-                        <p class="skill-proof">I author project-level agent rules and reusable skills, so a whole team gets consistent AI-assisted refactoring, review and docs instead of ad-hoc prompting</p>
+                        <p class="skill-proof">I write my own skills: test design with exhaustive case matrices, architecture review against existing code, and E2E QA that runs funnel suites and reports findings with commit attribution</p>
                     </div>
                     <div class="skill-category">
                         <h3 class="skill-category-title"><i class="fas fa-gears me-2"></i>Infrastructure &amp; delivery</h3>
                         <div class="skill-chips">
                             <span class="skill-chip">Docker</span>
+                            <span class="skill-chip">Traefik</span>
                             <span class="skill-chip">Nginx</span>
                             <span class="skill-chip">GitHub Actions</span>
                             <span class="skill-chip">Bitbucket Pipelines</span>
                             <span class="skill-chip">Redis</span>
                             <span class="skill-chip">AWS (EC2, S3)</span>
+                            <span class="skill-chip">Error monitoring</span>
                         </div>
-                        <p class="skill-proof">Multi-stage builds, reverse proxy and deployment pipelines set up and maintained by me, not inherited; app hosting on EC2 with S3 for object storage</p>
+                        <p class="skill-proof">Multi-stage builds, Traefik in front of several services, deployment pipelines and runbooks for risky changes — set up and maintained by me; EC2 hosting with S3 storage</p>
                     </div>
                     <div class="skill-category">
                         <h3 class="skill-category-title"><i class="fas fa-database me-2"></i>Data</h3>
@@ -358,6 +376,7 @@
                             <span class="skill-chip">Amplitude</span>
                             <span class="skill-chip">Meta Pixel</span>
                             <span class="skill-chip">GrowthBook</span>
+                            <span class="skill-chip">BigQuery</span>
                         </div>
                         <p class="skill-proof">Funnels instrumented end-to-end; A/B tests decide what ships instead of opinion</p>
                     </div>
@@ -365,11 +384,15 @@
                         <h3 class="skill-category-title"><i class="fas fa-vial me-2"></i>Testing</h3>
                         <div class="skill-chips">
                             <span class="skill-chip">PHPUnit</span>
-                            <span class="skill-chip">Pest</span>
-                            <span class="skill-chip">E2E suites</span>
+                            <span class="skill-chip">Vitest</span>
+                            <span class="skill-chip">Playwright (E2E)</span>
+                            <span class="skill-chip">Unit &amp; feature tests</span>
+                            <span class="skill-chip">Race &amp; idempotency tests</span>
+                            <span class="skill-chip">Larastan</span>
+                            <span class="skill-chip">Pint / ESLint</span>
                             <span class="skill-chip">Code review</span>
                         </div>
-                        <p class="skill-proof">Critical paths covered: payments, subscriptions and AI flows</p>
+                        <p class="skill-proof">Unit, feature and E2E levels on payments, subscriptions and AI flows; E2E suites walk every funnel to a test-card payment and assert analytics events at each step</p>
                     </div>
                     <div class="skill-category skill-category-secondary">
                         <h3 class="skill-category-title"><i class="fas fa-layer-group me-2"></i>Also worked with</h3>
